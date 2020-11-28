@@ -64,8 +64,8 @@ public class AlienAttacks : MonoBehaviour
         {
             if (flyingObjects[i].GetComponent<FlyingObject>() == null)
             {
-                flyingObjects[i].AddComponent<FlyingObject>();
-                flyingObjects[i].GetComponent<FlyingObject>().attackPath = this;
+                flyingObjects[i].AddComponent<FlyingObject>().attackPath = this;
+                
             }
         }
     }
