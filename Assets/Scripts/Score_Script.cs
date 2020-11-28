@@ -60,7 +60,7 @@ public class Score_Script : MonoBehaviour
         //Score is to be increased by X * current song want when on Top\\ See Desing Documentation
       if (_Crowdwants.Desireforcurrentsong > TestCrowd.Top)
       {
-      currentpoint_increase = Top_score_increase; 
+      currentpoint_increase = Top_score_increase * _currentCategory.want; 
       } else if (_Crowdwants.Desireforcurrentsong > TestCrowd.Mid)
       {
       currentpoint_increase = Mid_score_increase;
