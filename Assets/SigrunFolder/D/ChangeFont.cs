@@ -7,36 +7,37 @@ public class ChangeFont : MonoBehaviour
     public Font dyslexia;
     public Font standard;
 
-    public FontSource fontSource;
-
     public static bool fontchange;
 
-    [SerializeField] private int fontSizeChange = 1;
+    [SerializeField] private int fontSizeMultiplierChange = 1;
 
     public void ButtonDyslexia()
     {
-        fontSource.inUse = dyslexia;
+        AccessibilityContainer.fontInUse = dyslexia;
         fontchange = true;
         Invoke("boolFlip", 1f);
     }
 
     public void ButtonStandard()
     {
-        fontSource.inUse = standard;
+        AccessibilityContainer.fontInUse = standard;
         fontchange = true;
         Invoke("boolFlip", 1f);
     }
 
     public void ButtonSizeUp()
     {
-        fontSource.fontSize = fontSource.fontSize + fontSizeChange;
+        AccessibilityContainer.fontSizeMulitplier = AccessibilityContainer.fontSizeMulitplier + fontSizeMultiplierChange;
+        if (AccessibilityContainer.fontSizeMulitplier > AccessibilityContainer.fontMultiplierMaxSize)
+            AccessibilityContainer.fontSizeMulitplier = AccessibilityContainer.fontMultiplierMaxSize;
         fontchange = true;
         Invoke("boolFlip", 1f);
     }
 
     public void ButtonSizeDown()
     {
-        fontSource.fontSize = fontSource.fontSize - fontSizeChange;
+        if (AccessibilityContainer.fontSizeMulitplier >= 2)
+            AccessibilityContainer.fontSizeMulitplier = AccessibilityContainer.fontSizeMulitplier - fontSizeMultiplierChange;
         fontchange = true;
         Invoke("boolFlip", 1f);
     }

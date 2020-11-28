@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class SetFont : MonoBehaviour
 {
-    public FontSource fontSource;
+    [SerializeField] private int fontDefaultSize = 14;
+
     private void Start()
     {
-        GetComponent<Text>().font = fontSource.inUse;
+        GetComponent<Text>().font = AccessibilityContainer.fontInUse;
+        GetComponent<Text>().fontSize = fontDefaultSize * AccessibilityContainer.fontSizeMulitplier;
     }
     private void Update()
     {
         if (ChangeFont.fontchange == true)
         {
-            GetComponent<Text>().font = fontSource.inUse;
-            GetComponent<Text>().fontSize = fontSource.fontSize;
+            GetComponent<Text>().font = AccessibilityContainer.fontInUse;
+            GetComponent<Text>().fontSize = fontDefaultSize * AccessibilityContainer.fontSizeMulitplier;
         }
         
     }
