@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class DisplayTheColor : MonoBehaviour
 {
-    public int musicCategory;
-    public ColorScriptableObjectScript colors;
+    public int musicCategory; //Set on the object
 
-    private void Start()
+    private void Awake()
     {
-        ColorDisplay();
+        ColorDisplay(); //set the color when it spawns
     }
 
     private void Update()
     {
-        if (SetTheColor.colorUpdate == true)
+        if (SetTheColor.colorUpdate == true) //if the color should be changed change the color
             ColorDisplay();
     }
 
@@ -22,19 +21,19 @@ public class DisplayTheColor : MonoBehaviour
     {
         var renderer = GetComponent<Renderer>();
 
-        switch (musicCategory)
+        switch (musicCategory) //change the color of the object with the color from the container
         {
             case 3:
-                renderer.material.color = new Color(colors.aggressive.r,colors.aggressive.g,colors.aggressive.b);
+                renderer.material.color = new Color(AccessibilityContainer.aggressive.r,AccessibilityContainer.aggressive.g,AccessibilityContainer.aggressive.b);
                 break;
             case 2:
-                renderer.material.color = new Color(colors.energetic.r, colors.energetic.g, colors.energetic.b);
+                renderer.material.color = new Color(AccessibilityContainer.energetic.r, AccessibilityContainer.energetic.g, AccessibilityContainer.energetic.b);
                 break;
             case 1:
-                renderer.material.color = new Color(colors.calm.r, colors.calm.g, colors.calm.b);
+                renderer.material.color = new Color(AccessibilityContainer.calm.r, AccessibilityContainer.calm.g, AccessibilityContainer.calm.b);
                 break;
             case 0:
-                renderer.material.color = new Color(colors.chill.r, colors.chill.g, colors.chill.b);
+                renderer.material.color = new Color(AccessibilityContainer.chill.r, AccessibilityContainer.chill.g, AccessibilityContainer.chill.b);
                 break;
         }
     }

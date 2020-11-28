@@ -10,8 +10,6 @@ public class SetTheColor : MonoBehaviour
 
     private Color desiredColor;
 
-    public ColorScriptableObjectScript colorContainer;
-
     public static bool colorUpdate;
     private void Update()
     {
@@ -20,11 +18,9 @@ public class SetTheColor : MonoBehaviour
 
     public void CategoryPressed(Button _button)
     {
-        //categoryID = ();
-        print("pressed");
         category = _button.name;
 
-        switch(category)
+        switch(category) //check witch category should have their color updated
         {
             case "Aggressive":
                 categoryID = 3;
@@ -70,32 +66,32 @@ public class SetTheColor : MonoBehaviour
 
     public void GetGolor(Image _image)
     {
-        desiredColor = _image.color;
-        switch (categoryID)
+        desiredColor = _image.color; //we want to change the color stored in the container to the color of the "image", aka the button
+        switch (categoryID) 
         {
             case 3:
-                colorContainer.aggressive = desiredColor;
+                AccessibilityContainer.aggressive = desiredColor;
                 break;
             case 2:
-                colorContainer.energetic = desiredColor;
+                AccessibilityContainer.energetic = desiredColor;
                 break;
             case 1:
-                colorContainer.calm = desiredColor;
+                AccessibilityContainer.calm = desiredColor;
                 break;
             case 0:
-                colorContainer.chill = desiredColor;
+                AccessibilityContainer.chill = desiredColor;
                 break;
         }
-        colorUpdate = true;
+        colorUpdate = true; //causes displaythecolor to update the colors
         Invoke("boolFlip", 1f);
     }
 
-    public void RevertColor()
+    public void RevertColor() //sets the colors to their default values
     {
-        colorContainer.aggressive = Color.red;
-        colorContainer.energetic = Color.yellow;
-        colorContainer.calm = Color.green;
-        colorContainer.chill = Color.blue;
+        AccessibilityContainer.aggressive = Color.red;
+        AccessibilityContainer.energetic = Color.yellow;
+        AccessibilityContainer.calm = Color.green;
+        AccessibilityContainer.chill = Color.blue;
 
         colorUpdate = true;
         Invoke("boolFlip", 1f);
