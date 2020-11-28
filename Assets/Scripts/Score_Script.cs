@@ -56,6 +56,11 @@ public class Score_Script : MonoBehaviour
       Checkmodifier(_currentCategory.Melodic, Teststatic.MEL_Playing);
       Checkmodifier(_currentCategory.Rhythmic, Teststatic.RHY_Playing);
 
+<<<<<<< Updated upstream
+=======
+
+        
+>>>>>>> Stashed changes
       if (_Crowdwants.Desireforcurrentsong > TestCrowd.Top)
       {
       currentpoint_increase = Top_score_increase; 
