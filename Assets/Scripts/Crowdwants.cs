@@ -18,6 +18,7 @@ public class Crowdwants : MonoBehaviour
     public List<int> _Want = new List<int>();
     private void Start()
     {
+        //Used to give start value of want
         ChillWant = TestCrowd.chill.want * startwant_multiplier;
         EnergeticWant = TestCrowd.Calm.want * startwant_multiplier;
         CalmWant = TestCrowd.Energic.want * startwant_multiplier;
@@ -33,6 +34,7 @@ public class Crowdwants : MonoBehaviour
     
     public IEnumerator Want_counter()
     {
+        //increases want on the category based on if they are being played or not
         for (int i = 0; i < _Want.Count; i++)
         {
             if (i == Teststatic.song_playing)
@@ -59,18 +61,11 @@ public class Crowdwants : MonoBehaviour
                    break;
                 }
             }
+            //So they don't go above 100 or under 0
             _Want[i] = Mathf.Clamp(_Want[i], 0, 100);
         }
+        //Begins the process again after a few seconds
         yield return new WaitForSeconds(pointrefreshtimer);
         StartCoroutine(Want_counter());
-    }
-        
-    private void Update()
-    {
-        /* Debug.Log("SongDesire: " + Desireforcurrentsong);
-        Debug.Log("Chill: "+ _Want[0]);
-        Debug.Log("Calm: "+ _Want[1]);
-        Debug.Log("Energetic: "+ _Want[2]);
-        Debug.Log("Aggresive" +_Want[3]); */
     }
 }

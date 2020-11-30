@@ -4,34 +4,37 @@ using UnityEngine;
 
 public class Score_Script : MonoBehaviour
 {
-   [SerializeField] private Crowd TestCrowd;
+   [SerializeField] private Crowd TestCrowd; //The crowd currently being used
    public Crowdwants _Crowdwants;
-   public int _Score;
-   [SerializeField] private int scorerefreshtimer = 2;
+   public int _Score; 
+   [SerializeField] private int scorerefreshtimer = 2; //Time between calculations of the score
    public Category _currentCategory;
-   [SerializeField] public int point_Modifier = 1;
-   [SerializeField] public int currentpoint_increase;
+
+   //Used to calculate the points being earned
+   private int point_Modifier = 1;
+   public int currentpoint_increase;
    [SerializeField] public int Top_score_increase;
    [SerializeField] public int Mid_score_increase;
    [SerializeField] public int Bot_score_increase;
    private int colorbonus;
-   [SerializeField] private int Colorbonusvalue;
+   [Tooltip("Used to change the bonus that correct color will give")]
+   public int Colorbonusadd = 20; //adds value to colorbonus, Can be changed by designer
    private void Start() 
    {
      StartCoroutine(CountScoreCalc());
    }
    private void Update() 
    {
-      point_Modifier = 1;
+      point_Modifier = 1; //so that the point bonus wont go under 0 and into the negative
 
-      if (Teststatic._colorshowing == Teststatic.song_playing)
+      if (Teststatic._colorshowing == Teststatic.song_playing) //finds if the track number and the color number is the same
       {
-          colorbonus = 20;
+          colorbonus = Colorbonusadd;
       } else
       {
           colorbonus = 0;
       }
-
+        //finds the catagory currently being used
       switch (Teststatic.song_playing)
       {
          case 0:
@@ -50,14 +53,14 @@ public class Score_Script : MonoBehaviour
          _currentCategory = TestCrowd.Aggressive;
          break;
       }
-
+        //function used to give the modifier its value
       Checkmodifier(_currentCategory.LowFrequency, Teststatic.LF_Playing);
       Checkmodifier(_currentCategory.HighFrequency, Teststatic.HF_Playing);
       Checkmodifier(_currentCategory.Melodic, Teststatic.MEL_Playing);
       Checkmodifier(_currentCategory.Rhythmic, Teststatic.RHY_Playing);
 
 
-        //Score is to be increased by X * current song want when on Top\\ See Desing Documentation
+        //gives the current increase its value based on if it is above specific treshold
       if (_Crowdwants.Desireforcurrentsong > TestCrowd.Top)
       {
       currentpoint_increase = Top_score_increase * _currentCategory.want; 
@@ -69,7 +72,7 @@ public class Score_Script : MonoBehaviour
       }
    }
 
-   private void Checkmodifier(bool crowd, bool current)
+   private void Checkmodifier(bool crowd, bool current) //finds what the point modifier is
    {
       if (crowd && current)
       {
@@ -79,7 +82,7 @@ public class Score_Script : MonoBehaviour
           point_Modifier -= 1;
       }
    }
-   private IEnumerator CountScoreCalc()
+   private IEnumerator CountScoreCalc() //Calculates the score being given and makes sure it doesn't go under 0
    {
       if (point_Modifier < 1)
       {
