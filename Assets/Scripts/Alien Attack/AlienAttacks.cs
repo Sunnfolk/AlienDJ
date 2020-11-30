@@ -96,13 +96,13 @@ public class AlienAttacks : MonoBehaviour
 
     void Update()
     {
-        //Used for testing
-        if (Input.GetKeyDown(KeyCode.Space))
-            LaunchObject();
+        ////Used for testing
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //    LaunchObject();
 
-        //Used for Testing
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-            CreatePath();
+        ////Used for Testing
+        //if(Input.GetKeyDown(KeyCode.Alpha1))
+        //    CreatePath();
 
         
     }
