@@ -2,7 +2,7 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.aliendjvr.exe",
+      "app_key": "application.generated.unity.milkywaybeatsvr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
       "action_manifest_path": "C:\\Users\\eriar\\OneDrive\\Documents\\GitHub\\AlienDJ\\Assets\\StreamingAssets\\SteamVR\\actions.json",

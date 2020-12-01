@@ -24,12 +24,14 @@ public class Hand : MonoBehaviour
         if(GrabAction.GetStateDown(Pose.inputSource))
         {
             Pickup();
+            gameObject.tag = "Hand_Trigger";
         }
 
         //Trigger Up
         if (GrabAction.GetStateUp(Pose.inputSource))
         {
             Drop();
+            gameObject.tag = "Hand_Open";
         }
     }
 
