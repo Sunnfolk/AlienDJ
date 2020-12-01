@@ -222,9 +222,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919167200}
-  - component: {fileID: 919167202}
-  - component: {fileID: 919167201}
   - component: {fileID: 919167199}
+  - component: {fileID: 919167201}
+  - component: {fileID: 919167202}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -244,8 +244,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383a30b67925f714bac9174fcaa891e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valuez: 0
-  _playList: event:/RWAC/Rebel without a clause
+  _emitter: {fileID: 919167201}
+  value: 0
+  low: 0
+  high: 0
+  ryth: 0
+  melod: 0
+  lowint: 0
+  highint: 0
+  rythint: 0
+  melodint: 0
 --- !u!4 &919167200
 Transform:
   m_ObjectHideFlags: 0
@@ -273,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/RWAC/Rebel without a clause
+  Event: event:/milkyway beats/song type/milkyway beats
   PlayEvent: 11
   StopEvent: 12
   AllowFadeout: 1
@@ -281,8 +289,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &919167202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,7 +307,7 @@ MonoBehaviour:
   Emitters:
   - Target: {fileID: 919167201}
     Params: []
-  TriggerEvent: 0
+  TriggerEvent: 11
 --- !u!1 &2075477129
 GameObject:
   m_ObjectHideFlags: 0

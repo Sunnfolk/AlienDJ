@@ -243,8 +243,10 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../../Downloads/Tantrum VR/Tantrum VR/Tantrum VR.fspro
-  sourceBankPath: ..\..\..\..\Downloads\Tantrum VR\Tantrum VR\Build
+  sourceProjectPath: ../../../../Downloads/milkyway beats (built) (1)/milkyway beats
+    (built)/milkyway beats (built).fspro
+  sourceBankPath: ..\..\..\..\Downloads\milkyway beats (built) (1)\milkyway beats
+    (built)\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -266,13 +268,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Announcer
-  - CB
-  - FTM
-  - LOD SONGS
-  - Menu
-  - RWAC
-  - SFX
+  - Music
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
