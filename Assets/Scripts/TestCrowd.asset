@@ -31,7 +31,7 @@ MonoBehaviour:
     Melodic: 0
     Rhythmic: 0
   Calm:
-    want: 3
+    want: 5
     LowFrequency: 1
     HighFrequency: 0
     Melodic: 1
