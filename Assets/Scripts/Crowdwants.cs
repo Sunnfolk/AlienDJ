@@ -8,11 +8,12 @@ public class Crowdwants : MonoBehaviour
    [SerializeField] private int pointrefreshtimer = 1;   
 
     [SerializeField] private Crowd TestCrowd;
-    [SerializeField] private int startwant_multiplier = 30;
-    public int AggresiveWant; //Agressive Want
+    [SerializeField] private int startwant_multiplier = 20;
+    
     public int ChillWant; //Chill Want
-    public int EnergeticWant; //Energic want
     public int CalmWant; //Calm want
+    public int EnergeticWant; //Energic want
+    public int AggresiveWant; //Agressive Want
     public int Desireforcurrentsong;
 
     public List<int> _Want = new List<int>();
