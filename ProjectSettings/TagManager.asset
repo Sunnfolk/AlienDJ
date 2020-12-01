@@ -9,6 +9,9 @@ TagManager:
   - Interactable
   - Button
   - SnapObject
+  - Tshirt
+  - Crowd
+  - TshirtCannon
   layers:
   - Default
   - TransparentFX

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 358507908}
   - component: {fileID: 358507907}
   - component: {fileID: 358507906}
+  - component: {fileID: 358507909}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -204,6 +205,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &358507909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358507905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80b92878a396594092ca5d6c31847cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuzzerCooldownTime: 20
+  Buzzerwantadd: 10
+  _crowdwant: {fileID: 1521734207}
 --- !u!1 &413166298
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +250,65 @@ Transform:
   m_Father: {fileID: 1695176263}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &824851859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824851861}
+  - component: {fileID: 824851860}
+  - component: {fileID: 824851862}
+  m_Layer: 0
+  m_Name: TestCrowdbox
+  m_TagString: Crowd
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &824851860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824851859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 4, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &824851861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824851859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.42, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824851862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824851859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce328565fc5a6041a82e6cc17637fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ScoreScript: {fileID: 1521734205}
+  TshirtScoreIncrease: 200
 --- !u!1 &1045327612
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,11 +476,11 @@ MonoBehaviour:
   decreaseValue: 1
   pointrefreshtimer: 1
   TestCrowd: {fileID: 11400000, guid: bf2f83ea7a63acb4694bfb99e945465d, type: 2}
-  startwant_multiplier: 30
-  AggresiveWant: 0
+  startwant_multiplier: 20
   ChillWant: 0
-  EnergeticWant: 0
   CalmWant: 0
+  EnergeticWant: 0
+  AggresiveWant: 0
   Desireforcurrentsong: 0
   _Want: 
 --- !u!114 &1521734208
@@ -441,7 +516,7 @@ GameObject:
   - component: {fileID: 1695176259}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: TshirtCannon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
