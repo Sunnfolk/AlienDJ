@@ -20,7 +20,14 @@ public class TshirtCannon_Script : MonoBehaviour
            StartCoroutine("Reload");
         }
 
-        if (Input.GetKeyDown(KeyCode.O) && reloaded == true) //used for testing
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            shoot();
+        }
+    }
+    public void shoot()
+    {
+        if ( reloaded == true) //used for testing
         {
             Instantiate(Tshirt, firePoint.position, firePoint.rotation);
             Ammunition -= 1; 

@@ -15,15 +15,12 @@ public class TshirtProjectile_Script : MonoBehaviour
     }
     private void Update() 
     {
-        transform.Rotate (Random.Range(-90f, 90f)*Time.deltaTime*speed, Random.Range(-90f, 90f)*Time.deltaTime*speed,Random.Range(-80f, 80f)*Time.deltaTime*speed);    
+        transform.Rotate (10*Time.deltaTime, 70*Time.deltaTime, 10*Time.deltaTime);    
     }
+    
     private void OnTriggerEnter(Collider other) 
     {
-        if (other.CompareTag("crowd"))
-        {
-            Destroy(this.gameObject);
-        }
-        if (other.CompareTag("wall"))
+        if (other.CompareTag("Crowd"))
         {
             Destroy(this.gameObject);
         }
