@@ -6,19 +6,26 @@ using FMODUnity;
 public class Test_FMOD : MonoBehaviour
 {
 
-    public float valuez;
-    public FMOD.Studio.EventInstance _event;
-    public string _playList;
-    FMOD.Studio.EventDescription event_Description;
-    FMOD.Studio.PARAMETER_DESCRIPTION parameter_Description;
-    FMOD.Studio.PARAMETER_ID parameter_ID;
+    
+
+
+
+    public StudioEventEmitter _emitter;
+
+    public int value;
+
+    public bool low;
+    public bool high;
+    public bool ryth;
+    public bool melod;
+    public int lowint;
+    public int highint;
+    public int rythint;
+    public int melodint;
 
     private void Start()
     {
-        event_Description = FMODUnity.RuntimeManager.GetEventDescription(_playList);
-        event_Description.getParameterDescriptionByName("Mood", out parameter_Description);
-        parameter_ID = parameter_Description.id;
-        Debug.Log(parameter_Description);
+        
     }
 
     //Don't have to write FMODUnity 0when using the namespace.
@@ -45,39 +52,73 @@ public class Test_FMOD : MonoBehaviour
         //Code to access the parameters in FMOD file. Just like Animator code
         //_event.setParameterByName("Name of Variable", ParameterValue);
         //Name of variable is a set name and the parameter value is song playing
+        
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            //Mood(0);
-            _event.getParameterByName("Mood", out valuez);
-            Debug.Log(valuez);
+            value = 0;
+            ResetValues();
+
         }
         if(Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Mood(1);
+            value = 1;
+            ResetValues();
         }
         if(Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Mood(2);
+            value = 2;
+            ResetValues();
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            value = 3;
+            ResetValues();
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            low = !low;
+            lowint = !low ? 0 : 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            high = !high;
+            highint = !high ? 0 : 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            ryth = !ryth;
+            rythint = !ryth ? 0 : 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            melod = !melod;
+            melodint = !melod ? 0 : 1;
         }
 
 
-        
+
+        RuntimeManager.StudioSystem.setParameterByName("song type", value);
+        RuntimeManager.StudioSystem.setParameterByName("modifier 0", lowint);
+        RuntimeManager.StudioSystem.setParameterByName("modifier 1", highint);
+        RuntimeManager.StudioSystem.setParameterByName("modifier 2", rythint);
+        RuntimeManager.StudioSystem.setParameterByName("modifier 3", melodint);
+
+
     }
 
-    public void IpodControls()
+
+    private void ResetValues()
     {
-        var emitter = GetComponent<StudioEventEmitter>();
-        
+        low = false;
+        high = false;
+        ryth = false;
+        melod = false;
+        lowint = 0;
+        highint = 0;
+        rythint = 0;
+        melodint = 0;
     }
-
-    public void Mood(int _value)
-    {
-        var emitter = GetComponent<StudioEventEmitter>();
-        //emitter.SetParameter("Mood", _value);
-        emitter.SetParameter("Mood", _value);
-        Debug.Log(_value);
-    }
-
+    
 
 
 

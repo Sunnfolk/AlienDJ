@@ -92,6 +92,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &-8757376038089116433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/milkyway beats (built) (1)/milkyway beats (built)/Build/Desktop/Master.bank
+  Name: Master
+  lastModified: 637424132319019485
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8667955469586820061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +236,24 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 912
+  Exists: 1
+--- !u!114 &-7903661435294951884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/milkyway beats (built) (1)/milkyway beats (built)/Build/Desktop/Music.bank
+  Name: Music
+  lastModified: 637424132321653236
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-7838736838595258783
 MonoBehaviour:
@@ -529,6 +565,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
+--- !u!114 &-4626190194426331342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/milkyway beats/song type/milkyway beats
+  m_EditorClassIdentifier: 
+  Path: event:/milkyway beats/song type/milkyway beats
+  guid: de97ab37a9d03341844e034c52513a97
+  Banks:
+  - {fileID: -7903661435294951884}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-4349010741049980507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,67 +1184,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3121366822435308450}
-  - {fileID: 5480389099004096188}
-  - {fileID: 2526237738139519875}
-  - {fileID: 378998604195962683}
-  - {fileID: 3775909564350381407}
-  - {fileID: 8974157517313731824}
-  - {fileID: -3543239515753170643}
-  - {fileID: 5241202459733056090}
-  - {fileID: 5960466353332779143}
+  - {fileID: 8425213593889771726}
+  - {fileID: -8757376038089116433}
+  - {fileID: -7903661435294951884}
   EditorEvents:
-  - {fileID: -3799278645278992350}
-  - {fileID: -2911028776782683177}
-  - {fileID: -7426661184091352494}
-  - {fileID: 5682736690620906869}
-  - {fileID: -5621429803807628118}
-  - {fileID: -3827432610633960011}
-  - {fileID: -8105632761999587385}
-  - {fileID: -4349010741049980507}
-  - {fileID: -7784911032194933500}
-  - {fileID: -8985115952241355466}
-  - {fileID: 7572982169924687812}
-  - {fileID: 6483048176256218048}
-  - {fileID: -3608393075555603996}
-  - {fileID: -2801882936868837834}
-  - {fileID: 5673785750485037153}
-  - {fileID: 8199075079261506183}
-  - {fileID: 47073341793453083}
-  - {fileID: 6020002045584901003}
-  - {fileID: 5796947923014452160}
-  - {fileID: -3382152885657630144}
-  - {fileID: 8965564693007884863}
-  - {fileID: 8897655927731431406}
-  - {fileID: 5741791198699981155}
-  - {fileID: -4680184153733325632}
-  - {fileID: -445117271829513427}
-  - {fileID: 8817767100440032673}
-  - {fileID: -6186435375887053489}
-  - {fileID: 4850638684890918456}
-  - {fileID: 8564314693220810502}
-  - {fileID: 5514401574068225173}
-  - {fileID: -1535115631298836296}
-  - {fileID: -8297334149368651276}
-  - {fileID: -8767080399122139215}
-  - {fileID: -9197384809041292326}
-  - {fileID: -6090782310006468828}
-  - {fileID: -8984581526255706646}
-  - {fileID: 2365042055439820400}
-  - {fileID: 4466750408453153915}
-  - {fileID: -8593549551405930245}
-  - {fileID: 5214028204987856343}
-  - {fileID: 5861000878942055926}
-  - {fileID: 8053738186913493465}
-  EditorParameters:
-  - {fileID: 2314249489603727491}
-  - {fileID: 2861556088084466033}
-  - {fileID: 6140836157936907996}
+  - {fileID: -4626190194426331342}
+  EditorParameters: []
   MasterBanks:
-  - {fileID: 8974157517313731824}
+  - {fileID: -8757376038089116433}
   StringsBanks:
-  - {fileID: 3121366822435308450}
-  stringsBankWriteTime: 637423263855277516
+  - {fileID: 8425213593889771726}
+  stringsBankWriteTime: 637424132319257552
   cacheVersion: 5
 --- !u!114 &47073341793453083
 MonoBehaviour:
@@ -2257,6 +2266,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 23500
+--- !u!114 &8425213593889771726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/milkyway beats (built) (1)/milkyway beats (built)/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  lastModified: 637424132319257552
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1032
+  Exists: 1
 --- !u!114 &8503377555273222982
 MonoBehaviour:
   m_ObjectHideFlags: 0
