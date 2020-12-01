@@ -88,7 +88,7 @@ public class Score_Script : MonoBehaviour
       {
           point_Modifier = 1;
       }
-      _Score += (currentpoint_increase + colorbonus) * point_Modifier;
+        _Score += (currentpoint_increase + colorbonus) * point_Modifier;
       if (_Score < 0)
       {
           _Score = 0;
