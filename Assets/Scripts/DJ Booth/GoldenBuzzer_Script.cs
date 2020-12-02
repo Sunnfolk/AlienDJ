@@ -2,20 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GoldenBuzzer_Script : MonoBehaviour
 {
     public float BuzzerCooldownTime = 20;
     private float BuzzerCooldown = 0;
     [SerializeField] private int Buzzerwantadd = 20;
-    public Crowdwants _crowdwant;
+    private Crowdwants _crowdwant;
+
+    private void Start()
+    {
+        _crowdwant = GameObject.FindGameObjectWithTag("DJbooth").GetComponent<Crowdwants>();
+        
+        
+    }
 
     private void Update() 
     {
         BuzzerCooldown = BuzzerCooldown - Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            BuzzerActivate();
-        }
+        
+        //TESTING
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    BuzzerActivate();
+        //}
         if (BuzzerCooldown < 0)
         {
             BuzzerCooldown = 0;
@@ -28,7 +38,7 @@ public class GoldenBuzzer_Script : MonoBehaviour
             BuzzerCooldown += BuzzerCooldownTime;
             for (int i = 0; i < _crowdwant._Want.Count; i++)
             {
-                if (i == Teststatic.song_playing)
+                if (i == CurrentSong.songPlaying)
                 {
                     _crowdwant._Want[i] += Buzzerwantadd;
                 }

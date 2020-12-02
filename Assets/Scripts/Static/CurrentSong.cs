@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-
+[Serializable]
 public static class CurrentSong
 {
 
@@ -25,4 +26,12 @@ enum Modifier
     mod1,
     mod2,
     mod3
+}
+
+enum LightColor
+{
+    blue,
+    green,
+    yellow,
+    red
 }

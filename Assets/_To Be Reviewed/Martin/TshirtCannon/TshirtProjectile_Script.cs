@@ -10,7 +10,7 @@ public class TshirtProjectile_Script : MonoBehaviour
 
     private void Start() 
     {
-        Rigidbody _rb = GetComponent<Rigidbody>(); //getting the rigidbody of the projectile
+        _rb = GetComponent<Rigidbody>(); //getting the rigidbody of the projectile
         _rb.velocity = transform.forward * speed;
     }
     private void Update() 
