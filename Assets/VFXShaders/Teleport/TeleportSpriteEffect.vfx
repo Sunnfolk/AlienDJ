@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.05098039284348488,"g":0.10588235408067703,"b":0.250980406999588,"a":0.0}'
+      m_SerializableObject: '{"r":0.15234375,"g":0.3316406011581421,"b":0.75,"a":0.0}'
     min: -Infinity
     max: Infinity
     descendantCount: 0
@@ -2988,7 +2988,7 @@ VisualEffectResource:
       m_Vector4f:
         m_Array:
         - m_ExpressionIndex: 1
-          m_Value: {x: 0.050980393, y: 0.105882354, z: 0.2509804, w: 0}
+          m_Value: {x: 0.15234375, y: 0.3316406, z: 0.75, w: 0}
       m_Uint:
         m_Array: []
       m_Int:
@@ -4551,7 +4551,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.05098039284348488,"g":0.10588235408067703,"b":0.250980406999588,"a":0.0}'
+      m_SerializableObject: '{"r":0.15234375,"g":0.3316406011581421,"b":0.75,"a":0.0}'
     m_Space: 2147483647
   m_Property:
     name: o
