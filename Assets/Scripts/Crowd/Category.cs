@@ -7,8 +7,8 @@ using System;
 public class Category
 {
     public int want;
-    public bool LowFrequency;
-    public bool HighFrequency;
-    public bool Melodic;
-    public bool Rhythmic;
+    public bool modifier_0;
+    public bool modifier_1;
+    public bool modifier_2;
+    public bool modifier_3;
 }

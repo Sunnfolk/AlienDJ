@@ -10,7 +10,7 @@ public class Test_FMOD : MonoBehaviour
 
 
 
-    public StudioEventEmitter _emitter;
+    
 
     public int value;
 
