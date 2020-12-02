@@ -26,11 +26,11 @@ public class LerpTeleport : MonoBehaviour
 
     public float waitTime;
 
-    public bool StaticTimerisFinishedBool;
-    
-    
+    private bool candespawn;
+
     private void OnEnable()
     {
+        candespawn = true;
         mat = _spriteRenderer.material;
         
         effect.Stop();
@@ -48,26 +48,21 @@ public class LerpTeleport : MonoBehaviour
         
         mat.SetFloat("Vector1_FA25B07E", lerpvalue);
 
-
-        if (StaticTimerisFinishedBool)
+        if (AlienDespawn.StaticTimerisFinishedBool && candespawn)
         {
             _SpineRend.GetComponent<SkeletonAnimation>().AnimationState.SetEmptyAnimation(0, 0.25f);
             StartCoroutine(nameof(_teleOut), 1f);
-            StaticTimerisFinishedBool = false;
+            candespawn = false;
         }
         
 
         if (lerpIn)
         {
-            print(transform.name + " " + lerpvalue);
             lerpvalue += lerpTime;
-            print("TeleportingIn");
-            
         }
         else if (lerpOut)
         {
             lerpvalue -= lerpTime;
-            print("TeleportingOut");
         }
         
         if (lerpIn && lerpvalue >= max)
@@ -88,24 +83,19 @@ public class LerpTeleport : MonoBehaviour
     private IEnumerator _teleIn(float time)
     {
         var timer = UnityEngine.Random.Range(2f, 10f);
-        print((gameObject.name + "" + timer));
-        
         yield return new WaitForSeconds(timer);
         
         effect.Play();
         yield return new WaitForSeconds(time);
-        print("TeleportingIn Numerator");
         lerpIn = true;
 
     }
     private IEnumerator _teleOut(float time)
     {
+        effect.Play();
         _spriteRenderer.enabled = true;
         _SpineRend.SetActive(false);
-        
-        effect.Play();
         yield return new WaitForSeconds(time);
         lerpOut = true;
-        print("TeleportingOut Numerator");
     }
 }
