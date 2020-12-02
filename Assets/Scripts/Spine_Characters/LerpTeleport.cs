@@ -9,7 +9,7 @@ using Random = System.Random;
 public class LerpTeleport : MonoBehaviour
 {
 
-    public Material mat;
+    private Material mat;
 
     public float lerpvalue;
     public float lerpTime;
@@ -27,26 +27,16 @@ public class LerpTeleport : MonoBehaviour
     public float waitTime;
 
     public bool StaticTimerisFinishedBool;
-
     
-
-    // Start is called before the first frame update
-    private void Start()
-    {
-        _spriteRenderer.enabled = true;
-        _SpineRend.SetActive(false);
-        lerpvalue = 0f;
-        effect.Stop();
-    }
-
+    
     private void OnEnable()
     {
+        mat = _spriteRenderer.material;
+        
         effect.Stop();
-
         _spriteRenderer.enabled = true;
         _SpineRend.SetActive(false);
         lerpvalue = 0f;
-        
         StartCoroutine(nameof(_teleIn), waitTime);
     }
     
@@ -55,6 +45,7 @@ public class LerpTeleport : MonoBehaviour
     private void Update()
     {
         lerpvalue = Mathf.Clamp(lerpvalue, 0, max);
+        
         mat.SetFloat("Vector1_FA25B07E", lerpvalue);
 
 
@@ -96,13 +87,14 @@ public class LerpTeleport : MonoBehaviour
     
     private IEnumerator _teleIn(float time)
     {
-        var timer = UnityEngine.Random.Range(2f, 4f);
+        var timer = UnityEngine.Random.Range(2f, 10f);
+        print((gameObject.name + "" + timer));
         
         yield return new WaitForSeconds(timer);
+        
         effect.Play();
         yield return new WaitForSeconds(time);
         print("TeleportingIn Numerator");
-        lerpvalue = 0;
         lerpIn = true;
 
     }
@@ -113,9 +105,7 @@ public class LerpTeleport : MonoBehaviour
         
         effect.Play();
         yield return new WaitForSeconds(time);
-        lerpvalue = 8;
         lerpOut = true;
         print("TeleportingOut Numerator");
     }
-
 }
