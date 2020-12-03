@@ -12,15 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b832ff1816f3946805da122461a76d, type: 3}
   m_Name: MenuFunctions
   m_EditorClassIdentifier: 
-  menuIndex: 1
+  menuIndex: 0
   activePanel: {fileID: 0}
-  lastActivePanel:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  lastMenuIndex: 0000000001000000020000000100000001000000
+  lastActivePanel: []
+  lastMenuIndex: 
   menuPanelColor: {r: 0, g: 0, b: 0, a: 0.49803922}
   textColor: {r: 1, g: 1, b: 1, a: 1}
   selectedTextColor: {r: 0, g: 1, b: 0.9805918, a: 1}
