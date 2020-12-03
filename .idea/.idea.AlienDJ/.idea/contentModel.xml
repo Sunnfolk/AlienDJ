@@ -144,10 +144,10 @@
               <e p="Character_Saturn_Alien" t="Include">
                 <e p="skeleton.atlas.txt" t="Include" />
               </e>
-              <e p="Character_Venus_Alien" t="Include">
+              <e p="Character_Uranus_Alien" t="Include">
                 <e p="skeleton.atlas.txt" t="Include" />
               </e>
-              <e p="Uranus Alien" t="Include">
+              <e p="Character_Venus_Alien" t="Include">
                 <e p="skeleton.atlas.txt" t="Include" />
               </e>
             </e>

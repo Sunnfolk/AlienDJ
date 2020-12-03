@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using Spine.Unity;
 using UnityEngine;
 using UnityEngine.VFX;
-using Random = System.Random;
 
 public class AlienTeleport : MonoBehaviour
 {
     [Header("VFX")]
     public VisualEffect effect;
+    
     [Space(5f)]
     [Header("Teleport Variables")]
     [SerializeField] private float _teleportTime;
