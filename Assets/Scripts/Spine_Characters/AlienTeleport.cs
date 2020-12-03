@@ -14,6 +14,7 @@ public class AlienTeleport : MonoBehaviour
     [SerializeField] private float _vfxWaitTime;
     [SerializeField] private float _spawnRandomMin;
     [SerializeField] private float _spawnRandomMax;
+    [SerializeField] private float _teleportValueMax;
     
     [Space(5f)]
     [Header("Components")]
@@ -23,7 +24,6 @@ public class AlienTeleport : MonoBehaviour
     private Material _material;
 
     private float _teleportValue;
-    public float _teleportValueMax;
 
     private bool _canTeleportIn;
     private bool _canTeleportOut;
