@@ -15,6 +15,7 @@ TagManager:
   - Hand_Open
   - DJbooth
   - Hand_Trigger
+  - LPPlayer
   layers:
   - Default
   - TransparentFX

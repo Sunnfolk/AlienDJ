@@ -10,6 +10,9 @@ public class SnapDetector : MonoBehaviour
 
     private bool holdsObject = false;
 
+    public GameObject FMODPlayer;
+    public bool discPlayer;
+
     //Hide Snap detector / make invisible
     private void Start()
     {
@@ -30,9 +33,10 @@ public class SnapDetector : MonoBehaviour
             {
                 SnapToDetector(currentObject);
             }
-            else
+            else if(holdsObject && currentObject.ActiveHand != null)
             {
                 SnapFromDetector(currentObject);
+                
             }
 
             //Spin if spin is enabled
@@ -55,10 +59,19 @@ public class SnapDetector : MonoBehaviour
     private void SnapToDetector(Interactable currentObject)
     {
         holdsObject = true;
-
+        //goOnPlayer = currentObject.gameObject;
         currentObject.transform.position = transform.position;
         currentObject.transform.rotation = transform.rotation;
         currentObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        
+        if(currentObject.gameObject.TryGetComponent(out DiscSong _discSong) && discPlayer)
+        {
+            Debug.Log("Called Song Select");
+            _discSong.SongSelect();
+            FMODPlayer.SetActive(true);
+            //_discSong.snapped = true;
+
+        }
     }
 
     //snap from detector
@@ -66,5 +79,26 @@ public class SnapDetector : MonoBehaviour
     {
         currentObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         holdsObject = false;
+        //goOnPlayer = null;
+        if (currentObject.gameObject.TryGetComponent(out DiscSong _discSong) && discPlayer)
+        {
+            //_discSong.SongSelect();
+            FMODPlayer.SetActive(false);
+            //_discSong.snapped = false;
+
+        }
+
     }
+
+    private void Update()
+    {
+        //if(!holdsObject)
+        //{
+        //    if (discPlayer)
+        //    {
+        //        FMODPlayer.SetActive(false);
+        //    }
+        //}
+    }
+
 }

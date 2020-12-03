@@ -35,3 +35,11 @@ enum LightColor
     yellow,
     red
 }
+
+enum Song
+{
+    chill,
+    calm,
+    energetic,
+    aggressive
+}
