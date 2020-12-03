@@ -22,7 +22,6 @@ public class AlienTeleport : MonoBehaviour
     [SerializeField] private GameObject _SpineRenderer;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     
-    
     private Material _material;
 
     private float _teleportValue;
@@ -86,6 +85,7 @@ public class AlienTeleport : MonoBehaviour
 
     }
     
+    // IENumerator Function for Starting the teleportIN
     private IEnumerator TeleportIn(float time)
     {
         var timer = UnityEngine.Random.Range(_spawnRandomMin, _spawnRandomMax);
@@ -96,7 +96,8 @@ public class AlienTeleport : MonoBehaviour
         _canTeleportIn = true;
 
     }
-
+    
+    // IENumerator Function for Starting the teleportOut
     public IEnumerator TeleportOut(float time)
     {
         effect.Play();

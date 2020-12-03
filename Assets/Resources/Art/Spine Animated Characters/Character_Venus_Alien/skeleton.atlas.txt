@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 1225,730
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gooey alien body
+  rotate: false
+  xy: 803, 160
+  size: 200, 292
+  orig: 272, 319
+  offset: 41, 14
+  index: -1
+gooey alien head
+  rotate: true
+  xy: 803, 454
+  size: 274, 228
+  orig: 347, 261
+  offset: 34, 24
+  index: -1
+gooey alien left leg 1
+  rotate: true
+  xy: 1005, 237
+  size: 215, 206
+  orig: 232, 232
+  offset: 7, 15
+  index: -1
+gooey alien left leg 2
+  rotate: false
+  xy: 1057, 8
+  size: 166, 227
+  orig: 191, 252
+  offset: 10, 14
+  index: -1
+gooey alien right leg 1
+  rotate: true
+  xy: 1033, 479
+  size: 249, 188
+  orig: 276, 239
+  offset: 11, 23
+  index: -1
+gooey alien right leg 2
+  rotate: true
+  xy: 803, 2
+  size: 156, 252
+  orig: 203, 285
+  offset: 9, 14
+  index: -1
+gooey alien slime body
+  rotate: true
+  xy: 2, 7
+  size: 721, 799
+  orig: 800, 856
+  offset: 46, 32
+  index: -1

@@ -144,6 +144,12 @@
               <e p="Character_Saturn_Alien" t="Include">
                 <e p="skeleton.atlas.txt" t="Include" />
               </e>
+              <e p="Character_Venus_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Uranus Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
             </e>
           </e>
         </e>
@@ -169,8 +175,9 @@
           </e>
           <e p="Score_Script.cs" t="Include" />
           <e p="Spine_Characters" t="Include">
+            <e p="AlienDespawn.cs" t="Include" />
+            <e p="AlienTeleport.cs" t="Include" />
             <e p="AnimatedAlienCharacter.cs" t="Include" />
-            <e p="LerpTeleport.cs" t="Include" />
           </e>
           <e p="Teststatic.cs" t="Include" />
           <e p="VR" t="Include">

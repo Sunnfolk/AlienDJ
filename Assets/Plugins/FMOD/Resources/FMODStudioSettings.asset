@@ -263,16 +263,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks:
-  - Master
-  Banks:
-  - Announcer
-  - CB
-  - FTM
-  - LOD SONGS
-  - Menu
-  - RWAC
-  - SFX
+  MasterBanks: []
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

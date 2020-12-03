@@ -20,11 +20,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Alien Characters Animated/Alien_Venus.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Alien Characters Animated/Alien_Venus.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/bored dance.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/bored dance.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/hyped dance.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/hyped dance.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/idle anim.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/idle anim.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/normal dance.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets/normal dance.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/Saturn_Alien_Sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/Saturn_Alien_Sprite.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton.atlas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton.atlas.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton_Atlas.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton_Atlas.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton_Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton_Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton_SkeletonData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/skeleton_SkeletonData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Alien_Prototype.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Alien_Prototype.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Teleport2DMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Teleport2DMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_To Be Reviewed/Glenn.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_To Be Reviewed/Martin.meta" beforeDir="false" />
     </list>
@@ -37,13 +64,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" />
       </list>
     </option>
   </component>
@@ -88,6 +116,7 @@
       <updated>1606903761856</updated>
       <workItem from="1606903786142" duration="3203000" />
       <workItem from="1606912889736" duration="6079000" />
+      <workItem from="1606984526769" duration="2446000" />
     </task>
     <servers />
   </component>
@@ -109,9 +138,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="869" y="296" key="SettingsEditor" timestamp="1606904976051">
+    <state x="869" y="296" key="SettingsEditor" timestamp="1606989463278">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="869" y="296" key="SettingsEditor/0.25.2560.1415/-1440.395.1440.875@0.25.2560.1415" timestamp="1606904976051" />
+    <state x="869" y="296" key="SettingsEditor/0.25.2560.1415/-1440.395.1440.875@0.25.2560.1415" timestamp="1606989463278" />
   </component>
 </project>
