@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 943,583
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+classic alien L arm
+  rotate: true
+  xy: 382, 177
+  size: 136, 331
+  orig: 136, 331
+  offset: 0, 0
+  index: -1
+classic alien L leg
+  rotate: true
+  xy: 674, 4
+  size: 146, 267
+  orig: 146, 267
+  offset: 0, 0
+  index: -1
+classic alien R arm
+  rotate: true
+  xy: 2, 2
+  size: 136, 331
+  orig: 136, 331
+  offset: 0, 0
+  index: -1
+classic alien R leg
+  rotate: true
+  xy: 382, 53
+  size: 122, 290
+  orig: 122, 290
+  offset: 0, 0
+  index: -1
+classic alien body
+  rotate: true
+  xy: 382, 315
+  size: 266, 505
+  orig: 266, 505
+  offset: 0, 0
+  index: -1
+classic alien head
+  rotate: false
+  xy: 2, 140
+  size: 378, 441
+  orig: 378, 441
+  offset: 0, 0
+  index: -1
+classic alien neck
+  rotate: false
+  xy: 715, 152
+  size: 212, 161
+  orig: 212, 162
+  offset: 0, 1
+  index: -1
