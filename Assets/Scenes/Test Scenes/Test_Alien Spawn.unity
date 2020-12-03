@@ -435,9 +435,8 @@ MonoBehaviour:
   - {fileID: 767843954}
   - {fileID: 1374976247}
   _characters:
-  - {fileID: 6557451512795449213, guid: e54c273ddd3b04f8db85a999db1e19e3, type: 3}
-  - {fileID: 6557451512795449213, guid: e54c273ddd3b04f8db85a999db1e19e3, type: 3}
-  - {fileID: 6557451512795449213, guid: e54c273ddd3b04f8db85a999db1e19e3, type: 3}
+  - {fileID: 6557451512795449213, guid: fd7dc03fe9dde47a3a267623466b7f4f, type: 3}
+  - {fileID: 6557451512795449213, guid: 90861eaded7584d3c9aae8162712b638, type: 3}
 --- !u!4 &961808966
 Transform:
   m_ObjectHideFlags: 0

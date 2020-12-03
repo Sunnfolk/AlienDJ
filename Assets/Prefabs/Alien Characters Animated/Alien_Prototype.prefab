@@ -370,14 +370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f203c69a9e1b8442b91d4e29d0b50f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat: {fileID: 2100000, guid: fed25c0244976584aaec340bf1a77010, type: 2}
-  lerpvalue: 0
-  lerpTime: 0.1
-  max: 8
-  lerpIn: 0
-  lerpOut: 0
   effect: {fileID: 6557451511345911771}
-  _SpineRend: {fileID: 6557451512614876833}
+  _teleportTime: 0.1
+  _vfxWaitTime: 2
+  _spawnRandomMin: 1
+  _spawnRandomMax: 4
+  _SpineRenderer: {fileID: 6557451512614876833}
   _spriteRenderer: {fileID: 6557451512836500135}
-  waitTime: 2
-  StaticTimerisFinishedBool: 0
+  _teleportValueMax: 8
