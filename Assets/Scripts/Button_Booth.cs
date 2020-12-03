@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Button_Booth : MonoBehaviour
 {
 
+    public UnityEvent ButtonFunction;
 
+
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,18 +23,16 @@ public class Button_Booth : MonoBehaviour
         
     }
 
-    private void Pushed()
-    {
-        Debug.Log("I Was PUSEHD");
-    }
+   
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Hand_Trigger")
         {
 
-            Pushed();
-
+            
+            ButtonFunction.Invoke();
+            Debug.Log("Invoked " + ButtonFunction);
 
         }
 

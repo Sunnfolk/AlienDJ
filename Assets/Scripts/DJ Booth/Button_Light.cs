@@ -6,21 +6,40 @@ public class Button_Light : MonoBehaviour
 {
     [SerializeField]
     private LightColor lightColor;
+    private int colorIndex;
 
-    
-
+    private bool on;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        switch (lightColor)
+        {
+            case LightColor.blue:
+                colorIndex = 0;
+                break;
+            case LightColor.green:
+                colorIndex = 1;
+                break;
+            case LightColor.yellow:
+                colorIndex = 2;
+                break;
+            case LightColor.red:
+                colorIndex = 3;
+                break;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-        
+       
+        on = colorIndex == CurrentSong.currentColor;
+        if(on)
+            Debug.Log(lightColor + " is " + on);
+
     }
+
 
     void SetColor()
     {
@@ -59,4 +78,5 @@ public class Button_Light : MonoBehaviour
 
 
 
+    
 }

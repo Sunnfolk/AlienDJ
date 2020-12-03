@@ -6,6 +6,7 @@ public class Test_SetStatics : MonoBehaviour
 {
     public Crowd crowd;
     public int score;
+    public int color;
 
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class Test_SetStatics : MonoBehaviour
     {
 
 
-
+        CurrentSong.currentColor = color;
         score = CurrentSong.gameScore;
 
     }
