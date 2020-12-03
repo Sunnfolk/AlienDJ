@@ -19,7 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="" />
+    <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Animation 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/AnimationState 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/AnimationStateData 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Atlas 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/AtlasAttachmentLoader 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/Attachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentLoader 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentType 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/BoundingBoxAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/MeshAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/PathAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/PointAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/RegionAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/VertexAttachment 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/BlendMode 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Bone 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/BoneData 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Collections/OrderedDictionary 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/ConstraintData 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Event 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/EventData 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/ExposedList 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/IUpdatable 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/IkConstraint 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/IkConstraintData 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Json 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/MathUtils 2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/PathConstraint 2.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor 2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,11 +73,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1l63XziiVglO0GRwqnUoec6PIAW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -100,6 +136,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">

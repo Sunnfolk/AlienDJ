@@ -268,7 +268,7 @@ Transform:
   m_GameObject: {fileID: 6557451512795449213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 6557451512614876829}
   - {fileID: 6557451512836500132}
@@ -375,6 +375,6 @@ MonoBehaviour:
   _vfxWaitTime: 2
   _spawnRandomMin: 1
   _spawnRandomMax: 4
+  _teleportValueMax: 8
   _SpineRenderer: {fileID: 6557451512614876833}
   _spriteRenderer: {fileID: 6557451512836500135}
-  _teleportValueMax: 8
