@@ -31,7 +31,7 @@ public class GoldenBuzzer_Script : MonoBehaviour
             BuzzerCooldown = 0;
         }
     }
-    private void BuzzerActivate()
+    public void BuzzerActivate()
     {
         if (BuzzerCooldown == 0)
         {
@@ -41,6 +41,7 @@ public class GoldenBuzzer_Script : MonoBehaviour
                 if (i == CurrentSong.songPlaying)
                 {
                     _crowdwant._Want[i] += Buzzerwantadd;
+                    //Sound Buzzer
                 }
             }   
         }

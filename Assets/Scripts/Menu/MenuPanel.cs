@@ -130,6 +130,8 @@ public class MenuPanel : MonoBehaviour
                     print("please add the extras code in the MenuPanel script");
                     break;
                 case ActionType.startGame:
+                    
+                    //ADD START CODE HERE
 
                     print("please add the start game code in the MenuPanel script");
                     break;

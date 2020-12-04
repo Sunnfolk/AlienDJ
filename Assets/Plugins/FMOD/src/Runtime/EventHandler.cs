@@ -88,6 +88,8 @@ namespace FMODUnity
             HandleGameEvent(EmitterGameEvent.MouseUp);
         }
 
+       
+
         protected abstract void HandleGameEvent(EmitterGameEvent gameEvent);
     }
 }

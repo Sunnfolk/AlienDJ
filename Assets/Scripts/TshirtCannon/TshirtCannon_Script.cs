@@ -20,10 +20,11 @@ public class TshirtCannon_Script : MonoBehaviour
            StartCoroutine("Reload");
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            shoot();
-        }
+        ////Testing
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    shoot();
+        //}
     }
     public void shoot()
     {
