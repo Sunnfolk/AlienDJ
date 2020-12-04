@@ -53,13 +53,13 @@ public class Transition : MonoBehaviour
         //skybox = get the skybox from the crowd;
         if (AccessibilityContainer.hyperspeedEnable == true)
         {
-            hyperspeed.SetActive(true);
             //animator.SetTrigger(1);
+            hyperspeed.SetActive(true);
             StartCoroutine(HyperspeedEnd());
         }
         else if (AccessibilityContainer.hyperspeedEnable == false)
         {
-            //animator.SetTrigger(2);
+            //animator.SetTrigger(3);
             //Alienspawn();
         }
         RenderSettings.skybox = skybox;
@@ -67,9 +67,8 @@ public class Transition : MonoBehaviour
 
     public IEnumerator HyperspeedEnd()
     {
-
         yield return new WaitForSeconds(hyperspeedTimer);
-        //hyperspeedflash animator.SetTrigger(1);
+        //hyperspeedflash animator.SetTrigger(2);
         hyperspeed.SetActive(false);
         //Alienspawn();
     }
