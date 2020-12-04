@@ -15,7 +15,7 @@ public class MenuPanel : MonoBehaviour
     [Header("Gameobjects to choose from in panel:")]
     public List<GameObject> options;
     
-    public enum ActionType { activateNewPanel, Quit, timeSelect, photosensitiveSelect };
+    public enum ActionType { activateNewPanel, Quit, timeSelect, photosensitiveSelect, extras, startGame};
     [Header("Type of action for each option")]
     public List<ActionType> actionType;
 
@@ -41,7 +41,7 @@ public class MenuPanel : MonoBehaviour
         }
 
         //Set menu panel color
-        this.gameObject.GetComponent<Image>().color = menuFunctions.menuPanelColor;
+        this.gameObject.GetComponent<Image>().color = menuFunctions.activeMenuPanelColor;
 
         //Set all texts to text color
         foreach (GameObject gm in options)
@@ -102,26 +102,36 @@ public class MenuPanel : MonoBehaviour
     {
         if (menuFunctions.activePanel == this.gameObject)
         {
-            //Save information for when pushing the back button later
-            menuFunctions.lastActivePanel.Add(this.gameObject);
-            menuFunctions.lastMenuIndex.Add(menuFunctions.menuIndex);
-
             //What happens based on selected action
             switch (actionType[menuFunctions.menuIndex])
             {
                 case ActionType.activateNewPanel:
+                    saveLastActive();
+                    gameObject.GetComponent<Image>().color = menuFunctions.menuPanelColor;
                     activates[menuFunctions.menuIndex].SetActive(true);
                     break;
                 case ActionType.Quit:
-                    Debug.LogError("There is no code for quit yet");
+
+                    print("please add the quit code in the MenuPanel script");
                     break;
                 case ActionType.timeSelect:
+                    gameObject.GetComponent<Image>().color = menuFunctions.menuPanelColor;
+                    saveLastActive();
                     setGameDuration();
                     activates[menuFunctions.menuIndex].SetActive(true);
                     break;
                 case ActionType.photosensitiveSelect:
+                    saveLastActive();
                     setPhotosensitivity();
                     activates[menuFunctions.menuIndex].SetActive(true);
+                    break;
+                case ActionType.extras:
+
+                    print("please add the extras code in the MenuPanel script");
+                    break;
+                case ActionType.startGame:
+
+                    print("please add the start game code in the MenuPanel script");
                     break;
                 default:
                     Debug.LogError(actionType[menuFunctions.menuIndex] + " ActionType not defined within switch");
@@ -129,6 +139,13 @@ public class MenuPanel : MonoBehaviour
             }
         }
     }
+    void saveLastActive()
+    {
+        //Save information for when pushing the back button later
+        menuFunctions.lastActivePanel.Add(this.gameObject);
+        menuFunctions.lastMenuIndex.Add(menuFunctions.menuIndex);
+    }
+
     private void setGameDuration()
     {
         switch (menuFunctions.menuIndex)
@@ -184,6 +201,9 @@ public class MenuPanel : MonoBehaviour
         //Remove the last last-active-value from lists
         menuFunctions.lastMenuIndex.RemoveAt(menuFunctions.lastMenuIndex.Count - 1);
         menuFunctions.lastActivePanel.RemoveAt(menuFunctions.lastActivePanel.Count - 1);
+
+        //Set activepanel color to previous window
+        menuFunctions.activePanel.GetComponent<Image>().color = menuFunctions.activeMenuPanelColor;
 
         this.gameObject.SetActive(false);
     }

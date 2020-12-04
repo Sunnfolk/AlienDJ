@@ -25,6 +25,7 @@ public class MenuFunctions : ScriptableObject
     public Color menuPanelColor;
     public Color textColor;
     public Color selectedTextColor;
+    public Color activeMenuPanelColor;
 
 
     public void Up()
@@ -34,8 +35,15 @@ public class MenuFunctions : ScriptableObject
             activePanel.GetComponent<MenuPanel>().buttonUp();
         }
         catch
-        {
-            activePanel.GetComponent<PlanetSelectPanel>().buttonUp();
+        { 
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonUp();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonUp();
+            }
         }
     }
 
@@ -47,7 +55,14 @@ public class MenuFunctions : ScriptableObject
         }
         catch
         {
-            activePanel.GetComponent<PlanetSelectPanel>().buttonDown();
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonDown();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonDown();
+            }
         }
     }
 
@@ -59,7 +74,14 @@ public class MenuFunctions : ScriptableObject
         }
         catch
         {
-            activePanel.GetComponent<PlanetSelectPanel>().buttonSelect();
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonSelect();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonSelect();
+            }
         }
     }
 
@@ -71,7 +93,14 @@ public class MenuFunctions : ScriptableObject
         }
         catch
         {
-            activePanel.GetComponent<PlanetSelectPanel>().buttonBack();
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonBack();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonBack();
+            }
         }
     }
 }

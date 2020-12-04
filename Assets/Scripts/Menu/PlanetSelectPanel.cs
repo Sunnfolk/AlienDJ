@@ -43,8 +43,7 @@ public class PlanetSelectPanel : MonoBehaviour
         StartCoroutine(waitAndSetActiveWindow(this.gameObject));
 
         //Set menu panel color
-        planetSelectPanelImage.color = menuFunctions.menuPanelColor;
-        planetInfoPanelImage.color = menuFunctions.menuPanelColor;
+        planetSelectPanelImage.color = menuFunctions.activeMenuPanelColor;
 
         //Set all texts to text color
         planetNameText.color = menuFunctions.textColor;
@@ -62,6 +61,15 @@ public class PlanetSelectPanel : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         menuFunctions.activePanel = panelName;
+    }
+
+    private void Update()
+    {
+        //Check if the planet info color is correct
+        if (menuFunctions.activePanel == this.gameObject)
+            planetInfoPanelImage.color = menuFunctions.activeMenuPanelColor;
+        else
+            planetInfoPanelImage.color = menuFunctions.menuPanelColor;
     }
 
     public void buttonUp()
@@ -115,13 +123,13 @@ public class PlanetSelectPanel : MonoBehaviour
             //Change Gamesettings planet to current planet
             GameSettings.planet = menuFunctions.menuIndex; //the planet index is already equal to the menuindex variable
 
+            //Set panel colors back to unselected
+            planetSelectPanelImage.color = menuFunctions.menuPanelColor;
+
             //activates next panel
             activates.SetActive(true);
         }
     }
-
-    //hente spriterenderer
-    //spritrenderer.sprite = ny sprite
 
     public void buttonBack()
     {
@@ -133,6 +141,9 @@ public class PlanetSelectPanel : MonoBehaviour
             //Remove the last last-active-value from lists
             menuFunctions.lastMenuIndex.RemoveAt(menuFunctions.lastMenuIndex.Count - 1);
             menuFunctions.lastActivePanel.RemoveAt(menuFunctions.lastActivePanel.Count - 1);
+
+            //Set activepanel color to previous window
+            menuFunctions.activePanel.GetComponent<Image>().color = menuFunctions.activeMenuPanelColor;
 
             this.gameObject.SetActive(false);
         }
