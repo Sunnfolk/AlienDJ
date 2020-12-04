@@ -16,13 +16,9 @@ public static class AccessibilityContainer
     public static Color calm; //contains the color used for this mood
     public static Color chill; //contains the color used for this mood
 
-<<<<<<< Updated upstream
+
     //photosensitivyty stuff (I can spell)
-    public static bool hyperspeedEnabled; //does the player want hyperspeed
-    public static bool lightshowEnabled; //Does the player want the lightshows
-=======
-    //photosensitivity
-    public static bool lightShowEnable;
-    public static bool hyperspeedEnable;
->>>>>>> Stashed changes
+    public static bool hyperspeedEnable; //does the player want hyperspeed
+    public static bool lightShowEnable; //Does the player want the lightshows
+
 }
