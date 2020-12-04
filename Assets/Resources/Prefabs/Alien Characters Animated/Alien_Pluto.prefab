@@ -170,7 +170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4c345f800d24740668d1824d8914ba73, type: 2}
+  - {fileID: 2100000, guid: 272ed3a6342ec44c49f05a9640d5a7f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,9 +203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d5c9ce0b0e34dd699a8d113c5f9cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boredDance: {fileID: 11400000, guid: cac587e41322a44d18912007c322fe64, type: 2}
-  _normalDance: {fileID: 11400000, guid: d12ca2df27a624fac88ff269042374e9, type: 2}
-  _hypedDance: {fileID: 11400000, guid: 70446a6af707a424e97f2aac81e6187d, type: 2}
+  _boredDance: {fileID: 11400000, guid: 0af682a50f83f4c2f8de3e46e4ce8474, type: 2}
+  _normalDance: {fileID: 11400000, guid: 68b83aa36b04345a3a0aef8dee35956e, type: 2}
+  _hypedDance: {fileID: 11400000, guid: a417ec905db994437b02494f54f62cd0, type: 2}
 --- !u!114 &6557451512614876830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: d9084b4d0f057415d8212e4d4f5dbf0c, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 41ad87bb66b6b4da8927a3b3040b691a, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6557451512795449210}
   m_Layer: 0
-  m_Name: Alien_Venus
+  m_Name: Alien_Pluto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 57c2c54000f4943729f44ef17aa49f72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e338fbf500ea46c18ce8e0341bdd62c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
