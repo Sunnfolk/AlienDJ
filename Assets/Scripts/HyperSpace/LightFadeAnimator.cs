@@ -1,18 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-public class LightFadeAnimator : MonoBehaviour
+namespace HyperSpace
 {
-    // Start is called before the first frame update
-    void Start()
+    public class LightFadeAnimator : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private Animator _animator;
+    
+        // Start is called before the first frame update
+        private void Start()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                FadeIn();
+            }
+            else if (Input.GetKeyDown(KeyCode.K))
+            {
+                FadeOut();
+            }
+        }
+
+        public void FadeIn()
+        {
+            _animator.Play("LightFlashIn");
+        }
+
+        public void FadeOut()
+        {
+            _animator.Play("LightFlashOut");
+        }
     }
 }
