@@ -8,13 +8,14 @@ public class AnimatedAlienCharacter : MonoBehaviour
     [SerializeField] private AnimationReferenceAsset _boredDance;
     [SerializeField] private AnimationReferenceAsset _normalDance;
     [SerializeField] private AnimationReferenceAsset _hypedDance;
+    [SerializeField] private AnimationReferenceAsset _idle;
     
         
     // Start is called before the first frame update
     private void Start()
     {
         _skeletonAnimation = GetComponent<SkeletonAnimation>();
-        _skeletonAnimation.AnimationState.SetAnimation(0, _boredDance.Animation, true);
+        _skeletonAnimation.AnimationState.SetAnimation(0, _idle.Animation, true);
     }
 
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class AnimatedAlienCharacter : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Keypad0))
         {
-            _skeletonAnimation.AnimationState.SetEmptyAnimation(0, 0.25f);
+            _skeletonAnimation.AnimationState.SetAnimation(0, _idle.Animation, true);
         }
     }
 }
