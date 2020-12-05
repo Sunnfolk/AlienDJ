@@ -13,6 +13,9 @@ public class AccessibilityPanel : MonoBehaviour
     [Header("Type of action for each option")]
     public AccessibilytyType accessibilityType;
 
+    [Header("Gameobjects to choose from on the panel")]
+    public List<GameObject> options;
+
     
     private void OnEnable()
     {
@@ -20,8 +23,40 @@ public class AccessibilityPanel : MonoBehaviour
         //Without waiting it would skip through the entire menu in one frame
         StartCoroutine(waitAndSetActiveWindow(this.gameObject));
 
+        //ser menuindex to 0
+        menuFunctions.menuIndex = 0;
+
         //Set menu panel color
         this.gameObject.GetComponent<Image>().color = menuFunctions.activeMenuPanelColor;
+
+        if (accessibilityType != AccessibilytyType.colorProfile)
+        {
+            //Set all texts to text color
+            foreach (GameObject gm in options)
+            {
+                gm.GetComponent<TextMeshProUGUI>().color = menuFunctions.textColor;
+            }
+
+            //set text color
+            options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.selectedTextColor;
+        }
+        else
+        {
+            //Set all colorpreviews to transparent
+            Color imageColor;
+            foreach(GameObject gm in options)
+            {
+                imageColor = gm.GetComponent<Image>().color;
+                imageColor.a = 0.25f;
+                gm.GetComponent<Image>().color = imageColor;
+            }
+
+            imageColor = options[menuFunctions.menuIndex].GetComponent<Image>().color;
+            imageColor.a = 1f;
+            options[menuFunctions.menuIndex].GetComponent<Image>().color = imageColor;
+
+        }
+        
     }
 
     //Used in ^OnEnable^
@@ -35,26 +70,32 @@ public class AccessibilityPanel : MonoBehaviour
     {
         if (menuFunctions.activePanel == this.gameObject)
         {
-            switch (accessibilityType)
+            if (accessibilityType != AccessibilytyType.colorProfile)
+                // Revert current index text back to normal color
+                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.textColor;
+            else
+            {   
+                //set selected color to not transparent
+                Color imageColor = options[menuFunctions.menuIndex].GetComponent<Image>().color;
+                imageColor.a = 0.25f;
+                options[menuFunctions.menuIndex].GetComponent<Image>().color = imageColor;
+            }
+
+            // Add doen the index down by one and loop back if too big
+            menuFunctions.menuIndex--;
+            if (menuFunctions.menuIndex < 0)
             {
-                case AccessibilytyType.colorProfile:
-
-                    break;
-                case AccessibilytyType.textFont:
-
-                    break;
-                case AccessibilytyType.textSize:
-
-                    break;
-                case AccessibilytyType.volumeLevel:
-
-                    break;
-                case AccessibilytyType.placeholder:
-
-                    break;
-                default:
-                    Debug.LogError("this accessibilityType is not defined in this switch");
-                    break;
+                menuFunctions.menuIndex = options.Count - 1;
+            }
+            if (accessibilityType != AccessibilytyType.colorProfile)
+                // Make changed index to selected text color
+                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.selectedTextColor;
+            else
+            {
+                //set Unselected color to transparent
+                Color imageColor = options[menuFunctions.menuIndex].GetComponent<Image>().color;
+                imageColor.a = 1f;
+                options[menuFunctions.menuIndex].GetComponent<Image>().color = imageColor;
             }
         }
     }
@@ -63,26 +104,33 @@ public class AccessibilityPanel : MonoBehaviour
     {
         if (menuFunctions.activePanel == this.gameObject)
         {
-            switch (accessibilityType)
+            if (accessibilityType != AccessibilytyType.colorProfile)
+                // Revert current index text back to normal color
+                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.textColor;
+            else
             {
-                case AccessibilytyType.colorProfile:
+                //set selected color to not transparent
+                Color imageColor = options[menuFunctions.menuIndex].GetComponent<Image>().color;
+                imageColor.a = 0.25f;
+                options[menuFunctions.menuIndex].GetComponent<Image>().color = imageColor;
+            }
 
-                    break;
-                case AccessibilytyType.textFont:
+            // Add move the index down by one and loop back if too big
+            menuFunctions.menuIndex++;
+            if (menuFunctions.menuIndex >= options.Count)
+            {
+                menuFunctions.menuIndex = 0;
+            }
 
-                    break;
-                case AccessibilytyType.textSize:
-
-                    break;
-                case AccessibilytyType.volumeLevel:
-
-                    break;
-                case AccessibilytyType.placeholder:
-
-                    break;
-                default:
-                    Debug.LogError("this accessibilityType is not defined in this switch");
-                    break;
+            if (accessibilityType != AccessibilytyType.colorProfile)
+                // Make changed index to selected text color
+                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.selectedTextColor;
+            else
+            {
+                //set Unselected color to transparent
+                Color imageColor = options[menuFunctions.menuIndex].GetComponent<Image>().color;
+                imageColor.a = 1f;
+                options[menuFunctions.menuIndex].GetComponent<Image>().color = imageColor;
             }
         }
     }
