@@ -32,9 +32,13 @@ namespace HyperSpace
             // light flash (HyperSpace Exit)
             
             yield return new WaitForSeconds(1f);
-            
+
             // Start Crowd Spawn
-            // StopCoroutine
+
+        }
+        public void EndHyperSpace()
+        {
+            tunnel.SetActive(false);
         }
         
     }
