@@ -22,7 +22,9 @@ public class MenuPanel : MonoBehaviour
     [Header("What gameobject each activates (Leave element empty if not Activate New Panel")]
     public List<GameObject> activates;
 
-    
+    [Header("Insert what Start Game does")]
+    //Add here if start game is chosen
+    public GameStarter gameChanger;
 
 
 
@@ -130,10 +132,13 @@ public class MenuPanel : MonoBehaviour
                     print("please add the extras code in the MenuPanel script");
                     break;
                 case ActionType.startGame:
-                    
-                    //ADD START CODE HERE
+                    //Starts the change sequence
+                    if (gameChanger != null)
+                        gameChanger.ChangeGame();
+                    else
+                        print("No GameChanger in " + this);
 
-                    print("please add the start game code in the MenuPanel script");
+                    //print("please add the start game code in the MenuPanel script");
                     break;
                 default:
                     Debug.LogError(actionType[menuFunctions.menuIndex] + " ActionType not defined within switch");
