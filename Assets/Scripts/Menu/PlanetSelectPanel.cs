@@ -21,16 +21,16 @@ public class PlanetSelectPanel : MonoBehaviour
     [Header("What gameobject the select activates")]
     public GameObject activates;
 
-    private TextMeshProUGUI planetNameText;
-    private TextMeshProUGUI planetInfoText;
+    private TextMeshPro planetNameText;
+    private TextMeshPro planetInfoText;
     private Image planetImageImage;
     private Image planetInfoPanelImage;
     private Image planetSelectPanelImage;
 
     private void Awake()
     {
-        planetNameText = planetName.GetComponent<TextMeshProUGUI>();
-        planetInfoText = planetInfo.GetComponent<TextMeshProUGUI>();
+        planetNameText = planetName.GetComponent<TextMeshPro>();
+        planetInfoText = planetInfo.GetComponent<TextMeshPro>();
         planetImageImage = planetImage.GetComponent<Image>();
         planetInfoPanelImage = planetInfoPanel.GetComponent<Image>();
         planetSelectPanelImage = this.gameObject.GetComponent<Image>();

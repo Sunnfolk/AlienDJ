@@ -34,11 +34,11 @@ public class AccessibilityPanel : MonoBehaviour
             //Set all texts to text color
             foreach (GameObject gm in options)
             {
-                gm.GetComponent<TextMeshProUGUI>().color = menuFunctions.textColor;
+                gm.GetComponent<TextMeshPro>().color = menuFunctions.textColor;
             }
 
             //set text color
-            options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.selectedTextColor;
+            options[menuFunctions.menuIndex].GetComponent<TextMeshPro>().color = menuFunctions.selectedTextColor;
         }
         else
         {
@@ -72,7 +72,7 @@ public class AccessibilityPanel : MonoBehaviour
         {
             if (accessibilityType != AccessibilytyType.colorProfile)
                 // Revert current index text back to normal color
-                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.textColor;
+                options[menuFunctions.menuIndex].GetComponent<TextMeshPro>().color = menuFunctions.textColor;
             else
             {   
                 //set selected color to not transparent
@@ -89,7 +89,7 @@ public class AccessibilityPanel : MonoBehaviour
             }
             if (accessibilityType != AccessibilytyType.colorProfile)
                 // Make changed index to selected text color
-                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.selectedTextColor;
+                options[menuFunctions.menuIndex].GetComponent<TextMeshPro>().color = menuFunctions.selectedTextColor;
             else
             {
                 //set Unselected color to transparent
@@ -106,7 +106,7 @@ public class AccessibilityPanel : MonoBehaviour
         {
             if (accessibilityType != AccessibilytyType.colorProfile)
                 // Revert current index text back to normal color
-                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.textColor;
+                options[menuFunctions.menuIndex].GetComponent<TextMeshPro>().color = menuFunctions.textColor;
             else
             {
                 //set selected color to not transparent
@@ -124,7 +124,7 @@ public class AccessibilityPanel : MonoBehaviour
 
             if (accessibilityType != AccessibilytyType.colorProfile)
                 // Make changed index to selected text color
-                options[menuFunctions.menuIndex].GetComponent<TextMeshProUGUI>().color = menuFunctions.selectedTextColor;
+                options[menuFunctions.menuIndex].GetComponent<TextMeshPro>().color = menuFunctions.selectedTextColor;
             else
             {
                 //set Unselected color to transparent
