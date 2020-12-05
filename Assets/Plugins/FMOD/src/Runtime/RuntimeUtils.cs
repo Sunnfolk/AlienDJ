@@ -99,6 +99,7 @@ namespace FMODUnity
         MouseExit,
         MouseDown,
         MouseUp,
+        MarkusIsNotHere,
     }
 
     public enum LoaderGameEvent : int

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class GameSettings : ScriptableObject
+public static class GameSettings
 {
-    public string planet;
-    public float time;
-    public bool photosensitive;
+    public static int planet; // 0 = mercury, 1 = venus 2 = earth (cannot be selected, but still tecnichally exists), 3 = mars, 4 = jupiter, 5 = saturn, 6 = uranus, 7 = neptune, 8 = pluto, 9 = planetX
+    
+    public static float gameDuration; // 2, 5 or 10 minutes    index 0 = 2 min,     index 1 = 5 min,      index 2 = 10 min
+    
+    public static bool photosensitive; // true or false ("epilepsy mode"):   index 0 = false, index 1 = true
 }

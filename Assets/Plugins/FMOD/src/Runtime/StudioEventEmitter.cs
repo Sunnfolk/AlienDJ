@@ -80,6 +80,12 @@ namespace FMODUnity
             }
         }
 
+        //Custom
+        public void Test()
+        {
+            HandleGameEvent(EmitterGameEvent.MarkusIsNotHere);
+        }
+
         protected override void HandleGameEvent(EmitterGameEvent gameEvent)
         {
             if (PlayEvent == gameEvent)

@@ -6,9 +6,9 @@ using FMODUnity;
 public class Test_FMOD : MonoBehaviour
 {
 
-    
 
 
+    public StudioEventEmitter _emit;
 
     
 
@@ -55,8 +55,10 @@ public class Test_FMOD : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            value = 0;
-            ResetValues();
+
+            _emit.Test();
+            //value = 0;
+            //ResetValues();
 
         }
         if(Input.GetKeyDown(KeyCode.Alpha2))

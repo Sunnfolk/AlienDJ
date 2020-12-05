@@ -1,65 +1,106 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class MenuFunctions : MonoBehaviour
+
+[CreateAssetMenu]
+public class MenuFunctions : ScriptableObject
 {
     [HideInInspector]
-    //Index position for the current menu options
+    //Index of highlighted menu element
     public int menuIndex;
+
+    //Variable to differenciate which panel is active
     [HideInInspector]
-    public string activeWindow;
+    public GameObject activePanel;
+
+    //Saves the last active panel to set when pushing the back button
+    [HideInInspector]
+    public List<GameObject> lastActivePanel;
+
+    //save the last active menu index to set when pushing the back button
+    [HideInInspector]
+    public List<int> lastMenuIndex = new List<int>();
+
+    public Color menuPanelColor;
+    public Color textColor;
+    public Color selectedTextColor;
+    public Color activeMenuPanelColor;
 
 
-    private TextMeshProUGUI text = null;
-
-    public void indexDown(List<GameObject> options)
+    public void Up()
     {
-        //Revert previous text back to white
-        text = options[menuIndex].GetComponent<TextMeshProUGUI>();
-        text.color = Color.white;
-
-        //Go to under-index (Plus 1, and go back to zero if too big)
-        menuIndex = (++menuIndex >= options.Count) ? 0 : menuIndex;
-
-        //Change current text to cyan (seleted)
-        text = options[menuIndex].GetComponent<TextMeshProUGUI>();
-        text.color = Color.cyan;
+        try
+        {
+            activePanel.GetComponent<MenuPanel>().buttonUp();
+        }
+        catch
+        { 
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonUp();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonUp();
+            }
+        }
     }
 
-    public void indexUp(List<GameObject> options)
+    public void Down()
     {
-        //Revert previous text back to white
-        text = options[menuIndex].GetComponent<TextMeshProUGUI>();
-        text.color = Color.white;
-
-        //Go to over-index (minus 1, and go back to bottom if too small)
-        menuIndex = (--menuIndex <= -1) ? options.Count - 1 : menuIndex;
-
-        //Change current text to cyan (seleted)
-        text = options[menuIndex].GetComponent<TextMeshProUGUI>();
-        text.color = Color.cyan;
+        try
+        {
+            activePanel.GetComponent<MenuPanel>().buttonDown();
+        }
+        catch
+        {
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonDown();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonDown();
+            }
+        }
     }
 
-
-    public void indexNext(List<GameObject> options)
+    public void Select()
     {
-        options[menuIndex].SetActive(false);
-        menuIndex = (--menuIndex <= -1) ? options.Count - 1 : menuIndex;
-        options[menuIndex].SetActive(true);
+        try
+        {
+            activePanel.GetComponent<MenuPanel>().buttonSelect();
+        }
+        catch
+        {
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonSelect();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonSelect();
+            }
+        }
     }
 
-    public void indexPrevious(List<GameObject> options)
+    public void Back()
     {
-        options[menuIndex].SetActive(false);
-        menuIndex = (++menuIndex >= options.Count) ? 0 : menuIndex;
-        options[menuIndex].SetActive(true);
-    }
-
-    public IEnumerator WaitAndChangeActiveWindow(string NewWindow)
-    {
-        yield return new WaitForEndOfFrame();
-        activeWindow = NewWindow;
+        try
+        {
+            activePanel.GetComponent<MenuPanel>().buttonBack();
+        }
+        catch
+        {
+            try
+            {
+                activePanel.GetComponent<PlanetSelectPanel>().buttonBack();
+            }
+            catch
+            {
+                activePanel.GetComponent<AccessibilityPanel>().buttonBack();
+            }
+        }
     }
 }

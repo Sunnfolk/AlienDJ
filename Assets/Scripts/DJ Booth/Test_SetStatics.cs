@@ -6,6 +6,13 @@ public class Test_SetStatics : MonoBehaviour
 {
     public Crowd crowd;
     public int score;
+    public int color;
+
+    [Header("Active Modifier")]
+    public int mod0;
+    public int mod1;
+    public int mod2;
+    public int mod3;
 
     private void Awake()
     {
@@ -23,8 +30,13 @@ public class Test_SetStatics : MonoBehaviour
     {
 
 
-
+        CurrentSong.currentColor = color;
         score = CurrentSong.gameScore;
+        mod0 = CurrentSong.currentModifier_0;
+        mod1 = CurrentSong.currentModifier_1;
+        mod2 = CurrentSong.currentModifier_2;
+        mod3 = CurrentSong.currentModifier_3;
+
 
     }
 }

@@ -12,6 +12,10 @@ TagManager:
   - Tshirt
   - Crowd
   - TshirtCannon
+  - Hand_Open
+  - DJbooth
+  - Hand_Trigger
+  - LPPlayer
   layers:
   - Default
   - TransparentFX
