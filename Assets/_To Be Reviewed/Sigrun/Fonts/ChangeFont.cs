@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ChangeFont : MonoBehaviour
 {
-    public Font dyslexia; //the dyslexic friendly font
-    public Font standard; //The "standard" font
+    public TMP_FontAsset dyslexia; //the dyslexic friendly font
+    public TMP_FontAsset standard; //The "standard" font
 
     public static bool fontchange;
 

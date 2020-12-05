@@ -145,7 +145,14 @@ public class AccessibilityPanel : MonoBehaviour
 
                     break;
                 case AccessibilytyType.textFont:
-
+                    if (menuFunctions.menuIndex == 0)
+                    {
+                        gameObject.GetComponent<ChangeFont>().ButtonDyslexia();
+                    }
+                    else if (menuFunctions.menuIndex == 1)
+                    {
+                        gameObject.GetComponent<ChangeFont>().ButtonStandard();
+                    }
                     break;
                 case AccessibilytyType.textSize:
 
