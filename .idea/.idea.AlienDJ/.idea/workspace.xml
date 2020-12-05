@@ -19,39 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Animation 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/AnimationState 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/AnimationStateData 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Atlas 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/AtlasAttachmentLoader 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/Attachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentLoader 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentType 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/BoundingBoxAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/MeshAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/PathAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/PointAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/RegionAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Attachments/VertexAttachment 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/BlendMode 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Bone 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/BoneData 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Collections/OrderedDictionary 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/ConstraintData 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Event 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/EventData 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/ExposedList 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/IUpdatable 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/IkConstraint 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/IkConstraintData 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/Json 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/MathUtils 2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Spine/Runtime/spine-csharp/PathConstraint 2.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor 2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" afterDir="false" />
-    </list>
+    <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
