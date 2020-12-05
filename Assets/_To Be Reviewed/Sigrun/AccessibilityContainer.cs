@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 
 public static class AccessibilityContainer
 {
     //Changes Text
-    public static Font fontInUse; //the current font
+    public static TMP_FontAsset fontInUse; //the current font
     public static int fontSizeMulitplier; //how much the font should increase by, a multiplier so the ratio stays the same
     public static int fontMultiplierMaxSize = 2; //so the text has a max sixe
 
