@@ -9,4 +9,6 @@ public static class GameSettings
     public static float gameDuration; // 2, 5 or 10 minutes    index 0 = 2 min,     index 1 = 5 min,      index 2 = 10 min
     
     public static bool photosensitive; // true or false ("epilepsy mode"):   index 0 = false, index 1 = true
+
+    public static bool gameInPlay; 
 }
