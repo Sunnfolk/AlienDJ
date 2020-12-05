@@ -6,19 +6,23 @@ using TMPro;
 
 public class SetFont : MonoBehaviour
 {
-    [SerializeField] private int fontDefaultSize = 10; //the default size of this text's font, set individually
+    [SerializeField] private int fontDefaultSize = 100; //the default size of this text's font, set individually
+
+    public TextMeshPro text;
 
     private void Start()
     {
-        GetComponent<TextMeshPro>().font = AccessibilityContainer.fontInUse; //change the font to the one stored in the container
-        GetComponent<TextMeshPro>().fontSize = fontDefaultSize * AccessibilityContainer.fontSizeMulitplier; //increase the font by the value in the container
+        text = GetComponent<TextMeshPro>();
+        
+        text.font = AccessibilityContainer.fontInUse; //change the font to the one stored in the container
+        text.fontSize = fontDefaultSize * AccessibilityContainer.fontSizeMulitplier; //increase the font by the value in the container
     }
     private void Update()
     {
         if (ChangeFont.fontchange == true) //only change when there is a change
         {
-            GetComponent<TextMeshPro>().font = AccessibilityContainer.fontInUse; //change the font to the one stored in the container
-            GetComponent<TextMeshPro>().fontSize = fontDefaultSize * AccessibilityContainer.fontSizeMulitplier; //increase the font by the value in the container
+            text.font = AccessibilityContainer.fontInUse; //change the font to the one stored in the container
+            text.fontSize = fontDefaultSize * AccessibilityContainer.fontSizeMulitplier; //increase the font by the value in the container
         }
         
     }
