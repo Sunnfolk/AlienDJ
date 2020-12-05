@@ -18,7 +18,7 @@ namespace HyperSpace
         // Update is called once per frame
         private void Update()
         {
-            transform.Translate(0f,0f,speed);
+            transform.Translate(0f, 0f, speed);
         }
     }
 }
