@@ -15,7 +15,7 @@ public class MenuPanel : MonoBehaviour
     [Header("Gameobjects to choose from in panel:")]
     public List<GameObject> options;
     
-    public enum ActionType { activateNewPanel, Quit, timeSelect, photosensitiveSelect, extras, startGame};
+    public enum ActionType { activateNewPanel, Quit, timeSelect, photosensitiveSelect, extras, hyperspace, whichColor, startGame};
     [Header("Type of action for each option")]
     public List<ActionType> actionType;
 
@@ -123,22 +123,30 @@ public class MenuPanel : MonoBehaviour
                     activates[menuFunctions.menuIndex].SetActive(true);
                     break;
                 case ActionType.photosensitiveSelect:
-                    saveLastActive();
-                    setPhotosensitivity();
-                    activates[menuFunctions.menuIndex].SetActive(true);
+                    
                     break;
                 case ActionType.extras:
 
                     print("please add the extras code in the MenuPanel script");
                     break;
                 case ActionType.startGame:
+                    setLightshow();
                     //Starts the change sequence
                     if (gameChanger != null)
                         gameChanger.ChangeGame();
                     else
                         print("No GameChanger in " + this);
-
                     //print("please add the start game code in the MenuPanel script");
+                    break;
+                case ActionType.hyperspace:
+                    saveLastActive();
+                    setHyperspace();
+                    activates[menuFunctions.menuIndex].SetActive(true);
+                    break;
+                case ActionType.whichColor:
+                    saveLastActive();
+                    whichColor();
+                    activates[menuFunctions.menuIndex].SetActive(true);
                     break;
                 default:
                     Debug.LogError(actionType[menuFunctions.menuIndex] + " ActionType not defined within switch");
@@ -171,18 +179,39 @@ public class MenuPanel : MonoBehaviour
                 break;
         }
     }
-    private void setPhotosensitivity()
+    private void setHyperspace()
     {
         switch (menuFunctions.menuIndex)
         {
             case 0:
-                GameSettings.photosensitive = false;
+                //Add code true
                 break;
             case 1:
-                GameSettings.photosensitive = true;
+                //add code false
                 break;
             default:
-                Debug.LogError("Photosensitive index: " + menuFunctions.menuIndex.ToString() + " does not exist in switch");
+                Debug.LogError("SetHyperspace index: " + menuFunctions.menuIndex.ToString() + " does not exist in switch");
+                break;
+        }
+    }
+
+    private void whichColor()
+    {
+        menuFunctions.whichColor = menuFunctions.menuIndex;
+    }
+
+    private void setLightshow()
+    {
+        switch (menuFunctions.menuIndex)
+        {
+            case 0:
+                //add code true
+                break;
+            case 1:
+                //add code false
+                break;
+            default:
+                Debug.LogError("setLightshow index: " + menuFunctions.menuIndex.ToString() + " does not exist in switch");
                 break;
         }
     }

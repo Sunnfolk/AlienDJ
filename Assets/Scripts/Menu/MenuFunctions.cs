@@ -22,6 +22,10 @@ public class MenuFunctions : ScriptableObject
     [HideInInspector]
     public List<int> lastMenuIndex = new List<int>();
 
+    //What color is changed in the change color part of menu
+    [HideInInspector]
+    public int whichColor;
+
     public Color menuPanelColor;
     public Color textColor;
     public Color selectedTextColor;

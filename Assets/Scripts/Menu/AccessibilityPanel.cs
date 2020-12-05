@@ -141,25 +141,49 @@ public class AccessibilityPanel : MonoBehaviour
         {
             switch (accessibilityType)
             {
+                //color profile
                 case AccessibilytyType.colorProfile:
-
+                    //function(MenuFunctions.whichColor, options[MenuFunctions.menuIndex].getComponent<Image>().color)
+                    
                     break;
+
+                //text and font
                 case AccessibilytyType.textFont:
                     if (menuFunctions.menuIndex == 0)
                     {
-                        gameObject.GetComponent<ChangeFont>().ButtonDyslexia();
+                        gameObject.GetComponent<ChangeFont>().ButtonStandard();
                     }
                     else if (menuFunctions.menuIndex == 1)
                     {
-                        gameObject.GetComponent<ChangeFont>().ButtonStandard();
+                        gameObject.GetComponent<ChangeFont>().ButtonDyslexia();
                     }
                     break;
+
+                //Textsize
                 case AccessibilytyType.textSize:
-
+                    if (menuFunctions.menuIndex == 0)
+                    {
+                        //Add the function up
+                    }
+                    else if (menuFunctions.menuIndex == 1)
+                    {
+                        //add the function down
+                    }
                     break;
+
+                //Volume Level
                 case AccessibilytyType.volumeLevel:
-
+                    if (menuFunctions.menuIndex == 0)
+                    {
+                        //add the function up
+                    }
+                    else if (menuFunctions.menuIndex == 1)
+                    {
+                        //add the function down
+                    }
                     break;
+
+                //Remove this case after placeholders are not needed
                 case AccessibilytyType.placeholder:
 
                     break;
