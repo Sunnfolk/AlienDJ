@@ -5,7 +5,6 @@ namespace HyperSpace
 {
     public class LightFadeAnimator : MonoBehaviour
     {
-
         private Animator _animator;
     
         // Start is called before the first frame update
@@ -18,22 +17,13 @@ namespace HyperSpace
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
-                FadeIn();
-            }
-            else if (Input.GetKeyDown(KeyCode.K))
-            {
-                FadeOut();
+                Fade();
             }
         }
 
-        public void FadeIn()
+        public void Fade()
         {
-            _animator.Play("LightFlashIn");
-        }
-
-        public void FadeOut()
-        {
-            _animator.Play("LightFlashOut");
+            _animator.Play("Flash");
         }
     }
 }
