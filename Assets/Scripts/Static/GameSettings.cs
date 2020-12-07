@@ -10,5 +10,7 @@ public static class GameSettings
     
     public static bool photosensitive; // true or false ("epilepsy mode"):   index 0 = false, index 1 = true
 
-    public static bool gameInPlay; 
+    public static bool gameInPlay;
+
+    public static bool alienSpawn;
 }

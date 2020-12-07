@@ -8,12 +8,21 @@ namespace Alien_Spawn
         public List<Transform> _spawnPoints;
 
         public List<GameObject> _characters;
+
+        
         
         public void Update()
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            //if (Input.GetKeyDown(KeyCode.P))
+            //{
+            //    SelectCharacter();
+            //}
+
+            if (GameSettings.alienSpawn)
             {
                 SelectCharacter();
+                GameSettings.alienSpawn = false;
+
             }
         }
         
