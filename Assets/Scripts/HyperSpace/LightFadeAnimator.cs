@@ -13,14 +13,6 @@ namespace HyperSpace
             _animator = GetComponent<Animator>();
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.I))
-            {
-                Fade();
-            }
-        }
-
         public void Fade()
         {
             _animator.Play("Flash");

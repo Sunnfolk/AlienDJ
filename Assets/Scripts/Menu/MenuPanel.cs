@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class MenuPanel : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class MenuPanel : MonoBehaviour
     [Header("Gameobjects to choose from in panel:")]
     public List<GameObject> options;
     
-    public enum ActionType { activateNewPanel, Quit, timeSelect, photosensitiveSelect, extras, hyperspace, whichColor, startGame};
+    public enum ActionType { activateNewPanel, Quit, timeSelect, returnToMainMenu, extras, hyperspace, whichColor, startGame};
     [Header("Type of action for each option")]
     public List<ActionType> actionType;
 
@@ -25,6 +26,9 @@ public class MenuPanel : MonoBehaviour
     [Header("Insert what Start Game does")]
     //Add here if start game is chosen
     public GameStarter gameChanger;
+
+    [Header("Add setMenu object if Start game or Return to main menu is selected")]
+    public SetMenu setMenu;
 
 
 
@@ -122,8 +126,13 @@ public class MenuPanel : MonoBehaviour
                     setGameDuration();
                     activates[menuFunctions.menuIndex].SetActive(true);
                     break;
-                case ActionType.photosensitiveSelect:
-                    
+                case ActionType.returnToMainMenu:
+                    if (gameChanger != null)
+                        gameChanger.ChangeGame();
+                    else
+                        print("No GameChanger in " + this);
+                    setMenu.SetupMainMenu.Invoke();
+                    //Add code for returning to main menu from the game here     <----------------------------------------
                     break;
                 case ActionType.extras:
 
@@ -131,6 +140,7 @@ public class MenuPanel : MonoBehaviour
                     break;
                 case ActionType.startGame:
                     setLightshow();
+                    setMenu.SetupGameMenu.Invoke();
                     //Starts the change sequence
                     if (gameChanger != null)
                         gameChanger.ChangeGame();

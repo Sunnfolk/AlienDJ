@@ -10,7 +10,8 @@ namespace HyperSpace
 
         public void RunHyperSpace()
         {
-            StartCoroutine(nameof(InitialiseHyperSpace));
+            if (AccessibilityContainer.hyperspaceEnabled)
+                StartCoroutine(nameof(InitialiseHyperSpace));
         }
 
         private IEnumerator InitialiseHyperSpace()

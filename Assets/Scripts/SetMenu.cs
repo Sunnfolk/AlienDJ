@@ -1,19 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SetMenu : MonoBehaviour
 {
-
+    public UnityEvent SetupMainMenu;
+    public UnityEvent SetupGameMenu;
 
     public void SetMainMenu()
     {
-        //Set the main menu when you come from game
+
     }
 
     public void SetGameMenu()
     {
-        //Set game menu when you start game
+
     }
 
 

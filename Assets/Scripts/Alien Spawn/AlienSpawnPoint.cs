@@ -13,11 +13,6 @@ namespace Alien_Spawn
         
         public void Update()
         {
-            //if (Input.GetKeyDown(KeyCode.P))
-            //{
-            //    SelectCharacter();
-            //}
-
             if (GameSettings.alienSpawn)
             {
                 SelectCharacter();
@@ -31,7 +26,7 @@ namespace Alien_Spawn
         {
             foreach(Transform trans in _spawnPoints)
             {
-                Instantiate(_characters[Random.Range(0, _characters.Count)], trans);
+                Instantiate(_characters[Random.Range(0, _characters.Count)], trans.position, Quaternion.identity, null);
             }
         }
     }

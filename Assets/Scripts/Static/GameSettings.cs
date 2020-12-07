@@ -13,4 +13,8 @@ public static class GameSettings
     public static bool gameInPlay;
 
     public static bool alienSpawn;
+
+    public static bool alienDespawn;
+
+    public static bool skyboxActive;
 }

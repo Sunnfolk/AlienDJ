@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisableOnStart : MonoBehaviour
+public class SkyboxChecker : MonoBehaviour
 {
+    private MeshRenderer _rend;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _rend = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        _rend.enabled = GameSettings.skyboxActive;
     }
 }
