@@ -8,12 +8,14 @@ namespace HyperSpace
     {
         public GameObject tunnel;
 
+        [SerializeField] private float hyperspaceTimer = 5f;
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.P))
             {
                 RunHyperSpace();
+                Invoke("EndHyperSpace", hyperspaceTimer);
             }
         }
 

@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d95a91fe6e53c4dc887fefc92229f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -2
+  speed: -15
   startPos: {x: 0, y: 0}
 --- !u!1 &1113599145
 GameObject:
@@ -802,6 +802,11 @@ PrefabInstance:
       propertyPath: tunnel
       value: 
       objectReference: {fileID: 830322666}
+    - target: {fileID: 6742840302022610676, guid: 4d575532a4b5b4755b0487df0c3fc229,
+        type: 3}
+      propertyPath: hyperspaceTimer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6742840302022610677, guid: 4d575532a4b5b4755b0487df0c3fc229,
         type: 3}
       propertyPath: m_LocalPosition.x
