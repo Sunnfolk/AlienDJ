@@ -28,6 +28,12 @@ public class GameStarter : MonoBehaviour
 
     }
 
+    public void ThrowNull(string _place)
+    {
+
+        Debug.Log(_place);
+    }
+
 
 
 }

@@ -32,7 +32,7 @@ public class Test_SetStatics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameSettings.gameDuration = timer;
+        //GameSettings.gameDuration = timer;
 
         CurrentSong.currentColor = color;
         score = CurrentSong.gameScore;

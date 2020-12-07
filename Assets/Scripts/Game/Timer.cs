@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
     {
         if(running)
         {
+            Debug.Log("Timer is Running");
             timer -= 1 * Time.deltaTime;
 
             text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
@@ -37,8 +38,16 @@ public class Timer : MonoBehaviour
 
     public void SetTimer()
     {
-        GameSettings.gameInPlay = true;
+        
         timer = GameSettings.gameDuration * 60f;
+        text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
+        //running = true;
+
+    }
+
+    public void StartTimer()
+    {
+        GameSettings.gameInPlay = true;
         running = true;
 
     }
