@@ -9,6 +9,14 @@ namespace HyperSpace
         public GameObject tunnel;
 
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                RunHyperSpace();
+            }
+        }
+
         public void RunHyperSpace()
         {
             StartCoroutine(nameof(InitialiseHyperSpace));
