@@ -1,18 +1,5 @@
 
 skeleton.png
-size: 296,409
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-Mars Alien Pose
-  rotate: false
-  xy: 2, 2
-  size: 292, 405
-  orig: 293, 405
-  offset: 1, 0
-  index: -1
-
-skeleton2.png
 size: 563,1087
 format: RGBA8888
 filter: Linear,Linear

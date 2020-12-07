@@ -1,18 +1,5 @@
 
 skeleton.png
-size: 481,469
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-Planet X Alien Pose
-  rotate: false
-  xy: 2, 2
-  size: 477, 465
-  orig: 490, 520
-  offset: 12, 32
-  index: -1
-
-skeleton2.png
 size: 1993,949
 format: RGBA8888
 filter: Linear,Linear
