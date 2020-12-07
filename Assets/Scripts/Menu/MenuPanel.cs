@@ -184,10 +184,10 @@ public class MenuPanel : MonoBehaviour
         switch (menuFunctions.menuIndex)
         {
             case 0:
-                //Add code true
+                AccessibilityContainer.hyperspaceEnabled = true;
                 break;
             case 1:
-                //add code false
+                AccessibilityContainer.hyperspaceEnabled = false;
                 break;
             default:
                 Debug.LogError("SetHyperspace index: " + menuFunctions.menuIndex.ToString() + " does not exist in switch");
@@ -205,10 +205,10 @@ public class MenuPanel : MonoBehaviour
         switch (menuFunctions.menuIndex)
         {
             case 0:
-                //add code true
+                AccessibilityContainer.lightshowsEnabled = true;
                 break;
             case 1:
-                //add code false
+                AccessibilityContainer.lightshowsEnabled = false;
                 break;
             default:
                 Debug.LogError("setLightshow index: " + menuFunctions.menuIndex.ToString() + " does not exist in switch");
