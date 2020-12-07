@@ -1,18 +1,5 @@
 
 skeleton.png
-size: 623,820
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-Mercury Alien Pose
-  rotate: false
-  xy: 2, 2
-  size: 619, 816
-  orig: 622, 817
-  offset: 1, 1
-  index: -1
-
-skeleton2.png
 size: 2020,1185
 format: RGBA8888
 filter: Linear,Linear

@@ -9,6 +9,15 @@ namespace Alien_Spawn
 
         public List<GameObject> _characters;
         
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                SelectCharacter();
+            }
+        }
+        
+        
         public void SelectCharacter()
         {
             foreach(Transform trans in _spawnPoints)

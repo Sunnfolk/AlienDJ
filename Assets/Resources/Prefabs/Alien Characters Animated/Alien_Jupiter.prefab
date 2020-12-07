@@ -206,7 +206,7 @@ MonoBehaviour:
   _boredDance: {fileID: 11400000, guid: bd85171a96a234d8485f6478304181c0, type: 2}
   _normalDance: {fileID: 11400000, guid: bf3cb041e8bac400a978e71195d5a1e1, type: 2}
   _hypedDance: {fileID: 11400000, guid: 05ff2ba4e9b5843268d8b0fd9ce1af25, type: 2}
-  _idle: {fileID: 0}
+  _idle: {fileID: 11400000, guid: c550620e076ef4638be7573cf12f785a, type: 2}
 --- !u!114 &6557451512614876830
 MonoBehaviour:
   m_ObjectHideFlags: 0

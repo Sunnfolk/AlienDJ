@@ -11,15 +11,16 @@
         <e p="_To Be Reviewed" t="Include">
           <e p="Sigrun" t="Include">
             <e p="AccessibilityContainer.cs" t="Include" />
-            <e p="CB" t="Include">
+            <e p="ColorBlind" t="Include">
               <e p="DisplayTheColor.cs" t="Include" />
               <e p="SetTheColor.cs" t="Include" />
             </e>
-            <e p="D" t="Include">
+            <e p="Fonts" t="Include">
               <e p="ChangeFont.cs" t="Include" />
               <e p="FontSource.cs" t="Include" />
               <e p="SetFont.cs" t="Include" />
             </e>
+            <e p="Photosensitity.cs" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -189,21 +190,54 @@
             <e p="Category.cs" t="Include" />
             <e p="Crowd.cs" t="Include" />
           </e>
-          <e p="Crowdwants.cs" t="Include" />
-          <e p="Menu" t="Include">
-            <e p="GameSettings.cs" t="Include" />
-            <e p="MainMenu.cs" t="Include" />
-            <e p="MenuFunctions.cs" t="Include" />
-            <e p="Photosensitive.cs" t="Include" />
-            <e p="PlanetSelect.cs" t="Include" />
-            <e p="Settings.cs" t="Include" />
-            <e p="TimeSelect.cs" t="Include" />
+          <e p="DesireColorChange_Script.cs" t="Include" />
+          <e p="DJ Booth" t="Include">
+            <e p="Button_Light.cs" t="Include" />
+            <e p="Button_Song.cs" t="Include" />
+            <e p="Crowdwants.cs" t="Include" />
+            <e p="DiscSong.cs" t="Include" />
+            <e p="DJBoothRotation.cs" t="Include" />
+            <e p="GameToFmod.cs" t="Include" />
+            <e p="GoldenBuzzer_Script.cs" t="Include" />
+            <e p="Score_Script.cs" t="Include" />
+            <e p="Test_SetStatics.cs" t="Include" />
           </e>
-          <e p="Score_Script.cs" t="Include" />
-          <e p="Teststatic.cs" t="Include" />
+          <e p="Game" t="Include">
+            <e p="gravity.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+          </e>
+          <e p="HyperSpace" t="Include">
+            <e p="HyperSpaceController.cs" t="Include" />
+            <e p="HyperSpaceTunnelMove.cs" t="Include" />
+            <e p="LightFadeAnimator.cs" t="Include" />
+          </e>
+          <e p="Menu" t="Include">
+            <e p="AccessibilityPanel.cs" t="Include" />
+            <e p="Button_Booth.cs" t="Include" />
+            <e p="GameStarter.cs" t="Include" />
+            <e p="MenuFunctions.cs" t="Include" />
+            <e p="MenuPanel.cs" t="Include" />
+            <e p="Planet.cs" t="Include" />
+            <e p="PlanetSelectPanel.cs" t="Include" />
+            <e p="TravelEvent.cs" t="Include" />
+          </e>
+          <e p="ScoreTest.cs" t="Include" />
+          <e p="SetGameEnviorment.cs" t="Include" />
+          <e p="SetMenu.cs" t="Include" />
+          <e p="Spheretest.cs" t="Include" />
+          <e p="Static" t="Include">
+            <e p="CurrentSong.cs" t="Include" />
+            <e p="GameSettings.cs" t="Include" />
+          </e>
+          <e p="TshirtCannon" t="Include">
+            <e p="TshirtCannon_Script.cs" t="Include" />
+            <e p="TshirtProjectile_Script.cs" t="Include" />
+            <e p="TshirtTarget_Script.cs" t="Include" />
+          </e>
           <e p="VR" t="Include">
             <e p="Hand.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
+            <e p="RaspawnDetails.cs" t="Include" />
             <e p="SnapDetector.cs" t="Include" />
           </e>
         </e>
@@ -906,6 +940,13 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="VFXShaders" t="Include">
+          <e p="Aura" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="PortalDistortion.shader" t="Include" />
+            </e>
           </e>
         </e>
       </e>
