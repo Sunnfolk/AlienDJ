@@ -14,7 +14,6 @@ public class SkyboxChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("The Mesh Renderer is: " +_rend);
         _rend.enabled = GameSettings.skyboxActive;
     }
 }

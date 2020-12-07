@@ -21,6 +21,7 @@ namespace Alien_Spawn
         [Space(5f)]
         [Header("Components")]
         [SerializeField] private GameObject _SpineRenderer;
+       // private MeshRenderer _rend;
         [SerializeField] private SpriteRenderer _spriteRenderer;
     
         private Material _material;
@@ -34,12 +35,14 @@ namespace Alien_Spawn
 
         private void OnEnable()
         {
+           // _rend = _SpineRenderer.GetComponent<MeshRenderer>();
             _alienCanDespawn = true;
             _material = _spriteRenderer.material;
         
             effect.Stop();
             _spriteRenderer.enabled = true;
             _SpineRenderer.SetActive(false);
+            //_rend.enabled = true;
             _teleportValue = 0f;
         
             StartCoroutine(nameof(TeleportIn), _vfxWaitTime);
@@ -74,13 +77,14 @@ namespace Alien_Spawn
             {
                 _spriteRenderer.enabled = false;
                 effect.Stop();
+                //_rend.enabled = true;
                 _SpineRenderer.SetActive(true);
                 _canTeleportIn = false;
             }
             else if (_canTeleportOut && _teleportValue <= 0f)
             {
                 effect.Stop();
-                Destroy(gameObject);
+                Destroy(transform.parent.gameObject);
                 _canTeleportOut = false;
             }
 
@@ -105,6 +109,7 @@ namespace Alien_Spawn
             effect.Play();
             _spriteRenderer.enabled = true;
             _SpineRenderer.SetActive(false);
+            //_rend.enabled = false;
             yield return new WaitForSeconds(time);
             _canTeleportOut = true;
         }

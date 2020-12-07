@@ -14,7 +14,7 @@ namespace Alien_Spawn
     
         
         // Start is called before the first frame update
-        private void Start()
+        private void OnEnable()
         {
             _skeletonAnimation = GetComponent<SkeletonAnimation>();
             PlayIdle();

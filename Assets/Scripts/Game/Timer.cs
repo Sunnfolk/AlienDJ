@@ -51,4 +51,11 @@ public class Timer : MonoBehaviour
         running = true;
 
     }
+
+    public void StopTimer()
+    {
+        GameSettings.gameInPlay = false;
+        running = false;
+        text.SetText("");
+    }
 }
