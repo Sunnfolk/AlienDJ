@@ -80,6 +80,7 @@ namespace Alien_Spawn
             else if (_canTeleportOut && _teleportValue <= 0f)
             {
                 effect.Stop();
+                Destroy(gameObject);
                 _canTeleportOut = false;
             }
 
