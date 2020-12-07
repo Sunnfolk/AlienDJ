@@ -16,7 +16,7 @@ public class Crowd : ScriptableObject
 
     public Category Calm;
 
-    public Skybox Skybox;
+    public Texture Skybox;
 
     public int Top;
 
