@@ -1,0 +1,68 @@
+
+skeleton.png
+size: 623,820
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mercury Alien Pose
+  rotate: false
+  xy: 2, 2
+  size: 619, 816
+  orig: 622, 817
+  offset: 1, 1
+  index: -1
+
+skeleton2.png
+size: 2020,1185
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Assets/Alienvenstrebein
+  rotate: true
+  xy: 1418, 2
+  size: 453, 600
+  orig: 453, 600
+  offset: 0, 0
+  index: -1
+Assets/alienhøyrearm
+  rotate: true
+  xy: 664, 20
+  size: 379, 752
+  orig: 379, 752
+  offset: 0, 0
+  index: -1
+Assets/alienhøyrebein
+  rotate: false
+  xy: 664, 401
+  size: 611, 782
+  orig: 611, 782
+  offset: 0, 0
+  index: -1
+Assets/alienhøyreøye
+  rotate: true
+  xy: 1722, 797
+  size: 386, 207
+  orig: 386, 207
+  offset: 0, 0
+  index: -1
+Assets/alienkropp
+  rotate: false
+  xy: 2, 39
+  size: 660, 1144
+  orig: 662, 1144
+  offset: 2, 0
+  index: -1
+Assets/alienvenstrearm
+  rotate: false
+  xy: 1277, 457
+  size: 443, 726
+  orig: 443, 726
+  offset: 0, 0
+  index: -1
+Assets/alienvenstreøye
+  rotate: true
+  xy: 1722, 491
+  size: 304, 212
+  orig: 304, 212
+  offset: 0, 0
+  index: -1

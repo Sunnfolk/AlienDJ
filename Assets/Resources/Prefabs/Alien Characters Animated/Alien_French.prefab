@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6557451512614876829
 Transform:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557451512614876833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.08, z: 0}
+  m_LocalPosition: {x: 0, y: 0.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6557451512795449210}
@@ -203,10 +203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d5c9ce0b0e34dd699a8d113c5f9cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boredDance: {fileID: 11400000, guid: b4602087d72ed4757b67865c42985c53, type: 2}
-  _normalDance: {fileID: 11400000, guid: 3b4021a8c63ed475f919fd6bce8d3e88, type: 2}
-  _hypedDance: {fileID: 11400000, guid: 41a7fda7e7e65413b9c8ab271033a1ec, type: 2}
-  _idle: {fileID: 11400000, guid: f593d8c92160b4765b252a5470ac1a13, type: 2}
+  _boredDance: {fileID: 11400000, guid: ab0f68f9261934317ab573c22f7b73fe, type: 2}
+  _normalDance: {fileID: 11400000, guid: fd9b63ba072b642238b9a377bac53796, type: 2}
+  _hypedDance: {fileID: 11400000, guid: 38e1b2c54f7a14034bb19f4e1ad06e54, type: 2}
+  _idle: {fileID: 11400000, guid: b6e0f8ac8733946689c8f4f65e218820, type: 2}
 --- !u!114 &6557451512614876830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557451512836500134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.77, z: -0.13}
+  m_LocalPosition: {x: 0, y: 0, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6557451512795449210}

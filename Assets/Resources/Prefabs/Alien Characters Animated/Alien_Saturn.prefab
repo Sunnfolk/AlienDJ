@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6557451512614876829
 Transform:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557451512614876833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 0, z: 0}
+  m_LocalPosition: {x: -0.19, y: 0.312, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6557451512795449210}
@@ -203,9 +203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d5c9ce0b0e34dd699a8d113c5f9cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boredDance: {fileID: 11400000, guid: 2448567017369407e9a475f8ca9e9fa3, type: 2}
-  _normalDance: {fileID: 11400000, guid: ea57d682d209f469280bb1ac61ca0f4a, type: 2}
-  _hypedDance: {fileID: 11400000, guid: 917c20f48566c4279b47be7919e3d143, type: 2}
+  _boredDance: {fileID: 11400000, guid: e89bcf87fe3d0441a9d2a44aefa14c71, type: 2}
+  _normalDance: {fileID: 11400000, guid: 6158ceb5248234f9fad71d103e15e842, type: 2}
+  _hypedDance: {fileID: 11400000, guid: 03ee0109c7c7f49668b3f40ec7f53b48, type: 2}
+  _idle: {fileID: 11400000, guid: 06f294b68593347ea80edf534ab7a60d, type: 2}
 --- !u!114 &6557451512614876830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +241,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle anim
   loop: 0
   timeScale: 1
 --- !u!1 &6557451512795449213
@@ -302,7 +303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557451512836500134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.77, z: -0.13}
+  m_LocalPosition: {x: 0, y: 0, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6557451512795449210}
@@ -347,12 +348,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d2e7d2abc992a4b45b065a59d8be1006, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37850f60099aa4ca3bb77f8f52c9cbe7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.94, y: 10.16}
+  m_Size: {x: 5.82, y: 10.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

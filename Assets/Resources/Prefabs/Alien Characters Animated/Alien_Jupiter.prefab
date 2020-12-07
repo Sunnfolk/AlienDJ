@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6557451512614876829
 Transform:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557451512614876833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: -1, z: 0}
+  m_LocalPosition: {x: -0.116, y: -0.685, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6557451512795449210}
@@ -170,7 +170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1d9aeeece4fafc7409cb0640c54aad81, type: 2}
+  - {fileID: 2100000, guid: 780debf266e95459c88de1f6da301923, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,9 +203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d5c9ce0b0e34dd699a8d113c5f9cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boredDance: {fileID: 11400000, guid: 248afca341b34594293fcf6b2044ad2f, type: 2}
-  _normalDance: {fileID: 11400000, guid: e2b267672fb8a7148b0d25a50d4db868, type: 2}
-  _hypedDance: {fileID: 11400000, guid: 530a0e9dd19590145991addfe5a53dce, type: 2}
+  _boredDance: {fileID: 11400000, guid: bd85171a96a234d8485f6478304181c0, type: 2}
+  _normalDance: {fileID: 11400000, guid: bf3cb041e8bac400a978e71195d5a1e1, type: 2}
+  _hypedDance: {fileID: 11400000, guid: 05ff2ba4e9b5843268d8b0fd9ce1af25, type: 2}
+  _idle: {fileID: 0}
 --- !u!114 &6557451512614876830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 84053d663e5328b4e8deb191384da62e, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 68a57cf17a677407595d7e0f9f6a724d, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -240,7 +241,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: Idle
   loop: 0
   timeScale: 1
 --- !u!1 &6557451512795449213
@@ -302,7 +303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557451512836500134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.77, z: -0.13}
+  m_LocalPosition: {x: 0, y: 0, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6557451512795449210}
@@ -347,12 +348,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1b38ea4df9e9f04c8827f3026745bfc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61d20af0d7c804085997ef6157e67c1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.97, y: 5.08}
+  m_Size: {x: 14.16, y: 10.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
