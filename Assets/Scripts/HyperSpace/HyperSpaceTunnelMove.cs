@@ -7,18 +7,17 @@ namespace HyperSpace
     {
         public float speed;
 
-        public Vector2 startPos;
+        public Vector3 startPos;
 
         private void OnEnable()
         {
-            // Reset Position on Enable
-            //transform.position = startPos;
+            transform.position = startPos;
         }
 
         // Update is called once per frame
         private void Update()
         {
-            transform.Translate(0f,0f,speed);
+            transform.Translate(0f, 0f, speed);
         }
     }
 }
