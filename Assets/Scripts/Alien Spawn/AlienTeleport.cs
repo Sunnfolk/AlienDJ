@@ -52,9 +52,9 @@ namespace Alien_Spawn
             _teleportValue = Mathf.Clamp(_teleportValue, 0, _teleportValueMax);
             _material.SetFloat("Vector1_FA25B07E", _teleportValue);
 
-            if (AlienDespawn.StaticTimerisFinishedBool && _alienCanDespawn)
+            if (GameSettings.alienDespawn && _alienCanDespawn)
             {
-                _SpineRenderer.GetComponent<SkeletonAnimation>().AnimationState.SetEmptyAnimation(0, 0.25f);
+                _SpineRenderer.GetComponent<AnimatedAlienCharacter>().PlayIdle();
                 StartCoroutine(nameof(TeleportOut), 1f);
                 _alienCanDespawn = false;
             }
@@ -88,6 +88,7 @@ namespace Alien_Spawn
         // IENumerator Function for Starting the teleportIN
         private IEnumerator TeleportIn(float time)
         {
+            GameSettings.alienSpawn = false;
             var timer = UnityEngine.Random.Range(_spawnRandomMin, _spawnRandomMax);
             yield return new WaitForSeconds(timer);
         

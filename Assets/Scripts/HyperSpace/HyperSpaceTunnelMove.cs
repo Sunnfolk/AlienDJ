@@ -9,6 +9,11 @@ namespace HyperSpace
 
         public Vector3 startPos;
 
+        private void Awake()
+        {
+            startPos = transform.position;
+        }
+
         private void OnEnable()
         {
             transform.position = startPos;

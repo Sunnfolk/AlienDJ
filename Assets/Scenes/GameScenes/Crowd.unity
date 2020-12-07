@@ -549,6 +549,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: test.booth.monday
       objectReference: {fileID: 0}
+    - target: {fileID: 2352674950606202383, guid: 4d33270691f944c7eb382fe8c5b0d5c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3165381601037647029, guid: 4d33270691f944c7eb382fe8c5b0d5c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -678,6 +683,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9c9cfbd763d214911a4dc693d3b6c12f, type: 2}
+    - target: {fileID: 4169194659223343859, guid: 407e4eb9365694bfe89650bed260e905,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407e4eb9365694bfe89650bed260e905, type: 3}
 --- !u!1001 &7305740248260525490

@@ -11,6 +11,6 @@ public class SetAlienSpawn : MonoBehaviour
 
     public void DespawnAlien()
     {
-        
+        GameSettings.alienDespawn = true;
     }
 }
