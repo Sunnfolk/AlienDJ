@@ -21,10 +21,10 @@ public class TshirtCannon_Script : MonoBehaviour
         }
 
         ////Testing
-        //if (Input.GetKeyDown(KeyCode.Q))
-        //{
-        //    shoot();
-        //}
+        /*if (Input.GetKeyDown(KeyCode.Q))
+        {
+            shoot();
+        }*/
     }
     public void shoot()
     {
