@@ -11,7 +11,7 @@ namespace HyperSpace
         [SerializeField] private float hyperspaceTimer = 5f;
 
         private void Update()
-        {
+        { 
             if (Input.GetKeyDown(KeyCode.P))
             {
                 RunHyperSpace();

@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -15
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1113599145
 GameObject:
   m_ObjectHideFlags: 0
