@@ -143,8 +143,9 @@ public class AccessibilityPanel : MonoBehaviour
             {
                 //color profile
                 case AccessibilytyType.colorProfile:
-                    //function(MenuFunctions.whichColor, options[MenuFunctions.menuIndex].getComponent<Image>().color)
-                    
+                    gameObject.GetComponent<SetTheColor>().GetGolor(options[menuFunctions.menuIndex].GetComponent<Image>(), menuFunctions.whichColor);
+
+
                     break;
 
                 //text and font
@@ -163,11 +164,11 @@ public class AccessibilityPanel : MonoBehaviour
                 case AccessibilytyType.textSize:
                     if (menuFunctions.menuIndex == 0)
                     {
-                        //Add the function up
+                        gameObject.GetComponent<ChangeFont>().ButtonSizeUp();
                     }
                     else if (menuFunctions.menuIndex == 1)
                     {
-                        //add the function down
+                        gameObject.GetComponent<ChangeFont>().ButtonSizeDown();
                     }
                     break;
 
