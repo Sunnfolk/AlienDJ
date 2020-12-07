@@ -17,4 +17,9 @@ public static class AccessibilityContainer
     public static Color energetic; //contains the color used for this mood
     public static Color calm; //contains the color used for this mood
     public static Color chill; //contains the color used for this mood
+
+
+    //The photosensitivity settings
+    public static bool hyperspaceEnabled = true;
+    public static bool lightshowsEnabled = true;
 }

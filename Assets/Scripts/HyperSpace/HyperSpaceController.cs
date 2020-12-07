@@ -8,6 +8,17 @@ namespace HyperSpace
     {
         public GameObject tunnel;
 
+        [SerializeField] private float hyperspaceTimer = 5f;
+
+        private void Update()
+        { 
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                RunHyperSpace();
+                Invoke("EndHyperSpace", hyperspaceTimer);
+            }
+        }
+
         public void RunHyperSpace()
         {
             StartCoroutine(nameof(InitialiseHyperSpace));
@@ -31,9 +42,13 @@ namespace HyperSpace
             // light flash (HyperSpace Exit)
             
             yield return new WaitForSeconds(1f);
-            
+
             // Start Crowd Spawn
-            // StopCoroutine
+
+        }
+        public void EndHyperSpace()
+        {
+            tunnel.SetActive(false);
         }
         
     }
