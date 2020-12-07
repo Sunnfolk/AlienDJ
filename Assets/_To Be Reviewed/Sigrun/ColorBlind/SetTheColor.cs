@@ -64,10 +64,10 @@ public class SetTheColor : MonoBehaviour
         colorUpdate = !colorUpdate;
     }
 
-    public void GetGolor(Image _image)
+    public void GetGolor(Image _image, int musicID)
     {
         desiredColor = _image.color; //we want to change the color stored in the container to the color of the "image", aka the button
-        switch (categoryID) 
+        switch (musicID) 
         {
             case 3:
                 AccessibilityContainer.aggressive = desiredColor;

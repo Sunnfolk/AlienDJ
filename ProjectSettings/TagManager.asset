@@ -16,6 +16,7 @@ TagManager:
   - DJbooth
   - Hand_Trigger
   - LPPlayer
+  - playerCamera
   layers:
   - Default
   - TransparentFX

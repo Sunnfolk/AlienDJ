@@ -14,6 +14,10 @@ public class Test_SetStatics : MonoBehaviour
     public int mod2;
     public int mod3;
 
+    [Header("Game Settings")]
+    public float timer;
+
+
     private void Awake()
     {
         CurrentSong.selectedCrowd = crowd;
@@ -28,7 +32,7 @@ public class Test_SetStatics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        GameSettings.gameDuration = timer;
 
         CurrentSong.currentColor = color;
         score = CurrentSong.gameScore;
