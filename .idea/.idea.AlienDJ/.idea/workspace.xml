@@ -20,13 +20,143 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Alien_Prototype.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Alien_Prototype.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Teleport2DMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Teleport2DMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_To Be Reviewed/Glenn.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_To Be Reviewed/Martin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Neptun_Alien/idle pose Neptun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Neptun_Alien/idle pose Neptun.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien/idle pose Saturn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien/idle pose Saturn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/idle pose Saturn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/idle pose Saturn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/Default pose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/Default pose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/French Alien/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/Mars Alien Pose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/Mars Alien Pose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mars Alien Animation/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/Mercury Alien Pose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/Mercury Alien Pose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_skeleton.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_skeleton.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_skeleton2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Mercury Alien Animation/skeleton_skeleton2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/Planet X Alien Pose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/Planet X Alien Pose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Planet X Alien/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/Default Pluto pose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/Default Pluto pose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Pluto animation/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/Twisty Pose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/Twisty Pose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Uranus Alien/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/Default pose 2 jupiter alien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/Default pose 2 jupiter alien.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/Default pose 3 jupiter alien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/Default pose 3 jupiter alien.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/Default pose jupiter alien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/Default pose jupiter alien.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/jupiter alien/skeleton_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_French.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_French.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Jupiter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Jupiter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Mars.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Mars.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Neptun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Neptun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_PlanetX.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_PlanetX.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Pluto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Pluto.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Saturn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Saturn.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Uranus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Uranus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Venus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Alien Characters Animated/Alien_Venus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Test_Alien Spawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AlienSpawnPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AlienSpawnPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienDespawn.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienDespawn.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,23 +166,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AnimatedAlienCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienSpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienDespawn.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1l63XziiVglO0GRwqnUoec6PIAW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -88,6 +224,8 @@
       <updated>1606903761856</updated>
       <workItem from="1606903786142" duration="3203000" />
       <workItem from="1606912889736" duration="6079000" />
+      <workItem from="1606984526769" duration="2446000" />
+      <workItem from="1607332816028" duration="469000" />
     </task>
     <servers />
   </component>
@@ -106,12 +244,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="869" y="296" key="SettingsEditor" timestamp="1606904976051">
+    <state x="869" y="296" key="SettingsEditor" timestamp="1606989463278">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="869" y="296" key="SettingsEditor/0.25.2560.1415/-1440.395.1440.875@0.25.2560.1415" timestamp="1606904976051" />
+    <state x="869" y="296" key="SettingsEditor/0.25.2560.1415/-1440.395.1440.875@0.25.2560.1415" timestamp="1606989463278" />
   </component>
 </project>

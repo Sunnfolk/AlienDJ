@@ -141,7 +141,34 @@
         <e p="Resources" t="Include">
           <e p="Art" t="Include">
             <e p="Spine Animated Characters" t="Include">
+              <e p="Character_French_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Jupiter_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Mars_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Mercury_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Neptun_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_PlanetX_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Pluto_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
               <e p="Character_Saturn_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Uranus_Alien" t="Include">
+                <e p="skeleton.atlas.txt" t="Include" />
+              </e>
+              <e p="Character_Venus_Alien" t="Include">
                 <e p="skeleton.atlas.txt" t="Include" />
               </e>
             </e>
@@ -152,7 +179,12 @@
             <e p="AlienAttacks.cs" t="Include" />
             <e p="FlyingObject.cs" t="Include" />
           </e>
-          <e p="AlienSpawnPoint.cs" t="Include" />
+          <e p="Alien Spawn" t="Include">
+            <e p="AlienDespawn.cs" t="Include" />
+            <e p="AlienSpawnPoint.cs" t="Include" />
+            <e p="AlienTeleport.cs" t="Include" />
+            <e p="AnimatedAlienCharacter.cs" t="Include" />
+          </e>
           <e p="Crowd" t="Include">
             <e p="Category.cs" t="Include" />
             <e p="Crowd.cs" t="Include" />
@@ -168,10 +200,6 @@
             <e p="TimeSelect.cs" t="Include" />
           </e>
           <e p="Score_Script.cs" t="Include" />
-          <e p="Spine_Characters" t="Include">
-            <e p="AnimatedAlienCharacter.cs" t="Include" />
-            <e p="LerpTeleport.cs" t="Include" />
-          </e>
           <e p="Teststatic.cs" t="Include" />
           <e p="VR" t="Include">
             <e p="Hand.cs" t="Include" />

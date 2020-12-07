@@ -1,0 +1,13 @@
+
+skeleton.png
+size: 986,828
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+french alien asset whole
+  rotate: false
+  xy: 2, 2
+  size: 982, 824
+  orig: 1133, 1080
+  offset: 52, 156
+  index: -1

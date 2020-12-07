@@ -1,0 +1,75 @@
+
+skeleton.png
+size: 296,409
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mars Alien Pose
+  rotate: false
+  xy: 2, 2
+  size: 292, 405
+  orig: 293, 405
+  offset: 1, 0
+  index: -1
+
+skeleton2.png
+size: 563,1087
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mars alien assets/body
+  rotate: true
+  xy: 2, 2
+  size: 167, 345
+  orig: 248, 370
+  offset: 56, 8
+  index: -1
+Mars alien assets/head
+  rotate: false
+  xy: 349, 29
+  size: 212, 150
+  orig: 273, 181
+  offset: 33, 5
+  index: -1
+Mars alien assets/left foot
+  rotate: false
+  xy: 2, 628
+  size: 199, 457
+  orig: 248, 492
+  offset: 35, 20
+  index: -1
+Mars alien assets/lower right arm
+  rotate: false
+  xy: 203, 852
+  size: 337, 233
+  orig: 433, 307
+  offset: 22, 45
+  index: -1
+Mars alien assets/lowerf left arm
+  rotate: false
+  xy: 202, 181
+  size: 293, 252
+  orig: 367, 336
+  offset: 46, 61
+  index: -1
+Mars alien assets/right foot
+  rotate: false
+  xy: 2, 171
+  size: 198, 455
+  orig: 344, 586
+  offset: 41, 74
+  index: -1
+Mars alien assets/upper left arm
+  rotate: false
+  xy: 203, 639
+  size: 352, 211
+  orig: 398, 245
+  offset: 27, 19
+  index: -1
+Mars alien assets/upper right arm
+  rotate: false
+  xy: 203, 435
+  size: 348, 202
+  orig: 416, 277
+  offset: 21, 20
+  index: -1
