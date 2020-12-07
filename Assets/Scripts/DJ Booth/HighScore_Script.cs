@@ -9,13 +9,13 @@ public class HighScore_Script : MonoBehaviour
      public bool LevelComplete = false;
      private bool IsTwoMinute = false;
      private bool IsFiveMinute = false;
-     private bool IsTenMinutes = false;
+     private bool IsTenMinute = false;
      public int TwoMinuteHighScore;
      public int FiveMinuteHighScore;
      public int TenMinuteHighScore;
      
 
-     private void start() 
+     private void OnAwake() 
      {
          if (GameSettings.gameDuration == 2)
          {
@@ -27,14 +27,8 @@ public class HighScore_Script : MonoBehaviour
          }
          if (GameSettings.gameDuration == 10)
          {
-             IsTenMinutes = true;
+             IsTenMinute = true;
          }
-
-         if (Input.GetKeyDown(KeyCode.H))
-         {
-             PlayerPrefs.DeleteAll();
-         }
-         
      }
 
     private void Update() 
@@ -43,7 +37,7 @@ public class HighScore_Script : MonoBehaviour
          Score = _ScoreScript._Score;
          TwoMinuteHighScore = PlayerPrefs.GetInt("TwoMinute_HighScore");
          FiveMinuteHighScore = PlayerPrefs.GetInt("FiveMinute_HighScore");
-         TenMinuteHighScore = PlayerPrefs.GetInt("FiveMinute_HighScore");
+         TenMinuteHighScore = PlayerPrefs.GetInt("TenMinute_HighScore");
 
         if (LevelComplete == true && Score > TwoMinuteHighScore && IsTwoMinute == true)
         {
@@ -53,7 +47,7 @@ public class HighScore_Script : MonoBehaviour
         {
              SaveHighScoreFive();
         }
-        if (LevelComplete == true && Score > TenMinuteHighScore && IsTenMinutes == true)
+        if (LevelComplete == true && Score > TenMinuteHighScore && IsTenMinute == true)
         {
              SaveHighScoreTen();
         }
@@ -74,5 +68,9 @@ public class HighScore_Script : MonoBehaviour
      {
          TenMinuteHighScore = Score;
          PlayerPrefs.SetInt("TenMinute_HighScore", TenMinuteHighScore);
+     }
+    public void ResetScores()
+     {
+         PlayerPrefs.DeleteAll();
      }
 }
