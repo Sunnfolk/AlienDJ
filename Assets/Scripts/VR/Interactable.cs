@@ -21,50 +21,60 @@ public class Interactable : MonoBehaviour
     //Tracks the time before an object needs to respawn
     private float timer;
 
-    //true if the object is snapped to the disc player as an object
-    [HideInInspector]
-    public bool isSnapped = false;
-
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
 
+    private DissolveController _dissolve;
+
     private void Awake()
     {
+        _dissolve = GetComponent<DissolveController>();
         VrCamera = GameObject.FindGameObjectsWithTag("playerCamera")[0];
     }
 
     private void Start()
     {
-        spawnPosition = this.gameObject.transform.position;
-        spawnRotation = this.gameObject.transform.rotation;
+        spawnPosition = _dissolve.spawnPoint.position;
+        spawnRotation = _dissolve.spawnPoint.rotation;
+        _dissolve.value = 1;
+        StartCoroutine(Spawn());
         timer = Time.time;
     }
 
     private void Update()
     {
-        
-        if (!respawnIsOngoing)
+        if (_dissolve._canTeleportIn && _dissolve.value >= _dissolve._teleportValueMax)
         {
-            //restart the timer if it is held by the player, or it is close to its original startpoint
-            if (ActiveHand != null || Vector3.Distance(spawnPosition, this.gameObject.transform.position) <= notRespawnDistance)
-            {
-                timer = Time.time;
-            }
-            //respawn if the object is out of bounds or timer is down, or y position is bellow the floor, and not if it is a disc currently playing music
-            else if (Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position) >= respawnDistance || Time.time - timer >= timeBeforeRespawn || this.gameObject.transform.position.y < -1.5)
-            {
-                //do not respawn if object is snapped to the disc player as a disc.
-                if (!isSnapped)
-                {
-                    //print(Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position));
-                    StartCoroutine(doTheRespawn());
-                }
-                
-            }
+            _dissolve.effect.Stop();
+            StartCoroutine(ReSpawn());
+            _dissolve._canTeleportIn = false;
+        }
+        else if (_dissolve._canTeleportOut && _dissolve.value <= 0f)
+        {
+            _dissolve.effect.Stop();
+            _dissolve._canTeleportOut = false;
+            //Reset respawn timer
+            timer = Time.time;
+            //To detect respawns again
+            respawnIsOngoing = false;
+        }
+        
+        if (respawnIsOngoing) return;
+        
+        //restart the timer if it is held by the player, or it is close to its original startpoint
+        if (ActiveHand != null || Vector3.Distance(spawnPosition, this.gameObject.transform.position) <= notRespawnDistance)
+        {
+            timer = Time.time;
+        }
+        //respawn if the object is out of bounds or timer is down, or y position is bellow the floor
+        else if (Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position) >= respawnDistance || Time.time - timer >= timeBeforeRespawn || this.gameObject.transform.position.y < -1.5)
+        {
+            print(Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position));
+            StartCoroutine(DeSpawn());
         }
     }
 
-    private IEnumerator doTheRespawn()    //       <-----------------------------------------------------------------------    ADD:    TELEPORT EFFECT-ANIMATION IN THIS COROUTINE-THING
+    private IEnumerator DoTheRespawn()
     {
         //To not respawn several times every frame
         respawnIsOngoing = true;
@@ -77,10 +87,46 @@ public class Interactable : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
-        
         //Reset respawn timer
         timer = Time.time;
         //To detect respawns again
         respawnIsOngoing = false;
+    }
+
+    private IEnumerator ReSpawn()
+    {
+        respawnIsOngoing = true;
+        //set to startposition again
+        this.gameObject.transform.position = spawnPosition;
+        this.gameObject.transform.rotation = spawnRotation;
+        this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+
+        _dissolve.effect.Play();
+        yield return new WaitForSeconds(2);
+        _dissolve._canTeleportIn = true;
+        // value from 1 to 0
+        // When value is 0 stop effect & Reset variables
+    }
+
+    private IEnumerator DeSpawn()
+    {
+        _dissolve.effect.Play();
+        yield return new WaitForSeconds(2);
+        _dissolve._canTeleportOut = true;
+        // Value from 0 to 1
+        // When value is 1 - run Respawn & Stop effect
+    }
+
+    private IEnumerator Spawn()
+    {
+        this.gameObject.transform.position = spawnPosition;
+        this.gameObject.transform.rotation = spawnRotation;
+        
+        _dissolve.effect.Play();
+        yield return new WaitForSeconds(2);
+        _dissolve._canTeleportIn = true;
+        // value from 1 to 0
+        // When value is 0 stop effect & Reset variables
     }
 }

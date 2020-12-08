@@ -20,25 +20,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PlayVFX.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PlayVFX.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/black.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/black.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/grey.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/grey.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/white.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/white.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Closed.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Closed.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Open.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Open.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DissolveController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/Arena/arena.booth.done.finished.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/Arena/arena.booth.done.finished.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_French_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Jupiter_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Mars_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Neptun_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_PlanetX_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Pluto_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien 2/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Uranus_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_To Be Reviewed/Sigrun/CB.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_To Be Reviewed/Sigrun/D.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/DJ_Hands_Closed.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/DJ_Hands_Closed.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/Arena.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/Arena.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Environment.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Environment.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MPrefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/LP_Disc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/LP_Disc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Crowd.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Crowd.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFXShaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFXShaders/Smoke.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/PlayVFX.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DissolveController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,14 +70,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/LerpTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienDespawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienSpawnPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" />
-        <option value="$PROJECT_DIR$/Assets/AnimationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/LightAnimationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AnimatedAlienCharacter.cs" />
-        <option value="$PROJECT_DIR$/Assets/PlayVFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/DissolveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +128,7 @@
       <workItem from="1606984526769" duration="2446000" />
       <workItem from="1607332816028" duration="469000" />
       <workItem from="1607334972198" duration="566000" />
-      <workItem from="1607430745311" duration="2020000" />
+      <workItem from="1607441856807" duration="3471000" />
     </task>
     <servers />
   </component>
