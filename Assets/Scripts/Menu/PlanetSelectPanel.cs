@@ -10,7 +10,7 @@ public class PlanetSelectPanel : MonoBehaviour
 
 
     [Header("List of planet options")]
-    public List<Planet> planets;
+    public List<Crowd> planets = new List<Crowd>();
 
     [Header("Link to planetselect componenets")]
     public GameObject planetInfoPanel;
@@ -50,8 +50,8 @@ public class PlanetSelectPanel : MonoBehaviour
         planetInfoText.color = menuFunctions.textColor;
 
         // Set text to first index of planets
-        planetNameText.text = planets[0].planetName;
-        planetInfoText.text = planets[0].planetInfo;
+        //planetNameText.text = planets[0].planetName;
+        //planetInfoText.text = planets[0].planetInfo;
 
         menuFunctions.menuIndex = 0;
     }
@@ -106,9 +106,9 @@ public class PlanetSelectPanel : MonoBehaviour
 
     private void showNewPlanet()
     {
-        planetInfoText.text = planets[menuFunctions.menuIndex].planetInfo;
-        planetNameText.text = planets[menuFunctions.menuIndex].planetName;
-        planetImageImage.sprite = planets[menuFunctions.menuIndex].planetImage;
+        //planetInfoText.text = planets[menuFunctions.menuIndex].planetInfo;
+        //planetNameText.text = planets[menuFunctions.menuIndex].planetName;
+        //planetImageImage.sprite = planets[menuFunctions.menuIndex].planetImage;
 
     }
 
