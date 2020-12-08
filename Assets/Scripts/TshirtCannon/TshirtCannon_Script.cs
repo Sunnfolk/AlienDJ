@@ -20,19 +20,19 @@ public class TshirtCannon_Script : MonoBehaviour
            StartCoroutine("Reload");
         }
 
-        ////Testing
-        /*if (Input.GetKeyDown(KeyCode.Q))
+        //Testing
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            shoot();
-        }*/
+           shoot(); 
+        }
     }
     public void shoot()
     {
-        if ( reloaded == true) //used for testing
+        /*if ( reloaded == true) //used for testing
         {
             Instantiate(Tshirt, firePoint.position, firePoint.rotation);
             Ammunition -= 1; 
-        }
+        }*/
     }
     private IEnumerator Reload()
     {
