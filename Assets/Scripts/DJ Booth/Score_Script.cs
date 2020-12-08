@@ -6,7 +6,7 @@ using TMPro;
 [RequireComponent(typeof(Crowdwants))]
 public class Score_Script : MonoBehaviour
 {
-    
+    [SerializeField]
     private Crowd crowd; //The crowd currently being used
     private Crowdwants _Crowdwants;
     [HideInInspector]
@@ -32,8 +32,8 @@ public class Score_Script : MonoBehaviour
 
     private void Start() 
     {
-       
 
+        _Crowdwants = GetComponent<Crowdwants>();
     }
 
     public void ResetScore()
@@ -46,7 +46,7 @@ public class Score_Script : MonoBehaviour
         ResetScore();
         
         crowd = CurrentSong.selectedCrowd;
-        _Crowdwants = GetComponent<Crowdwants>();
+        
         StartCoroutine(CountScoreCalc());
     }
 

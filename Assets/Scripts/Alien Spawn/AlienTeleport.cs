@@ -57,6 +57,7 @@ namespace Alien_Spawn
 
             if (GameSettings.alienDespawn && _alienCanDespawn)
             {
+                print("I am the culprit");
                 _SpineRenderer.GetComponent<AnimatedAlienCharacter>().PlayIdle();
                 StartCoroutine(nameof(TeleportOut), 1f);
                 _alienCanDespawn = false;

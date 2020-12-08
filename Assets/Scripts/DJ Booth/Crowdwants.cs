@@ -19,13 +19,19 @@ public class Crowdwants : MonoBehaviour
     private int EnergeticWant; //Energic want
     private int AggresiveWant; //Agressive Want
     [HideInInspector]
-    public int Desireforcurrentsong;
+    public int Desireforcurrentsong = 0;
     [HideInInspector]
     public List<int> _Want = new List<int>();
     private void Start()
     {
 
         //FIX WHEN YOU SET THESE VALUES TO A SINGLE FUNCTION CALLED IN STARTING GAME
+        
+    }
+
+    public void SetAndStart()
+    {
+        _Want.Clear();
         crowd = CurrentSong.selectedCrowd;
         //Used to give start value of want
         ChillWant = crowd.chill.want * startwant_multiplier;
@@ -37,8 +43,13 @@ public class Crowdwants : MonoBehaviour
         _Want.Add(CalmWant);
         _Want.Add(EnergeticWant);
         _Want.Add(AggresiveWant);
-        
+
         StartCoroutine(Want_counter());
+    }
+
+    public void StopCounter()
+    {
+        StopCoroutine(Want_counter());
     }
     
     public IEnumerator Want_counter()

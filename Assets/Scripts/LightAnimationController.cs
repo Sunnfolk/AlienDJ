@@ -11,9 +11,25 @@ public class LightAnimationController : MonoBehaviour
 
     private void Update()
     {
-        
+        switch (CurrentSong.currentColor)
+        {
+            case 0:
+                PlayChill();
+                break;
+            case 1:
+                PlayCalm();
+                break;
+            case 2:
+                PlayEnergetic();
+                break;
+            case 3:
+                PlayAggressive();
+                break;
+            case 4:
+                PlayDefault();
+                break;
+        }
     }
-
     public void PlayChill()
     {
         CallOnAnimation(lightShowInner, "LightShow Chill" );
@@ -53,4 +69,5 @@ public class LightAnimationController : MonoBehaviour
     {
         anim.Play(state);
     }
+    
 }
