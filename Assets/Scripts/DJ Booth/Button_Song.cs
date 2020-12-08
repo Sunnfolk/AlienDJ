@@ -9,12 +9,18 @@ public class Button_Song : MonoBehaviour
     [Tooltip("What song Modifier the button activates")][SerializeField]
     private Modifier modifier;
 
-    private bool on;
+
+    public bool on;
+
+    public Material matOn;
+    public Material matOff;
+
+    private MeshRenderer rend;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        rend = GetComponent<MeshRenderer>();
 
         
     }
@@ -22,12 +28,8 @@ public class Button_Song : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Testing
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    on = !on;
-        //    ButtonSwitch();
-        //}
+
+        rend.material = on ? matOn : matOff;
 
         
 

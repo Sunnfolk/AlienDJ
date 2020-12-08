@@ -12,6 +12,9 @@ public class Timer : MonoBehaviour
     public TextMeshPro text;
 
     private float lerpTime;
+    private bool startLerp;
+    public float lerpSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,15 +39,27 @@ public class Timer : MonoBehaviour
                 running = false;
                 GameSettings.gameInPlay = false;
                 gameEnder.ChangeGame();
-                LerpDown();
+                //LerpDown();
             }
         }
+        else if(!running)
+        {
+            LerpDown();
+        }
+        
+
     }
 
     private void LerpDown()
     {
-        lerpTime += Time.deltaTime * 0.3f;
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Disco", Mathf.Lerp(1, 0, lerpTime));
+
+        lerpTime -= Time.deltaTime * lerpSpeed;
+        CurrentSong.discoValue = lerpTime;
+
+        //lerpTime += Time.deltaTime * 0.3f;
+        ////FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Disco", Mathf.Lerp(1, 0, lerpTime));
+        //CurrentSong.discoValue = Mathf.Lerp(1, 0, lerpTime);
+
     }
 
     public void SetTimer()
@@ -52,6 +67,7 @@ public class Timer : MonoBehaviour
         
         timer = GameSettings.gameDuration * 60f;
         text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
+        lerpTime = 1;
         
 
     }

@@ -15,6 +15,9 @@ public static class CurrentSong
     public static int currentModifier_3;
     public static int currentColor;
 
+    public static float discoValue;
+
+
     public static Crowd selectedCrowd;
     public static int gameScore;
     

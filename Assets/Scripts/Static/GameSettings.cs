@@ -17,4 +17,7 @@ public static class GameSettings
     public static bool alienDespawn;
 
     public static bool skyboxActive;
+
+    public static int planetIndex;
+
 }

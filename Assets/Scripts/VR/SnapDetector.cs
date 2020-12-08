@@ -13,16 +13,20 @@ public class SnapDetector : MonoBehaviour
     public GameObject FMODPlayer;
     public bool discPlayer;
 
-    private bool lerp;
+    public bool lerp;
     private float lerpTime;
     [SerializeField]
     private float lerpSpeed;
+    [SerializeField]
     private float lerpValue;
+
+    public List<Button_Song> buttonModifiers = new List<Button_Song>();
 
     //Hide Snap detector / make invisible
     private void Start()
     {
         GetComponent<MeshRenderer>().enabled = false;
+        
     }
 
     private void OnTriggerStay(Collider other)
@@ -75,7 +79,7 @@ public class SnapDetector : MonoBehaviour
            
             _discSong.SongSelect();
             lerp = true;
-            
+            Debug.Log("bool is "+lerp);
             _discSong.rotSpeed = rotateSpeed;
        
 
@@ -90,7 +94,7 @@ public class SnapDetector : MonoBehaviour
         //goOnPlayer = null;
         if (currentObject.gameObject.TryGetComponent(out DiscSong _discSong) && discPlayer)
         {
-          
+            ResetModifiers();          
             _discSong.rotSpeed = 0;
         }
 
@@ -99,13 +103,20 @@ public class SnapDetector : MonoBehaviour
 
     private void Update()
     {
-        if(lerp) //Change the value so song plays
+        if(lerp && lerpValue <= 1) //Change the value so song plays
         {
-            if (lerpValue <= 0)
-                lerp = false;
-            lerpTime += Time.deltaTime * lerpSpeed;
-            lerpValue = Mathf.Lerp(1, 0, lerpTime);
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Disco", lerpValue);
+
+
+            lerpValue += lerpSpeed;
+            CurrentSong.discoValue = lerpValue;
+            Debug.Log("value is " + lerpValue);
+
+
+            //if (lerpValue <= 0)
+            //    lerp = false;
+            //lerpTime += Time.deltaTime * lerpSpeed;
+            //lerpValue = Mathf.Lerp(0, 1, lerpTime);
+            //CurrentSong.discoValue = lerpValue;
 
 
 
@@ -118,6 +129,18 @@ public class SnapDetector : MonoBehaviour
         lerpValue = 0;
 
 
+    }
+
+    public void ResetModifiers()
+    {
+        CurrentSong.currentModifier_0 = 0;
+        CurrentSong.currentModifier_1 = 0;
+        CurrentSong.currentModifier_2 = 0;
+        CurrentSong.currentModifier_3 = 0;
+        for (int i = 0; i < buttonModifiers.Count; i++)
+        {
+            buttonModifiers[i].on = false;
+        }
     }
 
 }

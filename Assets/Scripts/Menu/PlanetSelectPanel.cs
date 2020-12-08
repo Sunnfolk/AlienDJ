@@ -50,6 +50,7 @@ public class PlanetSelectPanel : MonoBehaviour
         planetInfoText.color = menuFunctions.textColor;
 
         menuFunctions.menuIndex = 0;
+        GameSettings.planetIndex = menuFunctions.menuIndex;
         // Set text to first index of planets
         planetNameText.text = planets[menuFunctions.menuIndex].planetName;
         planetInfoText.text = planets[menuFunctions.menuIndex].text;
@@ -109,7 +110,7 @@ public class PlanetSelectPanel : MonoBehaviour
         planetInfoText.text = planets[menuFunctions.menuIndex].text;
         planetNameText.text = planets[menuFunctions.menuIndex].planetName;
         planetImageImage.sprite = planets[menuFunctions.menuIndex].planetImage;
-
+        GameSettings.planetIndex = menuFunctions.menuIndex;
     }
 
     public void buttonSelect()
