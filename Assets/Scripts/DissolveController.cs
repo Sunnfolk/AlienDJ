@@ -37,10 +37,20 @@ public class DissolveController : MonoBehaviour
         if (_canTeleportIn)
         {
             value -= _teleportTime;
+            if(value <= 0)
+            {
+                effect.Stop();
+                _canTeleportIn = false;
+            }
         }
         else if (_canTeleportOut)
         {
             value += _teleportTime;
+            if(value >= _teleportValueMax)
+            {
+                effect.Stop();
+                _canTeleportOut = false;
+            }
         }
     }
 }

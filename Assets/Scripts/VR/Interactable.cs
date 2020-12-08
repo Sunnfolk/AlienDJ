@@ -23,6 +23,8 @@ public class Interactable : MonoBehaviour
 
     public bool isSnapped;
 
+    private Rigidbody rb;
+
 
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
@@ -33,6 +35,7 @@ public class Interactable : MonoBehaviour
     {
         _dissolve = GetComponent<DissolveController>();
         VrCamera = GameObject.FindGameObjectsWithTag("playerCamera")[0];
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Start()
@@ -46,22 +49,7 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        if (_dissolve._canTeleportIn && _dissolve.value >= _dissolve._teleportValueMax)
-        {
-            _dissolve.effect.Stop();
-            StartCoroutine(ReSpawn());
-            _dissolve._canTeleportIn = false;
-        }
-        else if (_dissolve._canTeleportOut && _dissolve.value <= 0f)
-        {
-            _dissolve.effect.Stop();
-            _dissolve._canTeleportOut = false;
-            //Reset respawn timer
-            timer = Time.time;
-            //To detect respawns again
-            respawnIsOngoing = false;
-        }
-        
+       
         if (respawnIsOngoing) return;
         
         //restart the timer if it is held by the player, or it is close to its original startpoint
@@ -72,69 +60,41 @@ public class Interactable : MonoBehaviour
         //respawn if the object is out of bounds or timer is down, or y position is bellow the floor
         else if (Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position) >= respawnDistance || Time.time - timer >= timeBeforeRespawn || this.gameObject.transform.position.y < -1.5)
         {
-            //if(!isSnapped)
-            //{
-            //    StartCoroutine(DeSpawn());
+            if(!isSnapped)
+            {
+                StartCoroutine(Respawn());  //was DeSpawn before
 
-            //}
+            }
             
             
         }
     }
 
-    private IEnumerator DoTheRespawn()
-    {
-        //To not respawn several times every frame
-        respawnIsOngoing = true;
-
-        yield return new WaitForSeconds(0); //This line can be removed or changed (just needed to return something for the IEnumerator)
-
-        //set to startposition again
-        this.gameObject.transform.position = spawnPosition;
-        this.gameObject.transform.rotation = spawnRotation;
-        this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-
-        //Reset respawn timer
-        timer = Time.time;
-        //To detect respawns again
-        respawnIsOngoing = false;
-    }
-
-    private IEnumerator ReSpawn()
+    private IEnumerator Respawn()
     {
         respawnIsOngoing = true;
-        //set to startposition again
-        this.gameObject.transform.position = spawnPosition;
-        this.gameObject.transform.rotation = spawnRotation;
-        this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-
-        _dissolve.effect.Play();
-        yield return new WaitForSeconds(2);
-        _dissolve._canTeleportIn = true;
-        // value from 1 to 0
-        // When value is 0 stop effect & Reset variables
-    }
-
-    private IEnumerator DeSpawn()
-    {
-        _dissolve.effect.Play();
-        yield return new WaitForSeconds(2);
         _dissolve._canTeleportOut = true;
-        // Value from 0 to 1
-        // When value is 1 - run Respawn & Stop effect
+        _dissolve.effect.Play();
+        yield return new WaitForSeconds(1);
+        transform.position = _dissolve.spawnPoint.position;
+        transform.rotation = _dissolve.spawnPoint.rotation;
+        rb.velocity = Vector3.zero;
+        _dissolve._canTeleportIn = true;
+        _dissolve.effect.Play();
+        respawnIsOngoing = false;
+        timer = Time.time;
     }
 
     private IEnumerator Spawn()
     {
-        this.gameObject.transform.position = spawnPosition;
-        this.gameObject.transform.rotation = spawnRotation;
         
-        _dissolve.effect.Play();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0);
+        transform.position = _dissolve.spawnPoint.position;
+        transform.rotation = _dissolve.spawnPoint.rotation;
+        rb.velocity = Vector3.zero;
         _dissolve._canTeleportIn = true;
-        // value from 1 to 0
-        // When value is 0 stop effect & Reset variables
+        _dissolve.effect.Play();
+        respawnIsOngoing = false;
+        timer = Time.time;
     }
 }
