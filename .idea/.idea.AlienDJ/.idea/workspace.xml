@@ -20,62 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/AnimationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AnimationController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight  Aggressive.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight  Aggressive.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight ChillCalm.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight ChillCalm.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight Energetic.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight Energetic.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Innerlight_Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Innerlight_Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Lightshow_Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Lightshow_Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Calm.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Calm.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Chill.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Chill.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Energetic.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Energetic.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Outerlight_Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Outerlight_Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LightAnimation.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LightAnimation.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Outer Spotlights.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Outer Spotlights.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Rotate Inner Spotlight.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Rotate Inner Spotlight.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PlayVFX.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PlayVFX.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/black.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/black.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/grey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/grey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/white.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/Materials/white.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Closed.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Closed.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Open.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/DJ Hands/DJ_Hands_Open.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Inner Spotlights.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Inner Spotlights.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight Rotate Aggressive.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight Rotate Aggressive.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight Rotate.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight Rotate.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight SlowRotate.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/InnerLight SlowRotate.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Aggressive.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Aggressive.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Calm.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Calm.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Chill.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Chill.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Energetic.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/LightShow Energetic.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Outer Rotate.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Outer Rotate.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Outer Spotlights.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Outer Spotlights.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight In Out.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight In Out.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Rotate 1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Rotate 1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Sidey In.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Sidey In.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Sidey Side.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/OuterLight Sidey Side.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Rotate.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/LightShow Animations Test 2/Rotate.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/LightShow.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/LightShow.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/DJ_Hands_Closed.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/DJ Hands/DJ_Hands_Closed.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/Arena.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/Arena.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Environment.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Environment.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/PlayVFX.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -92,11 +58,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spine_Characters/AlienTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienDespawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienSpawnPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" />
         <option value="$PROJECT_DIR$/Assets/AnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/LightAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AnimatedAlienCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayVFX.cs" />
       </list>
     </option>
   </component>
@@ -148,7 +116,7 @@
       <workItem from="1606984526769" duration="2446000" />
       <workItem from="1607332816028" duration="469000" />
       <workItem from="1607334972198" duration="566000" />
-      <workItem from="1607430745311" duration="1062000" />
+      <workItem from="1607430745311" duration="2020000" />
     </task>
     <servers />
   </component>
