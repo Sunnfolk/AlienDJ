@@ -15,5 +15,17 @@ public class SkyboxChecker : MonoBehaviour
     void Update()
     {
         _rend.enabled = GameSettings.skyboxActive;
+
+        if (!GameSettings.skyboxActive)
+        {
+            UpdateSkyBox();
+        }
+
+    }
+
+    public void UpdateSkyBox()
+    {
+        _rend.material.SetTexture("_EmissionMap", CurrentSong.selectedCrowd.Skybox);
+        _rend.material.SetTexture("_BaseMap", CurrentSong.selectedCrowd.Skybox);
     }
 }

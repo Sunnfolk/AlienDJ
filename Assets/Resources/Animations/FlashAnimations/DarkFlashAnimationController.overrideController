@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DarkFlashAnimationController
+  m_Controller: {fileID: 9100000, guid: 3d07a91bc2f9a4b62b896b17f4223d6f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0af1b9d4eb74d45f5b8572f14ddc38b9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4bfafbb95a049544d80ec8e0c9c91f1c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 68f724a53fbd54d6ab7853f1345f9e6c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 189a28350d087154183c6f915a80b52d, type: 2}

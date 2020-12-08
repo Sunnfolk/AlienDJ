@@ -13,12 +13,12 @@ public class DJBoothRotation : MonoBehaviour
     }
     public void FromMenu()
     {
-        //_animator.Play("DJBooth_Menu_Rot");
+        _animator.Play("DJBooth_Menu_Rot");
     }
 
     public void FromGame()
     {
-        //_animator.Play("DJBooth_Game_Rot");
+        _animator.Play("DJBooth_Game_Rot");
     }
 
 
