@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public TextMeshPro text;
 
     private float lerpTime;
-    private bool startLerp;
+    //private bool startLerp;
     public float lerpSpeed;
 
     // Start is called before the first frame update

@@ -135,17 +135,16 @@ public class MenuPanel : MonoBehaviour
                     //Add code for returning to main menu from the game here     <----------------------------------------
                     break;
                 case ActionType.extras:
-
-                    print("please add the extras code in the MenuPanel script");
+                    //extras code does not do anything because it is extras code :))
                     break;
                 case ActionType.startGame:
                     setLightshow();
-                    setMenu.SetupGameMenu.Invoke();
                     //Starts the change sequence
                     if (gameChanger != null)
                         gameChanger.ChangeGame();
                     else
                         print("No GameChanger in " + this);
+                    setMenu.SetupGameMenu.Invoke();
                     //print("please add the start game code in the MenuPanel script");
                     break;
                 case ActionType.hyperspace:

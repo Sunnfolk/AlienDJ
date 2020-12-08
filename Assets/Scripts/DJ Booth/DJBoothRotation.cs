@@ -13,26 +13,26 @@ public class DJBoothRotation : MonoBehaviour
     }
     public void FromMenu()
     {
-        _animator.Play("DJBooth_Menu_Rot");
+        //_animator.Play("DJBooth_Menu_Rot");
     }
 
     public void FromGame()
     {
-        _animator.Play("DJBooth_Game_Rot");
+        //_animator.Play("DJBooth_Game_Rot");
     }
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            FromMenu();
-        }
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    FromMenu();
+        //}
 
-         if (Input.GetKeyDown(KeyCode.O))
-        {
-            FromGame();
-        }
+        // if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    FromGame();
+        //}
     }
 
 }

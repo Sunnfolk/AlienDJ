@@ -11,16 +11,16 @@ public class Button_Song : MonoBehaviour
 
 
     public bool on;
+    public SpriteRenderer rend;
+    public Color colorOn;
+    public Color colorOff;
 
-    public Material matOn;
-    public Material matOff;
-
-    private MeshRenderer rend;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<MeshRenderer>();
+        
 
         
     }
@@ -29,7 +29,7 @@ public class Button_Song : MonoBehaviour
     void Update()
     {
 
-        rend.material = on ? matOn : matOff;
+        rend.color = on ? colorOn : colorOff;
 
         
 

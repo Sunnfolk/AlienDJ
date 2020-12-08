@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(Crowdwants))]
 public class Score_Script : MonoBehaviour
@@ -25,15 +26,38 @@ public class Score_Script : MonoBehaviour
     private int colorbonus;
     [Tooltip("Used to change the bonus that correct color will give")][SerializeField]
     private int Colorbonusadd = 20; //adds value to colorbonus, Can be changed by designer
+
+    public TextMeshPro text;
+
+
     private void Start() 
     {
+       
+
+    }
+
+    public void ResetScore()
+    {
+        _Score = 0;
+    }
+
+    public void StartCountingScore()
+    {
+        ResetScore();
+        
         crowd = CurrentSong.selectedCrowd;
         _Crowdwants = GetComponent<Crowdwants>();
         StartCoroutine(CountScoreCalc());
-
     }
+
     private void Update() 
     {
+        if (!GameSettings.gameInPlay)
+            StopCoroutine(CountScoreCalc());
+
+        
+
+
       point_Modifier = 1; //so that the point bonus wont go under 0 and into the negative
 
       if (CurrentSong.currentColor == CurrentSong.songPlaying) //finds if the track number and the color number is the same
@@ -100,6 +124,7 @@ public class Score_Script : MonoBehaviour
           _Score = 0;
        }
         CurrentSong.gameScore = _Score;
+        text.SetText(_Score.ToString());
        yield return new WaitForSeconds(scoreRefreshTime);
        StartCoroutine(CountScoreCalc());
     }

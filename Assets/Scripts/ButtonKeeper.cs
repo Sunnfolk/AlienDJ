@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ButtonKeeper : MonoBehaviour
 {
-    public List<BoxCollider> _collider;
+    public List<Collider> _collider;
 
     public void DisableButton()
     {
 
-        foreach (BoxCollider butt in _collider)
+        foreach (Collider butt in _collider)
         {
             butt.enabled = false;
             print("Disabling Buttons");
@@ -18,7 +18,7 @@ public class ButtonKeeper : MonoBehaviour
     
     public void EnableButton()
     {
-        foreach (BoxCollider butt in _collider)
+        foreach (Collider butt in _collider)
         {
             butt.enabled = true;
             print("Disabling Buttons");

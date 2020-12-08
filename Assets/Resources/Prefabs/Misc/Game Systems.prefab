@@ -147,6 +147,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 7074572078190941280}
+          m_MethodName: SetMenu
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Rotate from Menu
     lastsForSeconds: 5
     mainEvent:
@@ -228,6 +239,17 @@ MonoBehaviour:
             m_StringArgument: Spawn Ailiens
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - name: Start Timer
     lastsForSeconds: 0
     mainEvent:
@@ -266,6 +288,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: ResetValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7074572078190941282
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,14 +310,13 @@ GameObject:
   - component: {fileID: 7074572078190941283}
   - component: {fileID: 7074572078190941286}
   - component: {fileID: 7074572078190941280}
-  - component: {fileID: 7074572078190941281}
   m_Layer: 0
   m_Name: FMOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7074572078190941283
 Transform:
   m_ObjectHideFlags: 0
@@ -312,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/milkyway beats/song type/milkyway beats
+  Event: event:/Milkyway beats/Main/Milkyway beats
   PlayEvent: 11
   StopEvent: 12
   AllowFadeout: 1
@@ -342,28 +374,6 @@ MonoBehaviour:
   disco: 0
   menu: 0
   ambience: 0
---- !u!114 &7074572078190941281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7074572078190941282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383a30b67925f714bac9174fcaa891e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _emit: {fileID: 7074572078190941286}
-  value: 0
-  low: 0
-  high: 0
-  ryth: 0
-  melod: 0
-  lowint: 0
-  highint: 0
-  rythint: 0
-  melodint: 0
 --- !u!1 &7074572078789404540
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +481,28 @@ MonoBehaviour:
         - m_Target: {fileID: 0}
           m_MethodName: DisableButton
           m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7074572079261241695}
+          m_MethodName: StopTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: SetActive
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -603,6 +635,28 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7074572078190941280}
+          m_MethodName: SetMenu
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 7074572078190941280}
+          m_MethodName: SetMainMenuMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!1 &7074572078980700635
 GameObject:
@@ -870,7 +924,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7074572079194270735}
-  - component: {fileID: 7074572079194270732}
   - component: {fileID: 7074572079194270733}
   m_Layer: 0
   m_Name: Game Systems
@@ -903,26 +956,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7074572079194270732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7074572079194270734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20746c7d873e7004f869b409af1a0e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crowd: {fileID: 0}
-  score: 0
-  color: 0
-  mod0: 0
-  mod1: 0
-  mod2: 0
-  mod3: 0
-  timer: 0
 --- !u!114 &7074572079194270733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,8 +979,9 @@ GameObject:
   - component: {fileID: 7074572079218699704}
   - component: {fileID: 7074572079218699710}
   - component: {fileID: 7074572079218699705}
+  - component: {fileID: 507255249}
   m_Layer: 0
-  m_Name: DJBooth
+  m_Name: DJBooth (wants and score)
   m_TagString: DJbooth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1002,6 +1036,25 @@ MonoBehaviour:
   Mid_score_increase: 0
   Bot_score_increase: 0
   Colorbonusadd: 20
+  text: {fileID: 0}
+--- !u!114 &507255249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7074572079218699707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0d6b6140f6e1646a33a08d9b049777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: 0
+  _ScoreScript: {fileID: 7074572079218699705}
+  LevelComplete: 0
+  TwoMinuteHighScore: 0
+  FiveMinuteHighScore: 0
+  TenMinuteHighScore: 0
 --- !u!1 &7074572079261241689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1102,7 @@ MonoBehaviour:
   running: 0
   gameEnder: {fileID: 7074572078821069307}
   text: {fileID: 0}
-  lerpSpeed: 0
+  lerpSpeed: 0.3
 --- !u!1 &7074572079479230843
 GameObject:
   m_ObjectHideFlags: 0

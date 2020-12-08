@@ -19,9 +19,11 @@ public class GameStarter : MonoBehaviour
 
         for (int i = 0; i < tEvent.Count; i++)
         {
+            Debug.Log("ON Event " + i + "Lasting for "+ tEvent[i].lastsForSeconds);
             tEvent[i].mainEvent.Invoke();
+            Debug.Log("Invoked");
             yield return new WaitForSeconds(tEvent[i].lastsForSeconds);
-
+            Debug.Log("Done Waiting");
         }
         
 

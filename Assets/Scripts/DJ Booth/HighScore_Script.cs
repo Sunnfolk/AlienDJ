@@ -15,7 +15,7 @@ public class HighScore_Script : MonoBehaviour
      public int TenMinuteHighScore;
      
 
-     private void OnAwake() 
+     public void WakingUp() 
      {
          if (GameSettings.gameDuration == 2)
          {
@@ -31,6 +31,8 @@ public class HighScore_Script : MonoBehaviour
          }
      }
 
+    
+
     private void Update() 
      {
          
@@ -39,15 +41,15 @@ public class HighScore_Script : MonoBehaviour
          FiveMinuteHighScore = PlayerPrefs.GetInt("FiveMinute_HighScore");
          TenMinuteHighScore = PlayerPrefs.GetInt("TenMinute_HighScore");
 
-        if (LevelComplete == true && Score > TwoMinuteHighScore && IsTwoMinute == true)
+        if (!GameSettings.gameInPlay && Score > TwoMinuteHighScore && IsTwoMinute == true)
         {
              SaveHighScoreTwo();
         }
-        if (LevelComplete == true && Score > FiveMinuteHighScore && IsFiveMinute == true)
+        if (!GameSettings.gameInPlay && Score > FiveMinuteHighScore && IsFiveMinute == true)
         {
              SaveHighScoreFive();
         }
-        if (LevelComplete == true && Score > TenMinuteHighScore && IsTenMinute == true)
+        if (!GameSettings.gameInPlay && Score > TenMinuteHighScore && IsTenMinute == true)
         {
              SaveHighScoreTen();
         }
