@@ -72,8 +72,13 @@ public class Interactable : MonoBehaviour
         //respawn if the object is out of bounds or timer is down, or y position is bellow the floor
         else if (Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position) >= respawnDistance || Time.time - timer >= timeBeforeRespawn || this.gameObject.transform.position.y < -1.5)
         {
-            print(Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position));
-            StartCoroutine(DeSpawn());
+            //if(!isSnapped)
+            //{
+            //    StartCoroutine(DeSpawn());
+
+            //}
+            
+            
         }
     }
 

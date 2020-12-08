@@ -36,6 +36,8 @@ public class SnapDetector : MonoBehaviour
          *   it has the SnapObject tag,
          *   it is not held by the controller.
          */
+
+
         Interactable currentObject = other.gameObject.GetComponent<Interactable>();
         if (other.gameObject.tag == "SnapObject")
         {
