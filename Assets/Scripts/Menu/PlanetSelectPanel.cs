@@ -49,11 +49,11 @@ public class PlanetSelectPanel : MonoBehaviour
         planetNameText.color = menuFunctions.textColor;
         planetInfoText.color = menuFunctions.textColor;
 
-        // Set text to first index of planets
-        //planetNameText.text = planets[0].planetName;
-        //planetInfoText.text = planets[0].planetInfo;
-
         menuFunctions.menuIndex = 0;
+        // Set text to first index of planets
+        planetNameText.text = planets[menuFunctions.menuIndex].planetName;
+        planetInfoText.text = planets[menuFunctions.menuIndex].text;
+
     }
 
     //Used in ^OnEnable^
@@ -106,9 +106,9 @@ public class PlanetSelectPanel : MonoBehaviour
 
     private void showNewPlanet()
     {
-        //planetInfoText.text = planets[menuFunctions.menuIndex].planetInfo;
-        //planetNameText.text = planets[menuFunctions.menuIndex].planetName;
-        //planetImageImage.sprite = planets[menuFunctions.menuIndex].planetImage;
+        planetInfoText.text = planets[menuFunctions.menuIndex].text;
+        planetNameText.text = planets[menuFunctions.menuIndex].planetName;
+        planetImageImage.sprite = planets[menuFunctions.menuIndex].planetImage;
 
     }
 

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5544321d0f419469b1d7b76ae28050, type: 3}
   m_Name: Crowd_PlanetX
   m_EditorClassIdentifier: 
+  planetName: PlanetX
   text: 
+  planetImage: {fileID: 0}
   chill:
     want: 4
     modifier_0: 1

@@ -5,8 +5,12 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Crowd")]
 public class Crowd : ScriptableObject
 {
+
+    public string planetName;
     [TextArea]
     public string text;
+
+    public Sprite planetImage;
 
     public Category chill;
 
