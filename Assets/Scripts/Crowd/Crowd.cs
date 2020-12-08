@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Crowd")]
 public class Crowd : ScriptableObject
@@ -22,6 +24,8 @@ public class Crowd : ScriptableObject
 
     public Texture Skybox;
 
+    public SceneAsset _environmentScene;
+    
     public int Top;
 
     public int Mid;

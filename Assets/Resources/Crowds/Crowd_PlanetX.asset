@@ -48,6 +48,7 @@ MonoBehaviour:
     modifier_2: 0
     modifier_3: 1
   Skybox: {fileID: 2800000, guid: 2594c26b83d454046a487c6ef9592429, type: 3}
+  _environmentScene: {fileID: 102900000, guid: 46d4b4573c0f94423aadad1915600c79, type: 3}
   Top: 100
   Mid: 90
   Bot: 60
