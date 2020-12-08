@@ -36,7 +36,7 @@ namespace Alien_Spawn
         private void OnEnable()
         {
            // _rend = _SpineRenderer.GetComponent<MeshRenderer>();
-            _alienCanDespawn = true;
+
             _material = _spriteRenderer.material;
         
             effect.Stop();
@@ -99,6 +99,7 @@ namespace Alien_Spawn
             effect.Play();
             yield return new WaitForSeconds(time);
             _canTeleportIn = true;
+            _alienCanDespawn = true;
 
         }
     

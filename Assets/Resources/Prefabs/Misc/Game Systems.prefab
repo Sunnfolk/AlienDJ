@@ -158,6 +158,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 507255249}
+          m_MethodName: WakingUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Rotate from Menu
     lastsForSeconds: 5
     mainEvent:
@@ -299,6 +310,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 7074572079218699705}
+          m_MethodName: StartCountingScore
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7074572078190941282
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a497febc9804434c96f85a6616bd209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuCrowd: {fileID: 0}
+  menuCrowd: {fileID: 11400000, guid: 1e77e11cd5dc3472884eee59dfa742e2, type: 2}
 --- !u!1 &7074572078821069301
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +726,17 @@ MonoBehaviour:
   SetupMainMenu:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6

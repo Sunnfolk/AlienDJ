@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54526189219106853}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.738, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8504955586302931526}
@@ -105,7 +105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229987382521532713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.76, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8504955586302931526}
@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 3131944133968864437}
   - component: {fileID: 33793406076836648}
   - component: {fileID: 4804095268278327125}
+  - component: {fileID: 3077481900885309495}
   m_Layer: 0
   m_Name: LP_Disc
   m_TagString: Untagged
@@ -215,9 +216,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9028728413744998652}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 2122076292780880787}
   - {fileID: 9112919745321124638}
@@ -257,6 +258,7 @@ MonoBehaviour:
   timeBeforeRespawn: 15
   respawnDistance: 5
   notRespawnDistance: 1
+  isSnapped: 0
 --- !u!114 &4804095268278327125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,10 +271,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c15051ffd034e60967262eb0abbb85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 0
   _rend: {fileID: 7459382945984503488}
   effect: {fileID: 4480515924318601803}
+  spawnPoint: {fileID: 0}
+  _canTeleportIn: 0
+  _canTeleportOut: 0
   _teleportTime: 0.01
-  _vfxWaitTime: 2
-  _spawnRandomMin: 0
-  _spawnRandomMax: 0
   _teleportValueMax: 1
+--- !u!65 &3077481900885309495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9028728413744998652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 0.1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}

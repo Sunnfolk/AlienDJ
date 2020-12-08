@@ -21,6 +21,9 @@ public class Interactable : MonoBehaviour
     //Tracks the time before an object needs to respawn
     private float timer;
 
+    public bool isSnapped;
+
+
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
 
