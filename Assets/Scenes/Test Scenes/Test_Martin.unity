@@ -219,7 +219,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BuzzerCooldownTime: 20
   Buzzerwantadd: 10
-  _crowdwant: {fileID: 1521734207}
 --- !u!1 &413166298
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413166298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.53}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1695176263}
@@ -307,8 +306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce328565fc5a6041a82e6cc17637fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ScoreScript: {fileID: 1521734205}
-  TshirtScoreIncrease: 200
 --- !u!1 &1045327612
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,17 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3eaae7a448070439157063ec986d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestCrowd: {fileID: 11400000, guid: bf2f83ea7a63acb4694bfb99e945465d, type: 2}
-  _Crowdwants: {fileID: 1521734207}
   _Score: 0
-  scorerefreshtimer: 2
-  _currentCategory:
-    want: 0
-    LowFrequency: 0
-    HighFrequency: 0
-    Melodic: 0
-    Rhythmic: 0
-  currentpoint_increase: 0
+  scoreRefreshTime: 2
   Top_score_increase: 20
   Mid_score_increase: 10
   Bot_score_increase: -10
@@ -474,13 +462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decreaseValue: 1
-  pointrefreshtimer: 1
-  TestCrowd: {fileID: 11400000, guid: bf2f83ea7a63acb4694bfb99e945465d, type: 2}
+  pointRefreshTimer: 1
   startwant_multiplier: 20
-  ChillWant: 0
-  CalmWant: 0
-  EnergeticWant: 0
-  AggresiveWant: 0
   Desireforcurrentsong: 0
   _Want: 
 --- !u!114 &1521734208
@@ -492,15 +475,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521734204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e8e1c67785523e468f7d967b9a5b535, type: 3}
+  m_Script: {fileID: 11500000, guid: fd0d6b6140f6e1646a33a08d9b049777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  song: 0
-  LowFrequency_playing: 0
-  HighFrequency_playing: 0
-  Melodic_playing: 0
-  Rythmic_playing: 0
-  Colorcurrentlyshowing: 0
+  Score: 0
+  _ScoreScript: {fileID: 1521734205}
+  LevelComplete: 0
+  TwoMinuteHighScore: 0
+  FiveMinuteHighScore: 0
+  TenMinuteHighScore: 0
 --- !u!1 &1695176258
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,13 +513,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695176258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8cf4f45edb15ae4bafda1e094b675e7, type: 3}
+  m_Script: {fileID: 11500000, guid: b9c933750644f8147a84bfa9f90745ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Ammunition: 5
   reload_delay: 2
   firePoint: {fileID: 413166299}
-  Tshirt: {fileID: 7012419959448749364, guid: 743120366c2c9e54787d6c626f1c0cf3, type: 3}
+  Tshirt: {fileID: 4980365189935634601, guid: 61030c6daab53db48b3ae69e5b8b6141, type: 3}
 --- !u!65 &1695176260
 BoxCollider:
   m_ObjectHideFlags: 0
