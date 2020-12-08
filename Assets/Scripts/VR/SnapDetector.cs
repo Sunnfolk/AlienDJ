@@ -69,6 +69,7 @@ public class SnapDetector : MonoBehaviour
     private void SnapToDetector(Interactable currentObject)
     {
         holdsObject = true;
+        currentObject.GetComponent<Interactable>().isSnapped = true;
         //goOnPlayer = currentObject.gameObject;
         currentObject.transform.position = transform.position;
         currentObject.transform.rotation = transform.rotation;
@@ -90,6 +91,7 @@ public class SnapDetector : MonoBehaviour
     {
         currentObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         holdsObject = false;
+        currentObject.GetComponent<Interactable>().isSnapped = false;
         //goOnPlayer = null;
         if (currentObject.gameObject.TryGetComponent(out DiscSong _discSong) && discPlayer)
         {

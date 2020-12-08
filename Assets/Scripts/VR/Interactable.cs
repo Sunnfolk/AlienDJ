@@ -21,6 +21,10 @@ public class Interactable : MonoBehaviour
     //Tracks the time before an object needs to respawn
     private float timer;
 
+    //true if the object is snapped to the disc player as an object
+    [HideInInspector]
+    public bool isSnapped = false;
+
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
 
@@ -49,7 +53,8 @@ public class Interactable : MonoBehaviour
             //respawn if the object is out of bounds or timer is down, or y position is bellow the floor, and not if it is a disc currently playing music
             else if (Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position) >= respawnDistance || Time.time - timer >= timeBeforeRespawn || this.gameObject.transform.position.y < -1.5)
             {
-                if (true) //   <<<---------------------------------------------------------------------------------------------------- ADD:  IF DISC NOT PLAYING MUSIC (IF NOT SNAPPED TO DISCPLAYER)
+                //do not respawn if object is snapped to the disc player as a disc.
+                if (!isSnapped)
                 {
                     //print(Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position));
                     StartCoroutine(doTheRespawn());
