@@ -1,4 +1,5 @@
-﻿using Spine.Unity;
+﻿using System;
+using Spine.Unity;
 using UnityEngine;
 
 namespace Alien_Spawn
@@ -18,6 +19,11 @@ namespace Alien_Spawn
         {
             _skeletonAnimation = GetComponent<SkeletonAnimation>();
             PlayIdle();
+        }
+
+        private void Update()
+        {
+            // Add code to call upon the animations based on current want
         }
 
         public void PlayBored()
