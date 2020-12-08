@@ -2534,6 +2534,7 @@ GameObject:
   - component: {fileID: 817270867}
   - component: {fileID: 817270866}
   - component: {fileID: 817270865}
+  - component: {fileID: 103085223087058678}
   m_Layer: 5
   m_Name: Highscores
   m_TagString: Untagged
@@ -2625,6 +2626,21 @@ MonoBehaviour:
   - {fileID: 0}
   gameChanger: {fileID: 0}
   setMenu: {fileID: 0}
+--- !u!114 &103085223087058678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817270863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db259a25cc1e644eaa06a33c0ac1b22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TwoMinuteHighScoreTXT: {fileID: 1942901046}
+  FiveMinuteHighScoreTXT: {fileID: 93304777}
+  TenMinuteHighScoreTXT: {fileID: 1476622701}
 --- !u!1 &836748085
 GameObject:
   m_ObjectHideFlags: 0

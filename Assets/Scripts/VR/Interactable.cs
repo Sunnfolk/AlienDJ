@@ -59,7 +59,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    private IEnumerator doTheRespawn()    //       <-----------------------------------------------------------------------    ADD TELEPORT EFFECT-ANIMATION IN THIS COROUTINE-THING
+    private IEnumerator doTheRespawn()    //       <-----------------------------------------------------------------------    ADD:    TELEPORT EFFECT-ANIMATION IN THIS COROUTINE-THING
     {
         //To not respawn several times every frame
         respawnIsOngoing = true;
