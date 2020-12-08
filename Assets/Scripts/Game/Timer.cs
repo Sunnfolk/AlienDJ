@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = 1;
     }
 
     // Update is called once per frame
@@ -31,18 +31,18 @@ public class Timer : MonoBehaviour
 
             text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
 
-            //text.SetText((timer / 60).ToString("00") + ":" + (timer % 60).ToString("00"));
-            //text.SetText(timer.ToString("00"));
+            
             if (timer <= 0)
             {
                 text.SetText("");
                 running = false;
                 GameSettings.gameInPlay = false;
                 gameEnder.ChangeGame();
+                lerpTime = 1;
                 //LerpDown();
             }
         }
-        else if(!running)
+        else if(!running && lerpTime >= 0)
         {
             LerpDown();
         }
@@ -56,10 +56,6 @@ public class Timer : MonoBehaviour
         lerpTime -= Time.deltaTime * lerpSpeed;
         CurrentSong.discoValue = lerpTime;
 
-        //lerpTime += Time.deltaTime * 0.3f;
-        ////FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Disco", Mathf.Lerp(1, 0, lerpTime));
-        //CurrentSong.discoValue = Mathf.Lerp(1, 0, lerpTime);
-
     }
 
     public void SetTimer()
@@ -67,7 +63,7 @@ public class Timer : MonoBehaviour
         
         timer = GameSettings.gameDuration * 60f;
         text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
-        lerpTime = 1;
+        //lerpTime = 1;
         
 
     }

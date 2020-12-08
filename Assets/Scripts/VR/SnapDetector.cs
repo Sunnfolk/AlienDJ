@@ -78,8 +78,7 @@ public class SnapDetector : MonoBehaviour
         {
            
             _discSong.SongSelect();
-            lerp = true;
-            Debug.Log("bool is "+lerp);
+            CurrentSong.discoValue = 1;
             _discSong.rotSpeed = rotateSpeed;
        
 
@@ -103,24 +102,7 @@ public class SnapDetector : MonoBehaviour
 
     private void Update()
     {
-        if(lerp && lerpValue <= 1) //Change the value so song plays
-        {
-
-
-            lerpValue += lerpSpeed;
-            CurrentSong.discoValue = lerpValue;
-            Debug.Log("value is " + lerpValue);
-
-
-            //if (lerpValue <= 0)
-            //    lerp = false;
-            //lerpTime += Time.deltaTime * lerpSpeed;
-            //lerpValue = Mathf.Lerp(0, 1, lerpTime);
-            //CurrentSong.discoValue = lerpValue;
-
-
-
-        }
+        
     }
 
     public void ResetValues()
@@ -137,6 +119,7 @@ public class SnapDetector : MonoBehaviour
         CurrentSong.currentModifier_1 = 0;
         CurrentSong.currentModifier_2 = 0;
         CurrentSong.currentModifier_3 = 0;
+        //CurrentSong.discoValue = 0;
         for (int i = 0; i < buttonModifiers.Count; i++)
         {
             buttonModifiers[i].on = false;
