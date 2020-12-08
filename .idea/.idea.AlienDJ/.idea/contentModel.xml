@@ -23,7 +23,6 @@
             <e p="Photosensitity.cs" t="Include" />
           </e>
         </e>
-        <e p="AnimationController.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
             <e p="addons" t="Include">
@@ -221,6 +220,7 @@
             <e p="HyperSpaceTunnelMove.cs" t="Include" />
             <e p="LightFadeAnimator.cs" t="Include" />
           </e>
+          <e p="LightAnimationController.cs" t="Include" />
           <e p="LookAtPlayer.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="AccessibilityPanel.cs" t="Include" />

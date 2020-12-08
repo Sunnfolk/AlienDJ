@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class AnimationController : MonoBehaviour
+public class LightAnimationController : MonoBehaviour
 {
     [SerializeField] private Animator lightShowInner;
 
