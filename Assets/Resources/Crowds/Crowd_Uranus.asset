@@ -13,33 +13,41 @@ MonoBehaviour:
   m_Name: Crowd_Uranus
   m_EditorClassIdentifier: 
   planetName: Uranus
-  text: 
-  planetImage: {fileID: 0}
+  text: "You want to go back to the 80s? Well Uranus is the closest place to the
+    2080s there is. With wind speeds of 560mph, you will be living life on the fast
+    lane, coasting from resort to resort. If a time capsule is what you\u2019re looking
+    for then they have that nailed; from classic cinemas to ZES gaming system, nothing
+    is too vintage there. Memorabilia is great, though the crowning achievement of
+    the Uranians will undoubtedly be their Disco regions that stretch for miles and
+    miles. Whether you\u2019re an old soul or just looking for your roots, here is
+    the place that you can find synthapy. \n\nEtiquette: Avoid dance battles, unless
+    you know what you\u2019re getting into.\n"
+  planetImage: {fileID: 21300000, guid: d524574442d05444ebabd746ccb5730e, type: 3}
   chill:
-    want: 4
-    modifier_0: 1
-    modifier_1: 0
-    modifier_2: 1
-    modifier_3: 0
-  Aggressive:
     want: 3
     modifier_0: 0
     modifier_1: 1
     modifier_2: 0
     modifier_3: 0
-  Energic:
-    want: 2
+  Aggressive:
+    want: 3
     modifier_0: 1
     modifier_1: 0
     modifier_2: 0
-    modifier_3: 1
-  Calm:
-    want: 1
+    modifier_3: 0
+  Energic:
+    want: 2
     modifier_0: 0
-    modifier_1: 1
+    modifier_1: 0
     modifier_2: 1
-    modifier_3: 1
+    modifier_3: 0
+  Calm:
+    want: 2
+    modifier_0: 0
+    modifier_1: 0
+    modifier_2: 1
+    modifier_3: 0
   Skybox: {fileID: 2800000, guid: bb86885ed4a7048048a679f3b8ce87b4, type: 3}
   Top: 100
-  Mid: 60
+  Mid: 50
   Bot: 30

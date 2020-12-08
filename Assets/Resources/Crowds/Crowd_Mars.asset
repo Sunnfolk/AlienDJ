@@ -13,33 +13,38 @@ MonoBehaviour:
   m_Name: Crowd_Mars
   m_EditorClassIdentifier: 
   planetName: Mars
-  text: 
-  planetImage: {fileID: 0}
+  text: "Festivals are fun, but none can beat the intensity of a martian\u2019s party!
+    Being busy with the limited atmosphere on Mars, they sure know how to make their
+    own! You need not worry about getting lost as Martians are almost always happy
+    to help! Provided that you can get their attention before they scuttle away to
+    carry out \u201CHive duties\u201D. So why not crash down on this red planet and
+    kick some dust to party!\n\nEtiquette: don\u2019t mention the queen.\n"
+  planetImage: {fileID: 21300000, guid: 59c5fc0e0bb01402fa52c64abd0be348, type: 3}
   chill:
-    want: 4
-    modifier_0: 1
+    want: 2
+    modifier_0: 0
     modifier_1: 0
     modifier_2: 1
-    modifier_3: 0
+    modifier_3: 1
   Aggressive:
+    want: 4
+    modifier_0: 0
+    modifier_1: 1
+    modifier_2: 0
+    modifier_3: 1
+  Energic:
+    want: 1
+    modifier_0: 1
+    modifier_1: 1
+    modifier_2: 1
+    modifier_3: 1
+  Calm:
     want: 3
     modifier_0: 0
     modifier_1: 1
     modifier_2: 0
     modifier_3: 0
-  Energic:
-    want: 2
-    modifier_0: 1
-    modifier_1: 0
-    modifier_2: 0
-    modifier_3: 1
-  Calm:
-    want: 1
-    modifier_0: 0
-    modifier_1: 1
-    modifier_2: 1
-    modifier_3: 1
   Skybox: {fileID: 2800000, guid: 47a1d7a97c4954390953619152c00355, type: 3}
   Top: 100
-  Mid: 60
+  Mid: 50
   Bot: 30

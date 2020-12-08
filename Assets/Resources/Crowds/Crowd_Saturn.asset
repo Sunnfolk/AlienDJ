@@ -13,33 +13,40 @@ MonoBehaviour:
   m_Name: Crowd_Saturn
   m_EditorClassIdentifier: 
   planetName: Saturn
-  text: 
-  planetImage: {fileID: 0}
+  text: "You need a place where you can do no wrong? Then try Saturn, where everything
+    goes wrong, on purpose! What makes a trip to Saturn isn\u2019t just the view,
+    but the ingenious lil guys that make up it\u2019s sizable population. With cloning
+    technology, every individual is always, in a sense, available to help! If your
+    concern or sense of self preservation is keeping you from having fun, worry not!
+    Every new visitor is required to input their genetic code into the cloning system!
+    Now you have yourself on file, you can feel free to rave to your heart's content.\n\nEtiquette:
+    avoid existential philosophy, or even saying \u201Cthe original you\u201D.\n"
+  planetImage: {fileID: 21300000, guid: 8d868de315d37431ba1bdccd94646f47, type: 3}
   chill:
-    want: 4
-    modifier_0: 1
+    want: 1
+    modifier_0: 0
     modifier_1: 0
-    modifier_2: 1
-    modifier_3: 0
+    modifier_2: 0
+    modifier_3: 1
   Aggressive:
-    want: 3
+    want: 1
     modifier_0: 0
     modifier_1: 1
     modifier_2: 0
     modifier_3: 0
   Energic:
-    want: 2
+    want: 4
     modifier_0: 1
-    modifier_1: 0
-    modifier_2: 0
-    modifier_3: 1
-  Calm:
-    want: 1
-    modifier_0: 0
     modifier_1: 1
     modifier_2: 1
     modifier_3: 1
+  Calm:
+    want: 1
+    modifier_0: 1
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 0
   Skybox: {fileID: 2800000, guid: 8a54b3fbb013b45b0aadaee94428a48c, type: 3}
   Top: 100
-  Mid: 60
-  Bot: 30
+  Mid: 70
+  Bot: 20
