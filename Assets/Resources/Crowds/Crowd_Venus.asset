@@ -13,33 +13,38 @@ MonoBehaviour:
   m_Name: Crowd_Venus
   m_EditorClassIdentifier: 
   planetName: Venus
-  text: 
-  planetImage: {fileID: 0}
+  text: "Who needs the boring \u201Cromantic\u201D excursions of terrestrial islands
+    when you can elope to the planet of love? Are you trying to escape the cold?
+    Well good news, nothing here is cold! \nYou may consider this inhospitable, but
+    now that is furthest from the truth! thanks to the efforts of the native\u2019s
+    aromatic rose gardens. So take the gassy path and visit venus!\n\nEtiquette:
+    Don\u2019t comment on their skeletal structure.\n"
+  planetImage: {fileID: 21300000, guid: 473a4557475374b0abc8175dabde4713, type: 3}
   chill:
-    want: 4
-    modifier_0: 1
-    modifier_1: 0
-    modifier_2: 1
-    modifier_3: 0
-  Aggressive:
     want: 3
     modifier_0: 0
     modifier_1: 1
     modifier_2: 0
+    modifier_3: 1
+  Aggressive:
+    want: 3
+    modifier_0: 1
+    modifier_1: 0
+    modifier_2: 1
     modifier_3: 0
   Energic:
     want: 2
-    modifier_0: 1
-    modifier_1: 0
+    modifier_0: 0
+    modifier_1: 1
     modifier_2: 0
     modifier_3: 1
   Calm:
-    want: 1
+    want: 4
     modifier_0: 0
     modifier_1: 1
-    modifier_2: 1
+    modifier_2: 0
     modifier_3: 1
   Skybox: {fileID: 2800000, guid: ed45bc82fcbc54db2b4901dd26833702, type: 3}
   Top: 100
-  Mid: 60
-  Bot: 30
+  Mid: 70
+  Bot: 50

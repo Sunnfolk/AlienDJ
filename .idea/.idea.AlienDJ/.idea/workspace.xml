@@ -20,38 +20,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/DissolveController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/Arena/arena.booth.done.finished.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/3D/Arena/arena.booth.done.finished.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_French_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Jupiter_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Mars_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Neptun_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_PlanetX_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Pluto_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien 2/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Uranus_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien/ReferenceAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_To Be Reviewed/Sigrun/CB.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_To Be Reviewed/Sigrun/D.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Aggressive.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Aggressive.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Calm.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Calm.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Chill.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Chill.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Energetic.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Energetic.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MPrefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/DAWAsset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/DAWProject.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/DataFile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/EffectPreset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/Locale.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/MixerView.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/ProfilerSession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/Return.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/SandboxScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/Snapshot.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/VCA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_French_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Jupiter_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Mars_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Neptun_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_PlanetX_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Pluto_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien 2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Saturn_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Uranus_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Art/Spine Animated Characters/Character_Venus_Alien.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Earth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Earth.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Jupiter.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Jupiter.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mars.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mars.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mercury.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mercury.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Neptune.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Neptune.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_PlanetX.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_PlanetX.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Pluto.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Pluto.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Saturn.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Saturn.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Uranus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Uranus.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Venus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Venus.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/LP_Disc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/LP_Disc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Crowd.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenes/Crowd.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.ShaderGraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.ShaderGraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/TeleportDissolveEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/TeleportDissolveEffect.vfx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFXShaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFXShaders/Smoke.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +78,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/DissolveController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,9 +89,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienDespawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienSpawnPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/DissolveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DissolveController.cs" />
       </list>
     </option>
   </component>
@@ -129,6 +145,7 @@
       <workItem from="1607332816028" duration="469000" />
       <workItem from="1607334972198" duration="566000" />
       <workItem from="1607441856807" duration="3471000" />
+      <workItem from="1607451562816" duration="833000" />
     </task>
     <servers />
   </component>

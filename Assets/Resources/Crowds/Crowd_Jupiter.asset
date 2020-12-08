@@ -13,32 +13,40 @@ MonoBehaviour:
   m_Name: Crowd_Jupiter
   m_EditorClassIdentifier: 
   planetName: Jupiter
-  text: 
-  planetImage: {fileID: 0}
+  text: "Nothing beats skydiving, and on Jupiter that\u2019s all you\u2019ll ever
+    need. Provided that you enter one of the Green light regions, you will have a
+    blast! Though if perpetual falling isn\u2019t your thing, you're in luck! The
+    endless winds and thunderstorms allow for any B\xD8LT\u2122 certified starcraft
+    to freely tour the various structures that home the Native people here; Very
+    sociable and friendly, you need not worry about making good impressions or even
+    what to say! As they can read your deepest thoughts for you! With a company like
+    that, who wouldn\u2019t want to stay in a place like this.\n\nEtiquette: don\u2019t
+    keep lightning strikes to yourself, sharing is caring!\n"
+  planetImage: {fileID: 21300000, guid: de9bf4690e18740d88950d18bf427fdf, type: 3}
   chill:
+    want: 1
+    modifier_0: 0
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 0
+  Aggressive:
+    want: 2
+    modifier_0: 0
+    modifier_1: 1
+    modifier_2: 0
+    modifier_3: 1
+  Energic:
     want: 4
     modifier_0: 1
     modifier_1: 0
-    modifier_2: 1
-    modifier_3: 0
-  Aggressive:
-    want: 3
-    modifier_0: 0
-    modifier_1: 1
     modifier_2: 0
     modifier_3: 0
-  Energic:
+  Calm:
     want: 2
     modifier_0: 1
-    modifier_1: 0
-    modifier_2: 0
-    modifier_3: 1
-  Calm:
-    want: 1
-    modifier_0: 0
     modifier_1: 1
-    modifier_2: 1
-    modifier_3: 1
+    modifier_2: 0
+    modifier_3: 0
   Skybox: {fileID: 2800000, guid: de588408f5e2340deb30b3b25f6bee31, type: 3}
   Top: 100
   Mid: 60

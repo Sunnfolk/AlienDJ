@@ -13,33 +13,41 @@ MonoBehaviour:
   m_Name: Crowd_PlanetX
   m_EditorClassIdentifier: 
   planetName: PlanetX
-  text: 
-  planetImage: {fileID: 0}
+  text: "There\u2019s not enough that can be said for our surprise newcomers to this
+    happy celestial family. Being long since lost to us when the *prehistoric* travesty
+    that was the *Meteor*-strike on *Earth*, the Natives of Planet X have made their
+    long arduous journey back to us. Hailing from *Quastar nerjoras*, a distant galaxy
+    from us, they are keen to catch-up on missed events! And so are more than ready
+    to invite tourist\u2019s into their great republic. They are such good hosts
+    that you may find it difficult to leave! As great conversationalists and all
+    supreme and powerful overseers, there is truly no reason not to visit Planet
+    X for a well intentioned catch-up.\n\n\nEtiquette: ALWAYS PRAISE EMPEROR KHAPTAK"
+  planetImage: {fileID: 21300000, guid: 93067b9e40e7b4e499d6f8024c3f8157, type: 3}
   chill:
-    want: 4
+    want: 3
+    modifier_0: 1
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 1
+  Aggressive:
+    want: 1
     modifier_0: 1
     modifier_1: 0
     modifier_2: 1
-    modifier_3: 0
-  Aggressive:
-    want: 3
-    modifier_0: 0
-    modifier_1: 1
-    modifier_2: 0
     modifier_3: 0
   Energic:
     want: 2
-    modifier_0: 1
-    modifier_1: 0
+    modifier_0: 0
+    modifier_1: 1
     modifier_2: 0
     modifier_3: 1
   Calm:
-    want: 1
+    want: 4
     modifier_0: 0
     modifier_1: 1
-    modifier_2: 1
+    modifier_2: 0
     modifier_3: 1
   Skybox: {fileID: 2800000, guid: 2594c26b83d454046a487c6ef9592429, type: 3}
   Top: 100
-  Mid: 60
-  Bot: 30
+  Mid: 90
+  Bot: 60
