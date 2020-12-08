@@ -46,16 +46,20 @@ public class Interactable : MonoBehaviour
             {
                 timer = Time.time;
             }
-            //respawn if the object is out of bounds or timer is down, or y position is bellow the floor
+            //respawn if the object is out of bounds or timer is down, or y position is bellow the floor, and not if it is a disc currently playing music
             else if (Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position) >= respawnDistance || Time.time - timer >= timeBeforeRespawn || this.gameObject.transform.position.y < -1.5)
             {
-                print(Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position));
-                StartCoroutine(doTheRespawn());
+                if (true) //   <<<---------------------------------------------------------------------------------------------------- ADD:  IF DISC NOT PLAYING MUSIC (IF NOT SNAPPED TO DISCPLAYER)
+                {
+                    //print(Vector3.Distance(VrCamera.transform.position, this.gameObject.transform.position));
+                    StartCoroutine(doTheRespawn());
+                }
+                
             }
         }
     }
 
-    private IEnumerator doTheRespawn()
+    private IEnumerator doTheRespawn()    //       <-----------------------------------------------------------------------    ADD TELEPORT EFFECT-ANIMATION IN THIS COROUTINE-THING
     {
         //To not respawn several times every frame
         respawnIsOngoing = true;
