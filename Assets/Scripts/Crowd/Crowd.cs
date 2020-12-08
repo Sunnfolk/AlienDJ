@@ -26,6 +26,7 @@ public class Crowd : ScriptableObject
 
     public SceneAsset _environmentScene;
     
+
     public int Top;
 
     public int Mid;

@@ -24,6 +24,22 @@ namespace Alien_Spawn
         private void Update()
         {
             // Add code to call upon the animations based on current want
+            
+            if(CurrentSong.crowdDesire > CurrentSong.selectedCrowd.Top)
+            {
+                PlayHyped();
+            }
+            else if(CurrentSong.crowdDesire > CurrentSong.selectedCrowd.Mid)
+            {
+                PlayNormal();
+            }
+            else
+            {
+                PlayBored();
+            }
+
+
+
         }
 
         public void PlayBored()

@@ -20,7 +20,7 @@ public static class CurrentSong
 
     public static Crowd selectedCrowd;
     public static int gameScore;
-    
+    public static int crowdDesire;
 }
 
 enum Modifier

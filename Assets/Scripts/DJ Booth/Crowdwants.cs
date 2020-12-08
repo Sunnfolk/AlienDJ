@@ -61,6 +61,7 @@ public class Crowdwants : MonoBehaviour
             {
                 _Want[i] -= decreaseValue;
                 Desireforcurrentsong = _Want[i];
+                CurrentSong.crowdDesire = Desireforcurrentsong;
             } else{
                 switch(i)
                 {

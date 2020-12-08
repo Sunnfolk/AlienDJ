@@ -96,12 +96,15 @@ public class Score_Script : MonoBehaviour
         //gives the current increase its value based on if it is above specific treshold
       if (_Crowdwants.Desireforcurrentsong > crowd.Top)
       {
-      currentpoint_increase = Top_score_increase * _currentCategory.want; 
-      } else if (_Crowdwants.Desireforcurrentsong > crowd.Mid)
+         currentpoint_increase = Top_score_increase * _currentCategory.want; 
+      } 
+      else if (_Crowdwants.Desireforcurrentsong > crowd.Mid)
       {
-      currentpoint_increase = Mid_score_increase;
-      } else {
-      currentpoint_increase = Bot_score_increase;
+         currentpoint_increase = Mid_score_increase;
+      } 
+      else 
+      {
+         currentpoint_increase = Bot_score_increase;
       }
     }
 
