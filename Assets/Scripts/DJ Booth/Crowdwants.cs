@@ -24,6 +24,8 @@ public class Crowdwants : MonoBehaviour
     public List<int> _Want = new List<int>();
     private void Start()
     {
+
+        //FIX WHEN YOU SET THESE VALUES TO A SINGLE FUNCTION CALLED IN STARTING GAME
         crowd = CurrentSong.selectedCrowd;
         //Used to give start value of want
         ChillWant = crowd.chill.want * startwant_multiplier;
