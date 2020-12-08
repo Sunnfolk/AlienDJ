@@ -23,6 +23,7 @@
             <e p="Photosensitity.cs" t="Include" />
           </e>
         </e>
+        <e p="DissolveController.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
             <e p="addons" t="Include">
@@ -141,36 +142,45 @@
         </e>
         <e p="Resources" t="Include">
           <e p="Art" t="Include">
-            <e p="Spine Animated Characters" t="Include">
-              <e p="Character_French_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
+            <e p="2D" t="Include">
+              <e p="Spine Animated Characters" t="Include">
+                <e p="Character_French_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Jupiter_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Mars_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Mercury_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Neptun_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_PlanetX_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Pluto_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Saturn_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Uranus_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
+                <e p="Character_Venus_Alien" t="Include">
+                  <e p="skeleton.atlas.txt" t="Include" />
+                </e>
               </e>
-              <e p="Character_Jupiter_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Mars_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Mercury_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Neptun_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_PlanetX_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Pluto_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Saturn_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Uranus_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
-              </e>
-              <e p="Character_Venus_Alien" t="Include">
-                <e p="skeleton.atlas.txt" t="Include" />
+            </e>
+          </e>
+          <e p="VFXShaders" t="Include">
+            <e p="Aura" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="PortalDistortion.shader" t="Include" />
               </e>
             </e>
           </e>
@@ -181,11 +191,11 @@
             <e p="FlyingObject.cs" t="Include" />
           </e>
           <e p="Alien Spawn" t="Include">
-            <e p="AlienDespawn.cs" t="Include" />
             <e p="AlienSpawnPoint.cs" t="Include" />
             <e p="AlienTeleport.cs" t="Include" />
             <e p="AnimatedAlienCharacter.cs" t="Include" />
           </e>
+          <e p="ButtonKeeper.cs" t="Include" />
           <e p="Crowd" t="Include">
             <e p="Category.cs" t="Include" />
             <e p="Crowd.cs" t="Include" />
@@ -211,6 +221,8 @@
             <e p="HyperSpaceTunnelMove.cs" t="Include" />
             <e p="LightFadeAnimator.cs" t="Include" />
           </e>
+          <e p="LightAnimationController.cs" t="Include" />
+          <e p="LookAtPlayer.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="AccessibilityPanel.cs" t="Include" />
             <e p="Button_Booth.cs" t="Include" />
@@ -221,9 +233,13 @@
             <e p="PlanetSelectPanel.cs" t="Include" />
             <e p="TravelEvent.cs" t="Include" />
           </e>
+          <e p="PlayVFX.cs" t="Include" />
           <e p="ScoreTest.cs" t="Include" />
+          <e p="SetAlienSpawn.cs" t="Include" />
           <e p="SetGameEnviorment.cs" t="Include" />
           <e p="SetMenu.cs" t="Include" />
+          <e p="SetSkybox.cs" t="Include" />
+          <e p="SkyboxChecker.cs" t="Include" />
           <e p="Spheretest.cs" t="Include" />
           <e p="Static" t="Include">
             <e p="CurrentSong.cs" t="Include" />
@@ -940,13 +956,6 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
-          </e>
-        </e>
-        <e p="VFXShaders" t="Include">
-          <e p="Aura" t="Include">
-            <e p="Shaders" t="Include">
-              <e p="PortalDistortion.shader" t="Include" />
-            </e>
           </e>
         </e>
       </e>

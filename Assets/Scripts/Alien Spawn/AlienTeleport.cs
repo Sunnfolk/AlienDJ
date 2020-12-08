@@ -87,7 +87,6 @@ namespace Alien_Spawn
                 Destroy(transform.parent.gameObject);
                 _canTeleportOut = false;
             }
-
         }
     
         // IENumerator Function for Starting the teleportIN
