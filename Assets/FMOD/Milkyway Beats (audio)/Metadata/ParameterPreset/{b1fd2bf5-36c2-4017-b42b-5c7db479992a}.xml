@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{b1fd2bf5-36c2-4017-b42b-5c7db479992a}">
+		<property name="name">
+			<value>Planet_Ambient</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ee305986-485b-4b6e-a0ee-72d298728286}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{82f143b3-9921-4a3d-b5d5-92bf63956edc}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{82f143b3-9921-4a3d-b5d5-92bf63956edc}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>11</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>10</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
+
 public class Timer : MonoBehaviour
 {
     public float timer;
     public bool running;
     public GameStarter gameEnder;
     public TextMeshPro text;
+
+    private float lerpTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +36,15 @@ public class Timer : MonoBehaviour
                 running = false;
                 GameSettings.gameInPlay = false;
                 gameEnder.ChangeGame();
+                LerpDown();
             }
         }
+    }
+
+    private void LerpDown()
+    {
+        lerpTime += Time.deltaTime * 0.3f;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Disco", Mathf.Lerp(1, 0, lerpTime));
     }
 
     public void SetTimer()
@@ -41,7 +52,7 @@ public class Timer : MonoBehaviour
         
         timer = GameSettings.gameDuration * 60f;
         text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
-        //running = true;
+        
 
     }
 

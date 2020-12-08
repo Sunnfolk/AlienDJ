@@ -13,6 +13,12 @@ public class SnapDetector : MonoBehaviour
     public GameObject FMODPlayer;
     public bool discPlayer;
 
+    private bool lerp;
+    private float lerpTime;
+    [SerializeField]
+    private float lerpSpeed;
+    private float lerpValue;
+
     //Hide Snap detector / make invisible
     private void Start()
     {
@@ -66,10 +72,12 @@ public class SnapDetector : MonoBehaviour
         
         if(currentObject.gameObject.TryGetComponent(out DiscSong _discSong) && discPlayer)
         {
-            Debug.Log("Called Song Select");
+           
             _discSong.SongSelect();
-            FMODPlayer.SetActive(true);
-            //_discSong.snapped = true;
+            lerp = true;
+            
+            _discSong.rotSpeed = rotateSpeed;
+       
 
         }
     }
@@ -82,23 +90,34 @@ public class SnapDetector : MonoBehaviour
         //goOnPlayer = null;
         if (currentObject.gameObject.TryGetComponent(out DiscSong _discSong) && discPlayer)
         {
-            //_discSong.SongSelect();
-            FMODPlayer.SetActive(false);
-            //_discSong.snapped = false;
-
+          
+            _discSong.rotSpeed = 0;
         }
 
     }
 
+
     private void Update()
     {
-        //if(!holdsObject)
-        //{
-        //    if (discPlayer)
-        //    {
-        //        FMODPlayer.SetActive(false);
-        //    }
-        //}
+        if(lerp) //Change the value so song plays
+        {
+            if (lerpValue <= 0)
+                lerp = false;
+            lerpTime += Time.deltaTime * lerpSpeed;
+            lerpValue = Mathf.Lerp(1, 0, lerpTime);
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Disco", lerpValue);
+
+
+
+        }
+    }
+
+    public void ResetValues()
+    {
+
+        lerpValue = 0;
+
+
     }
 
 }

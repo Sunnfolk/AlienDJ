@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{54afc9ca-d3e2-4178-b4e3-a89a575597f6}">
+		<property name="assetPath">
+			<value>Ambient_PlanetX.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>42.684081632653061</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16374787-c560-422b-a93f-f0818d839448}</destination>
+		</relationship>
+	</object>
+</objects>

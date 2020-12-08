@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c99a565a-70b0-42cc-b37a-fed15203e09b}">
+		<property name="assetPath">
+			<value>Venus_Bored.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>26.174693877551022</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16374787-c560-422b-a93f-f0818d839448}</destination>
+		</relationship>
+	</object>
+</objects>

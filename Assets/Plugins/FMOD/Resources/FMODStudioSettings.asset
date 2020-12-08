@@ -528,10 +528,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../../Downloads/milkyway beats (built) (1)/milkyway beats
-    (built)/milkyway beats (built).fspro
-  sourceBankPath: ..\..\..\..\Downloads\milkyway beats (built) (1)\milkyway beats
-    (built)\Build
+  sourceProjectPath: Assets/FMOD/Milkyway Beats (audio)/Milkyway_Beats_Audio.fspro
+  sourceBankPath: Assets\FMOD\Milkyway Beats (audio)\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -554,6 +552,8 @@ MonoBehaviour:
   - Master
   Banks:
   - Music
+  - SFX
+  - Voice acting
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
