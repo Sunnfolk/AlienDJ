@@ -7,6 +7,7 @@ public class SetAlienSpawn : MonoBehaviour
     public void SpawnAlien(bool value)
     {
         GameSettings.alienSpawn = value;
+        Debug.Log("Alien Spawned");
     }
 
     public void DespawnAlien(bool value)

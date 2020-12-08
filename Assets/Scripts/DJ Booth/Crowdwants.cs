@@ -10,17 +10,17 @@ public class Crowdwants : MonoBehaviour
     private int pointRefreshTimer = 1;   
 
     
-    private Crowd crowd;
+    public Crowd crowd;
     [Tooltip("Give the want for a song a boost at start")][SerializeField]
     private int startwant_multiplier = 20;
     
-    private int ChillWant; //Chill Want
-    private int CalmWant; //Calm want
-    private int EnergeticWant; //Energic want
-    private int AggresiveWant; //Agressive Want
-    [HideInInspector]
+    public int ChillWant; //Chill Want
+    public int CalmWant; //Calm want
+    public int EnergeticWant; //Energic want
+    public int AggresiveWant; //Agressive Want
+    
     public int Desireforcurrentsong = 0;
-    [HideInInspector]
+    
     public List<int> _Want = new List<int>();
     private void Start()
     {
@@ -31,7 +31,10 @@ public class Crowdwants : MonoBehaviour
 
     public void SetAndStart()
     {
-        _Want.Clear();
+        Debug.Log("Started");
+        if(_Want.Count != 0)
+            _Want.Clear();
+        Debug.Log(CurrentSong.selectedCrowd);
         crowd = CurrentSong.selectedCrowd;
         //Used to give start value of want
         ChillWant = crowd.chill.want * startwant_multiplier;
@@ -39,11 +42,12 @@ public class Crowdwants : MonoBehaviour
         CalmWant = crowd.Energic.want * startwant_multiplier;
         AggresiveWant = crowd.Aggressive.want * startwant_multiplier;
 
+        Debug.Log("I AM RUNNING");
         _Want.Add(ChillWant);
         _Want.Add(CalmWant);
         _Want.Add(EnergeticWant);
         _Want.Add(AggresiveWant);
-
+        Debug.Log("I HAVE ADDED");
         StartCoroutine(Want_counter());
     }
 

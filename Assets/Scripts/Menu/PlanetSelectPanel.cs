@@ -48,12 +48,14 @@ public class PlanetSelectPanel : MonoBehaviour
         //Set all texts to text color
         planetNameText.color = menuFunctions.textColor;
         planetInfoText.color = menuFunctions.textColor;
-
-        menuFunctions.menuIndex = 0;
-        GameSettings.planetIndex = menuFunctions.menuIndex;
-        // Set text to first index of planets
-        planetNameText.text = planets[menuFunctions.menuIndex].planetName;
-        planetInfoText.text = planets[menuFunctions.menuIndex].text;
+        Debug.Log("Menu Index alpha " + menuFunctions.menuIndex);
+        menuFunctions.menuIndex=0;
+        //GameSettings.planetIndex = menuFunctions.menuIndex;
+        //// Set text to first index of planets
+        //planetNameText.text = planets[menuFunctions.menuIndex].planetName;
+        //planetInfoText.text = planets[menuFunctions.menuIndex].text;
+        Debug.Log("Menu Index Beta " + menuFunctions.menuIndex);
+        showNewPlanet();
 
     }
 
@@ -71,6 +73,8 @@ public class PlanetSelectPanel : MonoBehaviour
             planetInfoPanelImage.color = menuFunctions.activeMenuPanelColor;
         else
             planetInfoPanelImage.color = menuFunctions.menuPanelColor;
+
+        Debug.Log(CurrentSong.selectedCrowd);
     }
 
     public void buttonUp()
@@ -111,6 +115,7 @@ public class PlanetSelectPanel : MonoBehaviour
         planetNameText.text = planets[menuFunctions.menuIndex].planetName;
         planetImageImage.sprite = planets[menuFunctions.menuIndex].planetImage;
         GameSettings.planetIndex = menuFunctions.menuIndex;
+        CurrentSong.selectedCrowd = planets[menuFunctions.menuIndex];
     }
 
     public void buttonSelect()

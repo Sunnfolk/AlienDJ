@@ -111,7 +111,7 @@ public class SnapDetector : MonoBehaviour
 
     public void ResetValues()
     {
-
+        Debug.Log("SnapDetector");
         lerpValue = 0;
 
 
