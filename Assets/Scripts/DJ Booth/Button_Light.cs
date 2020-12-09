@@ -38,9 +38,9 @@ public class Button_Light : MonoBehaviour
     {
        
         on = colorIndex == CurrentSong.currentColor;
-        if(on)
+       /* if(on)
             Debug.Log(lightColor + " is " + on);
-
+       */
     }
 
 

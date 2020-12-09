@@ -10,12 +10,13 @@ public class SetMenu : MonoBehaviour
 
     public void SetMainMenu()
     {
-
+        Invoke(nameof(SetupMainMenu), 0f);
+        print("IsThis CALLED????????");
     }
 
     public void SetGameMenu()
     {
-
+     
     }
 
 

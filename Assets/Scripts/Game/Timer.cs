@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
     {
         if(running)
         {
-            Debug.Log("Timer is Running");
+            //Debug.Log("Timer is Running");
             timer -= 1 * Time.deltaTime;
 
             text.SetText(Mathf.Floor(timer / 60).ToString("00") + ":" + Mathf.FloorToInt(timer % 60).ToString("00"));
