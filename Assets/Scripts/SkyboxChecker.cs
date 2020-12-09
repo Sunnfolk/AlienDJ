@@ -23,7 +23,11 @@ public class SkyboxChecker : MonoBehaviour
         if (!GameSettings.skyboxActive)
         {
             UpdateSkyBox();
-            ActivateEnvironment();
+        }
+
+        if (GameSettings.canSetEnvironment)
+        {
+            StartCoroutine(ActivateEnvironment());
         }
     }
 
@@ -33,7 +37,7 @@ public class SkyboxChecker : MonoBehaviour
         _rend.material.SetTexture("_BaseMap", CurrentSong.selectedCrowd.Skybox);
     }
     
-    public void ActivateEnvironment()
+    public IEnumerator ActivateEnvironment()
     {
         for (int i = 0; i < _environments.Count; i++)
         {
@@ -45,7 +49,8 @@ public class SkyboxChecker : MonoBehaviour
             {
                 _environments[i].gameObject.SetActive(false);
             }
-            
         }
+        yield return new WaitForSeconds(0f);
+        GameSettings.canSetEnvironment = false;
     }
 }

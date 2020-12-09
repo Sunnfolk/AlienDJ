@@ -20,4 +20,6 @@ public static class GameSettings
 
     public static int planetIndex;
 
+    public static bool canSetEnvironment;
+
 }
