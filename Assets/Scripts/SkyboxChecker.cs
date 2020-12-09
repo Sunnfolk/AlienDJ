@@ -9,6 +9,8 @@ public class SkyboxChecker : MonoBehaviour
     void Start()
     {
         _rend = GetComponent<MeshRenderer>();
+        _rend.enabled = true;
+        GameSettings.skyboxActive = true;
     }
 
     // Update is called once per frame

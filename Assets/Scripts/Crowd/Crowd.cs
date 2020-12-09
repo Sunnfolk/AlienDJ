@@ -24,9 +24,6 @@ public class Crowd : ScriptableObject
 
     public Texture Skybox;
 
-    public SceneAsset _environmentScene;
-    
-
     public int Top;
 
     public int Mid;
