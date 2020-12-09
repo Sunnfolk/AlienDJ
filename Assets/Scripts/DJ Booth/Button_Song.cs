@@ -15,7 +15,10 @@ public class Button_Song : MonoBehaviour
     public Color colorOn;
     public Color colorOff;
 
-    
+    [FMODUnity.EventRef]
+    public string ButtonPushSound = "";
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +75,7 @@ public class Button_Song : MonoBehaviour
     {
         if(other.gameObject.tag == "Hand_Trigger")
         {
+            FMODUnity.RuntimeManager.PlayOneShot(ButtonPushSound);
             on = !on;
             ButtonSwitch();
         }

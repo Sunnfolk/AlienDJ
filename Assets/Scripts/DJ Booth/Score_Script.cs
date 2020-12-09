@@ -67,7 +67,8 @@ public class Score_Script : MonoBehaviour
       {
           colorbonus = 0;
       }
-        //finds the catagory currently being used
+        //finds the catagory currently being used 
+        //Used for Modifiers
       switch (CurrentSong.songPlaying)
       {
          case 0:
@@ -92,6 +93,9 @@ public class Score_Script : MonoBehaviour
       Checkmodifier(_currentCategory.modifier_2, CurrentSong.currentModifier_2);
       Checkmodifier(_currentCategory.modifier_3, CurrentSong.currentModifier_3);
 
+
+        if (point_Modifier <= 0)
+            point_Modifier = 1;
 
         //gives the current increase its value based on if it is above specific treshold
       if (_Crowdwants.Desireforcurrentsong > crowd.Top)

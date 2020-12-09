@@ -23,6 +23,7 @@ MonoBehaviour:
     supreme and powerful overseers, there is truly no reason not to visit Planet
     X for a well intentioned catch-up.\n\n\nEtiquette: ALWAYS PRAISE EMPEROR KHAPTAK"
   planetImage: {fileID: 21300000, guid: 93067b9e40e7b4e499d6f8024c3f8157, type: 3}
+  voiceLine: event:/Voice acting/DJ Dark Star/Planet X/GameStart_Voice_PlanetX
   chill:
     want: 3
     modifier_0: 1
@@ -48,7 +49,6 @@ MonoBehaviour:
     modifier_2: 0
     modifier_3: 1
   Skybox: {fileID: 2800000, guid: 2594c26b83d454046a487c6ef9592429, type: 3}
-  _environmentScene: {fileID: 102900000, guid: 46d4b4573c0f94423aadad1915600c79, type: 3}
   Top: 90
   Mid: 60
   Bot: 60

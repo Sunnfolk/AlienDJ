@@ -13,6 +13,8 @@ public class Crowd : ScriptableObject
     public string text;
 
     public Sprite planetImage;
+    [FMODUnity.EventRef]
+    public string voiceLine;
 
     public Category chill;
 

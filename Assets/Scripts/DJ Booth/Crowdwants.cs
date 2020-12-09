@@ -31,10 +31,10 @@ public class Crowdwants : MonoBehaviour
 
     public void SetAndStart()
     {
-        Debug.Log("Started");
+        //Debug.Log("Started");
         if(_Want.Count != 0)
             _Want.Clear();
-        Debug.Log(CurrentSong.selectedCrowd);
+        //Debug.Log(CurrentSong.selectedCrowd);
         crowd = CurrentSong.selectedCrowd;
         //Used to give start value of want
         ChillWant = crowd.chill.want * startwant_multiplier;
@@ -42,12 +42,12 @@ public class Crowdwants : MonoBehaviour
         CalmWant = crowd.Energic.want * startwant_multiplier;
         AggresiveWant = crowd.Aggressive.want * startwant_multiplier;
 
-        Debug.Log("I AM RUNNING");
+        //Debug.Log("I AM RUNNING");
         _Want.Add(ChillWant);
         _Want.Add(CalmWant);
         _Want.Add(EnergeticWant);
         _Want.Add(AggresiveWant);
-        Debug.Log("I HAVE ADDED");
+        //Debug.Log("I HAVE ADDED");
         StartCoroutine(Want_counter());
     }
 
@@ -56,6 +56,10 @@ public class Crowdwants : MonoBehaviour
         StopCoroutine(Want_counter());
     }
     
+    public void SetCrowd(Crowd _crowd)
+    {
+        crowd = _crowd;
+    }
     public IEnumerator Want_counter()
     {
         //increases want on the category based on if they are being played or not

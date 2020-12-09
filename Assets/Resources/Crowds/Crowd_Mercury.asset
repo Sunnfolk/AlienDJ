@@ -20,6 +20,7 @@ MonoBehaviour:
     that are dotted around the planet, and boy do the native folk know how to chill
     out! Just don\u2019t expect high effort services\u2026\n\nEtiquette: talk slow.\n"
   planetImage: {fileID: 21300000, guid: a9894479b9ae340968462b50f7068f4b, type: 3}
+  voiceLine: event:/Voice acting/DJ Dark Star/Mercury/GameStart_Voice_Mercury
   chill:
     want: 3
     modifier_0: 1
@@ -45,7 +46,6 @@ MonoBehaviour:
     modifier_2: 1
     modifier_3: 0
   Skybox: {fileID: 2800000, guid: 7c1ad43831ead48fc8d8658f243b9fec, type: 3}
-  _environmentScene: {fileID: 102900000, guid: 53bcdafc7101340ecbb9a78f8b454763, type: 3}
   Top: 65
   Mid: 40
   Bot: 40

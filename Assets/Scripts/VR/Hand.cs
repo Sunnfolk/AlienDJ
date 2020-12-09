@@ -11,10 +11,18 @@ public class Hand : MonoBehaviour
     private Interactable CurrentInteractable = null;
     private List<Interactable> ContactInteractables = new List<Interactable>();
 
+    private PlayVFX handVFX = null;
+
+    public GameObject _handOpen;
+    public GameObject _handClosed;
+
+    public Transform snaptooPoint;
+
     private void Awake()
     {
         Pose = GetComponent<SteamVR_Behaviour_Pose>();
         Joint = GetComponent<FixedJoint>();
+        handVFX = _handOpen.GetComponent<PlayVFX>();
     }
 
     // Update is called once per frame
@@ -23,6 +31,8 @@ public class Hand : MonoBehaviour
         //Trigger Down
         if(GrabAction.GetStateDown(Pose.inputSource))
         {
+
+
             Pickup();
             gameObject.tag = "Hand_Trigger";
         }
@@ -30,6 +40,8 @@ public class Hand : MonoBehaviour
         //Trigger Up
         if (GrabAction.GetStateUp(Pose.inputSource))
         {
+            
+
             Drop();
             gameObject.tag = "Hand_Open";
         }
@@ -87,16 +99,27 @@ public class Hand : MonoBehaviour
         // Get nearest interactable
         CurrentInteractable = GetNearestInteractable();
 
+        _handClosed.SetActive(true);
+        _handOpen.SetActive(false);
+
         // Null Check
         if (!CurrentInteractable)
             return;
+
+        _handClosed.SetActive(false);
+        _handOpen.SetActive(true);
+
+        //Play effect for held object
+        handVFX.OnGrip();
 
         // Already held (by other controller), check
         if (CurrentInteractable.ActiveHand)
             CurrentInteractable.ActiveHand.Drop();
 
         // position to controller
-        CurrentInteractable.transform.position = transform.position;
+        CurrentInteractable.transform.position = snaptooPoint.position;
+        CurrentInteractable.transform.rotation = snaptooPoint.rotation;
+
         // attach
         Rigidbody targetBody = CurrentInteractable.GetComponent<Rigidbody>();
         Joint.connectedBody = targetBody;
@@ -107,9 +130,15 @@ public class Hand : MonoBehaviour
 
     public void Drop()
     {
+        _handClosed.SetActive(false);
+        _handOpen.SetActive(true);
+
         // Null Check
         if (!CurrentInteractable)
             return;
+
+        //Turn off effect for held object
+        handVFX.OnRelease();
 
         // Apply velocity
         Rigidbody targetBody = CurrentInteractable.GetComponent<Rigidbody>();
