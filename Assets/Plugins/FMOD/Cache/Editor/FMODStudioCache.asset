@@ -786,7 +786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD_SongFile/Milkyway Beats (audio)/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637430517530000000
+  lastModified: 637430171460000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -963,7 +963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD_SongFile/Milkyway Beats (audio)/Build/Desktop/Voice acting.bank
   Name: Voice acting
-  lastModified: 637430517540000000
+  lastModified: 637430171600000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2091,7 +2091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD_SongFile/Milkyway Beats (audio)/Build/Desktop/SFX.bank
   Name: SFX
-  lastModified: 637430517540000000
+  lastModified: 637430171600000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2313,7 +2313,7 @@ MonoBehaviour:
   - {fileID: -5939476802569040259}
   StringsBanks:
   - {fileID: 8123992540352461891}
-  stringsBankWriteTime: 637430517530000000
+  stringsBankWriteTime: 637430171460000000
   cacheVersion: 5
 --- !u!114 &47073341793453083
 MonoBehaviour:
@@ -3830,7 +3830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD_SongFile/Milkyway Beats (audio)/Build/Desktop/Music.bank
   Name: Music
-  lastModified: 637430517540000000
+  lastModified: 637430171600000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -4160,9 +4160,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD_SongFile/Milkyway Beats (audio)/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637430517530000000
+  lastModified: 637430171460000000
   LoadResult: 0
-  FileSizes: []
+  FileSizes:
+  - Name: Desktop
+    Value: 3346
   Exists: 1
 --- !u!114 &8187953550827388341
 MonoBehaviour:
