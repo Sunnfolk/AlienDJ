@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tunnel: {fileID: 0}
+  hyperStart: event:/SFX/HyperSpace_Start
+  hyperEnd: event:/SFX/HyperSpace_End

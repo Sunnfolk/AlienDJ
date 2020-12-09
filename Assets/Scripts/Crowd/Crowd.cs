@@ -7,7 +7,6 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Crowd")]
 public class Crowd : ScriptableObject
 {
-
     public string planetName;
     [TextArea]
     public string text;
@@ -25,12 +24,11 @@ public class Crowd : ScriptableObject
     public Category Calm;
 
     public Texture Skybox;
+    
+    public string SceneName;
 
     public int Top;
 
     public int Mid;
-
-    public int Bot;
-
 
 }

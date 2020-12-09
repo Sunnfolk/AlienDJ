@@ -48,6 +48,6 @@ MonoBehaviour:
     modifier_2: 0
     modifier_3: 0
   Skybox: {fileID: 2800000, guid: 8a54b3fbb013b45b0aadaee94428a48c, type: 3}
+  SceneName: SaturnEnvironment
   Top: 70
   Mid: 20
-  Bot: 20

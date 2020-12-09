@@ -42,6 +42,6 @@ MonoBehaviour:
     modifier_2: 1
     modifier_3: 1
   Skybox: {fileID: 0}
+  SceneName: EarthEnvironment
   Top: 60
   Mid: 30
-  Bot: 30

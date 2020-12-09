@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d866c-7154-4e5d-9e5d-8f7f4487492d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Aggressive.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Aggressive.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Calm.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Calm.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Chill.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Chill.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Energetic.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/LPColour_Energetic.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienDJ/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/DAWAsset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FMOD_SongFile/Milkyway Beats (audio)/Metadata/DAWProject.meta" beforeDir="false" />
@@ -56,6 +49,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Earth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Earth.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Jupiter.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Jupiter.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mars.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mars.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Menu.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Menu.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mercury.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Mercury.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Neptune.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Neptune.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_PlanetX.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_PlanetX.asset" afterDir="false" />
@@ -63,12 +57,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Saturn.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Saturn.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Uranus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Uranus.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Venus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Crowds/Crowd_Venus.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/LP_Disc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Arena&amp;Booth/LP_Disc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.ShaderGraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.ShaderGraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/Dissolve.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/TeleportDissolveEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/VFXShaders/Teleport/TeleportDissolveEffect.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetSkybox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SetSkybox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,11 +80,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AnimatedAlienCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienDespawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienSpawnPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" />
         <option value="$PROJECT_DIR$/Assets/DissolveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VR/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Alien Spawn/AlienTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DissolveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crowd/Crowd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SetSkybox.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +106,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../as.app/Contents/MacOS/Milkyway Beats VR" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../as.app/Contents/MacOS" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />

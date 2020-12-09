@@ -1,5 +1,60 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &435466726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435466727}
+  - component: {fileID: 435466728}
+  m_Layer: 0
+  m_Name: Tester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435466727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435466726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7074572079194270735}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435466728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435466726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c2165f41d12f647a8283e7149b94bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gs: {fileID: 7074572078062744087}
+  tester: 0
+  crwd: {fileID: 11400000, guid: 26fb1082dacc24904bd55ae82b0d0411, type: 2}
+  fmd: {fileID: 7074572078190941280}
+  sscript: {fileID: 7074572079218699705}
+  mnu: 0
+  songCat: 0
+  mod0: 0
+  mod1: 0
+  mod2: 0
+  mod3: 0
+  score: 0
 --- !u!1 &501996121
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +96,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0814b50731c116438232c4ba41a8dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1105760952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105760953}
+  - component: {fileID: 1105760954}
+  m_Layer: 0
+  m_Name: VoiceLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105760953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105760952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7074572079194270735}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1105760954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105760952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15fe811cf5a71a44bd241551cafab13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7074572078062744081
@@ -261,6 +359,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1105760954}
+          m_MethodName: playVoiceLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - name: Start Timer
     lastsForSeconds: 0
     mainEvent:
@@ -384,7 +493,7 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
+  OverrideAttenuation: 1
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
 --- !u!114 &7074572078190941280
@@ -555,6 +664,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 7074572078980700633}
+          m_MethodName: SetMainMenu
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Flash and Hyperspace
     lastsForSeconds: 2
     mainEvent:
@@ -610,6 +730,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7074572079218699710}
+          m_MethodName: SetCrowd
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 1e77e11cd5dc3472884eee59dfa742e2,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Crowd, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1009,6 +1141,8 @@ Transform:
   - {fileID: 7074572079126920047}
   - {fileID: 7074572079479230840}
   - {fileID: 501996122}
+  - {fileID: 435466727}
+  - {fileID: 1105760953}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1036,11 +1170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f610363a8a64f55b600090086a24c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenes:
-  - {fileID: 102900000, guid: d07d101e73c9142f6a8c2b9d2fbd4f88, type: 3}
-  - {fileID: 102900000, guid: 5eb95630d03352b42a3c888a34b928a5, type: 3}
-  - {fileID: 102900000, guid: 452f289ff9e9e4a55809f6e7c17b8c37, type: 3}
-  - {fileID: 102900000, guid: 31c8ff0f63cc44c0c9c50c17913fcb00, type: 3}
+  _sceneNames:
+  - Crowd
+  - LightShow
+  - Environment
+  - VFX
 --- !u!1 &7074572079218699707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decreaseValue: 1
   pointRefreshTimer: 1
-  crowd: {fileID: 0}
+  crowd: {fileID: 11400000, guid: 1e77e11cd5dc3472884eee59dfa742e2, type: 2}
   startwant_multiplier: 20
   ChillWant: 0
   CalmWant: 0
@@ -1108,12 +1242,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3eaae7a448070439157063ec986d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crowd: {fileID: 0}
+  crowd: {fileID: 11400000, guid: 1e77e11cd5dc3472884eee59dfa742e2, type: 2}
   _Score: 0
   scoreRefreshTime: 2
-  Top_score_increase: 0
-  Mid_score_increase: 0
-  Bot_score_increase: 0
+  Top_score_increase: 1
+  Mid_score_increase: 1
+  Bot_score_increase: -1
   Colorbonusadd: 20
   text: {fileID: 0}
 --- !u!114 &507255249

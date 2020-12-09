@@ -46,6 +46,6 @@ MonoBehaviour:
     modifier_2: 1
     modifier_3: 0
   Skybox: {fileID: 2800000, guid: 7c1ad43831ead48fc8d8658f243b9fec, type: 3}
+  SceneName: MercuryEnvironment
   Top: 65
   Mid: 40
-  Bot: 40

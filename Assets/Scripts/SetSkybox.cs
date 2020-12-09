@@ -8,13 +8,13 @@ public class SetSkybox : MonoBehaviour
     public void ActivateSkybox()
     {
         GameSettings.skyboxActive = true;
-        //SceneManager.LoadScene(nameof(CurrentSong.selectedCrowd._environmentScene), LoadSceneMode.Additive);
+        SceneManager.LoadScene(CurrentSong.selectedCrowd.SceneName, LoadSceneMode.Additive);
 
     }
 
     public void DeactivateSkybox()
     {
         GameSettings.skyboxActive = false;
-        //SceneManager.UnloadSceneAsync(nameof(CurrentSong.selectedCrowd._environmentScene));
+        SceneManager.UnloadSceneAsync(CurrentSong.selectedCrowd.SceneName);
     }
 }

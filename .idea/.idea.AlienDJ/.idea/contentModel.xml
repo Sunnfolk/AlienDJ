@@ -684,6 +684,7 @@
             <e p="gravity.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>
+          <e p="GameSceneLoader.cs" t="Include" />
           <e p="HyperSpace" t="Include">
             <e p="HyperSpaceController.cs" t="Include" />
             <e p="HyperSpaceTunnelMove.cs" t="Include" />
@@ -1352,6 +1353,7 @@
           <e p="SteamVR_Input_ActionSets.cs" t="Include" />
           <e p="SteamVR_Input_Initialization.cs" t="Include" />
         </e>
+        <e p="Test_Big.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">
@@ -1426,6 +1428,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="VoiceLine.cs" t="Include" />
       </e>
       <e p="FMODUnity.csproj" t="IncludeRecursive" />
       <e p="FMODUnityEditor.csproj" t="IncludeRecursive" />
