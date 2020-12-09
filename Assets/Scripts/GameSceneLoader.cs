@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameSceneLoader : MonoBehaviour
 {
-    public List<SceneAsset> _scenes;
-
     public List<String> _sceneNames;
     // Start is called before the first frame update
     private void Start()
