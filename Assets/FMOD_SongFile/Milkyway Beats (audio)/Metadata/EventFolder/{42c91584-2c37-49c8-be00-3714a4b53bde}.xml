@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{42c91584-2c37-49c8-be00-3714a4b53bde}">
+		<property name="name">
+			<value>dj dark star</value>
+		</property>
+		<relationship name="folder">
+			<destination>{63690d84-d2be-46e0-ac5b-2bf1adafd63c}</destination>
+		</relationship>
+	</object>
+</objects>

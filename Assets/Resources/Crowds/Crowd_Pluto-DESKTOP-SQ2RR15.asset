@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5544321d0f419469b1d7b76ae28050, type: 3}
+  m_Name: Crowd_Pluto
+  m_EditorClassIdentifier: 
+  planetName: Pluto
+  text: "Nothing says it\u2019s winter destination like warm cocoa, a crackling log
+    fire, an isolated cabin and a kilometre wide geopowered thermal-dome to bite
+    back the cold. If you find you don\u2019t need the sun to have a good time, then
+    pluto is the place for you. Though if you are not looking for isolation during
+    your stay, Plutonians have you covered, with sleek utopian metropolises. While
+    on pluto, you will never find yourself unsatisfied. \n\nEtiquette: Don\u2019t
+    expect long conversations. They are not fond of chatting (learnt from experience)\n"
+  planetImage: {fileID: 21300000, guid: 9d12fdcbc72cd4e29968486fdbd4f37e, type: 3}
+  voiceLine: event:/Voice acting/DJ Dark Star/Pluto/GameStart_Voice_Pluto
+  chill:
+    want: 3
+    modifier_0: 0
+    modifier_1: 1
+    modifier_2: 0
+    modifier_3: 1
+  Aggressive:
+    want: 2
+    modifier_0: 0
+    modifier_1: 0
+    modifier_2: 1
+    modifier_3: 0
+  Energic:
+    want: 1
+    modifier_0: 1
+    modifier_1: 1
+    modifier_2: 1
+    modifier_3: 1
+  Calm:
+    want: 4
+    modifier_0: 0
+    modifier_1: 1
+    modifier_2: 0
+    modifier_3: 0
+  Skybox: {fileID: 2800000, guid: 874088ad48c864dfcb6d56d22c878d3d, type: 3}
+  SceneName: PlutoEnvironment
+  Top: 80
+  Mid: 50

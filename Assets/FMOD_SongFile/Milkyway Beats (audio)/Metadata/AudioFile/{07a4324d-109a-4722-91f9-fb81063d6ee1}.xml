@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{07a4324d-109a-4722-91f9-fb81063d6ee1}">
+		<property name="assetPath">
+			<value>Fireworks_Build_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.5326666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16374787-c560-422b-a93f-f0818d839448}</destination>
+		</relationship>
+	</object>
+</objects>

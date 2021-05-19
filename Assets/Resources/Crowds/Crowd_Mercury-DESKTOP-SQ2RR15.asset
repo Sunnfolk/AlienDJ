@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5544321d0f419469b1d7b76ae28050, type: 3}
+  m_Name: Crowd_Mercury
+  m_EditorClassIdentifier: 
+  planetName: Mercury
+  text: "What do you want from your holiday destination? Sun? Geographic Landmarks?
+    Well Mercury is all that! If you\u2019ve brought you sunscreen and your anti
+    radiation exoskeleton, you can enjoy nice pleasant strolls of unrelenting sunshine.
+    you can find yourself a safe and insulated time within the many crater towns
+    that are dotted around the planet, and boy do the native folk know how to chill
+    out! Just don\u2019t expect high effort services\u2026\n\nEtiquette: talk slow.\n"
+  planetImage: {fileID: 21300000, guid: a9894479b9ae340968462b50f7068f4b, type: 3}
+  voiceLine: event:/Voice acting/DJ Dark Star/Mercury/GameStart_Voice_Mercury
+  chill:
+    want: 3
+    modifier_0: 1
+    modifier_1: 1
+    modifier_2: 0
+    modifier_3: 1
+  Aggressive:
+    want: 1
+    modifier_0: 0
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 0
+  Energic:
+    want: 1
+    modifier_0: 0
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 0
+  Calm:
+    want: 4
+    modifier_0: 1
+    modifier_1: 0
+    modifier_2: 1
+    modifier_3: 0
+  Skybox: {fileID: 2800000, guid: 7c1ad43831ead48fc8d8658f243b9fec, type: 3}
+  SceneName: MercuryEnvironment
+  Top: 65
+  Mid: 40

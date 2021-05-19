@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5544321d0f419469b1d7b76ae28050, type: 3}
+  m_Name: Crowd_Saturn
+  m_EditorClassIdentifier: 
+  planetName: Saturn
+  text: "You need a place where you can do no wrong? Then try Saturn, where everything
+    goes wrong, on purpose! What makes a trip to Saturn isn\u2019t just the view,
+    but the ingenious lil guys that make up it\u2019s sizable population. With cloning
+    technology, every individual is always, in a sense, available to help! If your
+    concern or sense of self preservation is keeping you from having fun, worry not!
+    Every new visitor is required to input their genetic code into the cloning system!
+    Now you have yourself on file, you can feel free to rave to your heart's content.\n\nEtiquette:
+    avoid existential philosophy, or even saying \u201Cthe original you\u201D.\n"
+  planetImage: {fileID: 21300000, guid: 8d868de315d37431ba1bdccd94646f47, type: 3}
+  voiceLine: event:/Voice acting/DJ Dark Star/Saturn/GameStart_Voice_Saturn
+  chill:
+    want: 1
+    modifier_0: 0
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 1
+  Aggressive:
+    want: 1
+    modifier_0: 0
+    modifier_1: 1
+    modifier_2: 0
+    modifier_3: 0
+  Energic:
+    want: 4
+    modifier_0: 1
+    modifier_1: 1
+    modifier_2: 1
+    modifier_3: 1
+  Calm:
+    want: 1
+    modifier_0: 1
+    modifier_1: 0
+    modifier_2: 0
+    modifier_3: 0
+  Skybox: {fileID: 2800000, guid: 8a54b3fbb013b45b0aadaee94428a48c, type: 3}
+  SceneName: SaturnEnvironment
+  Top: 70
+  Mid: 20

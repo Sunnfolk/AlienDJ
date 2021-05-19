@@ -1,0 +1,132 @@
+
+skeleton.png
+size: 619,1047
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm_Righy
+  rotate: true
+  xy: 212, 549
+  size: 120, 222
+  orig: 120, 250
+  offset: 0, 19
+  index: -1
+Arm_left
+  rotate: false
+  xy: 323, 320
+  size: 118, 227
+  orig: 120, 250
+  offset: 0, 19
+  index: -1
+Butt
+  rotate: true
+  xy: 517, 2
+  size: 160, 76
+  orig: 161, 76
+  offset: 1, 0
+  index: -1
+Eyes_Angry
+  rotate: true
+  xy: 540, 342
+  size: 180, 77
+  orig: 180, 77
+  offset: 0, 0
+  index: -1
+Eyes_Crying
+  rotate: false
+  xy: 313, 12
+  size: 181, 80
+  orig: 181, 80
+  offset: 0, 0
+  index: -1
+Eyes_Happy
+  rotate: true
+  xy: 436, 549
+  size: 185, 68
+  orig: 185, 68
+  offset: 0, 0
+  index: -1
+Eyes_Normal
+  rotate: true
+  xy: 506, 524
+  size: 181, 97
+  orig: 181, 97
+  offset: 0, 0
+  index: -1
+Feet Placement
+  rotate: true
+  xy: 179, 139
+  size: 372, 50
+  orig: 372, 50
+  offset: 0, 0
+  index: -1
+Full_Arm
+  rotate: false
+  xy: 212, 671
+  size: 168, 374
+  orig: 200, 374
+  offset: 22, 0
+  index: -1
+Head
+  rotate: false
+  xy: 323, 94
+  size: 192, 224
+  orig: 192, 227
+  offset: 0, 3
+  index: -1
+Leg_Left
+  rotate: false
+  xy: 508, 707
+  size: 90, 338
+  orig: 90, 338
+  offset: 0, 0
+  index: -1
+Leg_Right
+  rotate: false
+  xy: 231, 209
+  size: 90, 338
+  orig: 90, 338
+  offset: 0, 0
+  index: -1
+Legs and Torso
+  rotate: false
+  xy: 2, 513
+  size: 208, 532
+  orig: 208, 532
+  offset: 0, 0
+  index: -1
+Shoulder_Left
+  rotate: false
+  xy: 443, 346
+  size: 95, 176
+  orig: 95, 176
+  offset: 0, 0
+  index: -1
+Shoulder_Right
+  rotate: false
+  xy: 517, 164
+  size: 95, 176
+  orig: 95, 176
+  offset: 0, 0
+  index: -1
+Thigh_Left
+  rotate: false
+  xy: 382, 736
+  size: 124, 309
+  orig: 125, 350
+  offset: 1, 8
+  index: -1
+Thigh_Right
+  rotate: true
+  xy: 2, 10
+  size: 124, 309
+  orig: 125, 350
+  offset: 0, 9
+  index: -1
+Torso
+  rotate: false
+  xy: 2, 136
+  size: 175, 375
+  orig: 208, 532
+  offset: 17, 103
+  index: -1

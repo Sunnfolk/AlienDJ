@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{231c8061-9e80-4645-97d5-0ab65239dfcb}">
+		<property name="assetPath">
+			<value>Magic Memory (low end).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>51.200000000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16374787-c560-422b-a93f-f0818d839448}</destination>
+		</relationship>
+	</object>
+</objects>

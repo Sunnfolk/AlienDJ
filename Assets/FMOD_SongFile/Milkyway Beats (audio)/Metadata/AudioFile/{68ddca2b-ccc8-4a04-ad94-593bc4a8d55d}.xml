@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{68ddca2b-ccc8-4a04-ad94-593bc4a8d55d}">
+		<property name="assetPath">
+			<value>Neptune_Normal.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>27.115102040816325</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16374787-c560-422b-a93f-f0818d839448}</destination>
+		</relationship>
+	</object>
+</objects>
